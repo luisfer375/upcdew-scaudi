@@ -67,9 +67,6 @@
                     <scanTargetPatterns>
                         <scanTargetPattern>
                             <directory>src/main/webapp/WEB-INF</directory>
-                            <excludes>
-                                <exclude>**/*.jsp</exclude>
-                            </excludes>
                             <includes>
                                 <include>**/*.properties</include>
                                 <include>**/*.xml</include>

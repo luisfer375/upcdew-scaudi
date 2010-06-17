@@ -4,5 +4,8 @@
     <Scope Scope="Project">
         <Node id="index.jsp" x="150" y="150" zoom="true"/>
     </Scope>
-    <Scope Scope="All Faces Configurations"/>
+    <Scope Scope="All Faces Configurations">
+        <Node id="index.jsp" x="400" y="150" zoom="true"/>
+        <Node id="pages/principal.jsp" x="150" y="150" zoom="true"/>
+    </Scope>
 </Scene>
