@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="pe.com.backus.scaudi.domain">
+    <class name="Region" table="T_COMENTARIO">
+
+        <id name="idComentario" column="IN_IDCOMENTARIO">
+                <generator class="increment"></generator>
+        </id>
+        <property name="descripcion" column="VC_DESCRIPCION" length="30"></property>
+
+    </class>
+</hibernate-mapping>
