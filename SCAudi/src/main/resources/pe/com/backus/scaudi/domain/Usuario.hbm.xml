@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="pe.com.backus.scaudi.domain">
+    <class name="Usuario" table="T_USUARIO">
+
+        <id name="idUsuario" column="IN_IDUSUARIO">
+                <generator class="increment"></generator>
+        </id>
+        <property name="nombre" column="VC_NOMBRE" length="30"></property>
+        <property name="login" column="VC_LOGIN" length="30"></property>
+        <property name="password" column="VC_PASSWORD" length="30"></property>
+        <property name="tipo" column="IN_TIPO"  type="INTEGER"></property>
+        <property name="estado" column="IN_ESTADO" type="INTEGER"></property>
+
+    </class>
+</hibernate-mapping>
