@@ -7,24 +7,33 @@
         <param-value>/WEB-INF/applicationContext.xml</param-value>
     </context-param>
     -->
+    <context-param>
+        <param-name>javax.faces.CONFIG_FILES</param-name>
+        <param-value>/WEB-INF/faces/faces-config.xml,
+            /WEB-INF/faces/faces-reparto.xml,
+            /WEB-INF/faces/faces-reposicion-almacenamiento.xml,
+            /WEB-INF/faces/faces-mantenimiento-flota.xml,
+            /WEB-INF/faces/faces-gestion-cd.xml,
+            /WEB-INF/faces/faces-evaluacion-mercado.xml</param-value>
+    </context-param>
     <servlet>
-       <servlet-name>Faces Servlet</servlet-name>
-       <servlet-class>org.apache.myfaces.webapp.MyFacesServlet</servlet-class>
-       <load-on-startup>1</load-on-startup>
+        <servlet-name>Faces Servlet</servlet-name>
+        <servlet-class>org.apache.myfaces.webapp.MyFacesServlet</servlet-class>
+        <load-on-startup>1</load-on-startup>
     </servlet>
     <servlet-mapping>
-                <servlet-name>Faces Servlet</servlet-name>
-                <url-pattern>/faces/*</url-pattern>
+        <servlet-name>Faces Servlet</servlet-name>
+        <url-pattern>/faces/*</url-pattern>
     </servlet-mapping>
     <servlet-mapping>
         <servlet-name>Faces Servlet</servlet-name>
         <url-pattern>*.faces</url-pattern>
     </servlet-mapping>
-
-    <context-param>
-        <param-name>javax.faces.CONFIG_FILES</param-name>
-        <param-value>/WEB-INF/faces/faces-config.xml</param-value>
-    </context-param>
+    <!-- Faces Servlet Mapping -->
+    <servlet-mapping>
+        <servlet-name>Faces Servlet</servlet-name>
+        <url-pattern>*.jsf</url-pattern>
+    </servlet-mapping>
     <session-config>
         <session-timeout>
             30
@@ -32,6 +41,6 @@
     </session-config>
     <!--Faces Servlet-->
     <welcome-file-list>
-        <welcome-file>index.jsp</welcome-file>
+        <welcome-file>/pages/index.jsp</welcome-file>
     </welcome-file-list>
 </web-app>
