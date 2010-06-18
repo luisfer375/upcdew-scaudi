@@ -1,0 +1,222 @@
+body {
+	background-color: #62647a;
+}
+.menuhome {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #383431;
+	font-weight: bold;
+}
+.menuhome a:link {
+	text-decoration: none;
+	color: #383431;
+}
+.menuhome a:visited {
+	color: #383431;
+	text-decoration: none;
+}
+.menuhome a:hover {
+	color: #E9A939;
+}
+.menuizq {
+	background-color: #d2d2e2;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #383431;
+	font-weight: bold;
+	list-style-image: url(images/bullet_celeste.gif);
+	
+}
+.menuizq ul {
+	margin-left: 23px;
+	margin-right: 10px;
+}
+.menuizq a {
+	margin-left: -3px;
+}
+.menuizq a:link {
+	text-decoration: none;
+	color: #383431;
+}
+.menuizq a:visited {
+	color: #7B7D97;
+	text-decoration: none;
+}
+.menuizq a:hover {
+	color: #464b87;
+	list-style-image: url(images/bullet_azul.gif);
+}
+.menuMetas {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	font-weight: bold;
+	color: #ffffff;
+	list-style-image: url(images/bullet_azul.gif);
+	
+}
+.menuMetas #activo {
+	color: #ffffff;
+	list-style-image: url(images/bullet_azul.gif);
+	
+}
+.menuMetas ul {
+	margin-left: 23px;
+	margin-right: 10px;
+	margin-top: 10px;
+}
+.menuMetasEst ol {
+	margin-left: 40px;
+	margin-right: 10px;
+	margin-top: -10px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 9px;
+	font-weight: normal;
+	color: #ffffff;
+	list-style-image: none;
+	list-style-type: decimal;
+}
+.menuMetas a {
+	margin-left: 0px;
+}
+.menuMetas a:link {
+	text-decoration: none;
+	color: #262b6e;
+}
+.menuMetasbk a:visited {
+	color: #555b96;
+	text-decoration: none;
+}
+.menuMetas a:visited {
+	color: #262b6e;
+	text-decoration: none;
+}
+.menuMetas a:hover {
+	color: #ffffff;
+	list-style-image: url(images/bullet_azul.gif);
+}
+
+.menuMetasEst a:link {
+	text-decoration: none;
+	color: #262b6e;
+}
+.menuMetasEstbk a:visited {
+	color: #555b96;
+	text-decoration: none;
+}
+.menuMetasEst a:visited {
+	color: #262b6e;
+	text-decoration: none;
+}
+.menuMetasEst a:hover {
+	color: #ffffff;
+}
+.tittabla {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	font-weight: bold;
+	color: #FFFFFF;
+}
+.subtittabla {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 9px;
+	font-weight: bold;
+	color: #FFFFFF;
+}
+h2 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight: bold;
+	color: #4d4d57;
+	margin-bottom: -15px;
+}
+
+
+.textotabla {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #4d4d57;
+	list-style-image: url(images/bullet_grischico.gif);
+}
+.textotabla li {
+	margin-left: -15px;
+}
+.tituloModulo {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #000057;
+	font-weight: bold;
+	line-height: 25px;
+}
+.stitModulo {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #000057;
+	font-weight: bold;
+}
+.subtextomodulos {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	margin: auto;
+	color: #4d4d57;
+	text-align: center;
+}
+
+.titulo {
+	font-family: Arial, Helvetica, sans-serif;
+	color: #000057;
+	font-size: 21px;
+	font-weight: bold;
+}
+.texto {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #4d4d57;
+	line-height: 18px;
+	text-align: justify;
+	padding: 5px;
+}
+.texto ul {
+	margin-top: 10px;
+	list-style-image: url(images/bullet_grischico.gif);
+}
+.texto a:link {
+	color: #4d4d57;
+	text-decoration: none;
+}
+
+.texto a:visited {
+	color: #4d4d57;
+	text-decoration: none;
+}
+.texto a:hover {
+	color: #999999;
+	text-decoration: none;
+}
+.subtitulo {
+	font-size: 12px;
+	font-weight: bold;
+	color: #363682;
+	font-family: Arial, Helvetica, sans-serif;
+}
+.numero {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 32px;
+	color: #9798a2;
+	font-weight: bold;
+}
+.nombreestandar {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	font-weight: bold;
+	color: #000057;
+}
+.nombreestandar_esp {
+
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	font-weight: bold;
+	color: #8186B7;
+}
