@@ -1,4 +1,6 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<%@ taglib prefix="f" uri="http://java.sun.com/jsf/core"%>
+<%@ taglib prefix="h" uri="http://java.sun.com/jsf/html"%>
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
@@ -33,9 +35,7 @@ function MM_swapImage() { //v3.0
 </head>
 
 <body onload="MM_preloadImages('images/mnH_mod1_roll.gif','images/mnH_mod1_2_roll1.gif','images/mnH_mod1_2_roll2.gif','images/mnH_mod2_roll.gif','images/mnH_mod2_3_roll2.gif','images/mnH_mod2_3_roll3.gif','images/mnH_mod3_roll.gif','images/mnH_mod3_4_roll3.gif','images/mnH_mod3_4_roll4.gif','images/mnH_mod4_roll.gif','images/mnH_mod4_5_roll4.gif','images/mnH_mod4_5_roll5.gif','images/mnH_mod5_roll.gif')">
-
-
-
+<h:form id="frmPrincipal" >
 <table border="0" align="center" cellpadding="2" cellspacing="0">
   <tr>
     <td bgcolor="#262b54"><table border="0" align="center" cellpadding="0" cellspacing="0" bgcolor="#FFFFFF">
@@ -71,7 +71,9 @@ function MM_swapImage() { //v3.0
                         <td></td>
                       </tr>
                       <tr>
-                        <td align="right" class="menuhome"><a href="intro.html">Introducci&oacute;n</a></td>
+                        <td align="right" class="menuhome">
+                            <h:commandLink> <h:outputText value="intro"/> </h:commandLink></td>
+                            <!--<a href="intro.html">Introducci&oacute;n</a>-->
                         <td><img src="images/bullet_amarillo.gif" width="9" height="7" /></td>
                       </tr>
                       <tr>
@@ -130,5 +132,6 @@ function MM_swapImage() { //v3.0
     </table></td>
   </tr>
 </table>
-</body>
+</h:form>
+ </body>
 </html>
