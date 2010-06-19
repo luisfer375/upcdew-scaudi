@@ -5,15 +5,11 @@
 
 package pe.com.backus.scaudi.domain;
 
-import java.io.Serializable;
-
-
 /**
  *
- * @author Administrador
+ * @author u201000244
  */
-
-public class Modulo implements Serializable{
+public class Modulo {
 
     private Integer idModulo;
     private String descripcion;
@@ -33,7 +29,6 @@ public class Modulo implements Serializable{
     public void setIdModulo(Integer idModulo) {
         this.idModulo = idModulo;
     }
-
 
 
 

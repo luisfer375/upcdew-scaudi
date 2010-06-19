@@ -5,15 +5,11 @@
 
 package pe.com.backus.scaudi.domain;
 
-import java.io.Serializable;
-
-
 /**
  *
- * @author Administrador
+ * @author u201000244
  */
-
-public class Area implements Serializable{
+public class Area {
 
     private Integer idArea;
     private Modulo modulo;
@@ -40,8 +36,8 @@ public class Area implements Serializable{
         return modulo;
     }
 
-    public void setModulo(Modulo modulo) {
-        this.modulo = modulo;
+    public void setModulo(Modulo idModulo) {
+        this.modulo= idModulo;
     }
 
     public Integer getPeso() {
@@ -51,8 +47,8 @@ public class Area implements Serializable{
     public void setPeso(Integer peso) {
         this.peso = peso;
     }
+        
 
-   
 
 
 }
