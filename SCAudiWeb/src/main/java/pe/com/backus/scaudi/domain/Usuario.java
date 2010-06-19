@@ -5,22 +5,19 @@
 
 package pe.com.backus.scaudi.domain;
 
-import java.io.Serializable;
-
-
 /**
  *
- * @author Administrador
+ * @author u201000244
  */
-
-public class Usuario implements Serializable{
+public class Usuario {
 
     private Integer idUsuario;
-    private String nombre;
-    private String login;
-    private String password;
+    private String  nombre;
+    private String  login;
+    private String  password;
     private Integer tipo;
     private Integer estado;
+
 
     public Integer getEstado() {
         return estado;
@@ -69,12 +66,6 @@ public class Usuario implements Serializable{
     public void setTipo(Integer tipo) {
         this.tipo = tipo;
     }
-
-
-  
-
-
-
 
 
 

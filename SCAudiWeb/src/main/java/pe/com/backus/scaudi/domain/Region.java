@@ -5,15 +5,11 @@
 
 package pe.com.backus.scaudi.domain;
 
-import java.io.Serializable;
-
-
 /**
  *
- * @author Administrador
+ * @author u201000244
  */
-
-public class Region implements Serializable{
+public class Region {
 
     private Integer idRegion;
     private String descripcion;
@@ -33,10 +29,6 @@ public class Region implements Serializable{
     public void setIdRegion(Integer idRegion) {
         this.idRegion = idRegion;
     }
-
-
-    
-
 
 
 

@@ -5,18 +5,14 @@
 
 package pe.com.backus.scaudi.domain;
 
-import java.io.Serializable;
-
-
 /**
  *
- * @author Administrador
+ * @author u201000244
  */
+public class Comentario {
 
-public class Comentario implements Serializable{
-
-    private Integer idComentario;
-    private String descripcion;
+    private Integer   idComentario;
+    private String    descripcion;
 
     public String getDescripcion() {
         return descripcion;
@@ -33,10 +29,5 @@ public class Comentario implements Serializable{
     public void setIdComentario(Integer idComentario) {
         this.idComentario = idComentario;
     }
-
-    
-
-
-
 
 }
