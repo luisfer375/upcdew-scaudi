@@ -3,13 +3,13 @@
 <%@page language="java" pageEncoding="UTF-8"%>
 
 <html>
-    <f:view>
         <head>
             <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
             <title>JSP Page</title>
         </head>
         <body>
+             <h1>JSP Page</h1>
+                <br/>
             <jsp:forward page="/pages/est01.jsf"/>
         </body>
-    </f:view>
 </html>
