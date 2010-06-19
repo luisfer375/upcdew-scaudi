@@ -3,7 +3,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
 <title>Est&aacute;ndares de Distribuci&oacute;n</title>
-<link href="styles.css" rel="stylesheet" type="text/css" />
+<link href="../pages/styles.css" rel="stylesheet" type="text/css" />
 <script type="text/JavaScript">
 <!--
 function MM_preloadImages() { //v3.0
@@ -36,17 +36,17 @@ function MM_swapImage() { //v3.0
 </style>
 </head>
 
-<body onload="MM_preloadImages('images/mnI_mod1_2_roll1.gif','images/mnI_mod2_roll.gif','images/mnI_mod2_3_roll2.gif','images/mnI_mod2_3_roll3.gif','images/mnI_mod3_roll.gif','images/mnI_mod3_4_roll3.gif','images/mnI_mod3_4_roll4.gif','images/mnI_mod4_roll.gif','images/mnI_mod4_5_roll4.gif','images/mnI_mod4_5_roll5.gif','images/mnI_mod5_roll.gif','images/mnI_mod1_roll.gif','images/mnI_active1_2.gif')">
+<body onload="MM_preloadImages('../images/mnI_mod1_2_roll1.gif','../images/mnI_mod1_2_roll2.gif','../images/mnI_mod2_roll.gif','../images/mnI_mod2_3_roll3.gif','../images/mnI_mod3_roll.gif','../images/mnI_mod3_4_roll3.gif','../images/mnI_mod4_roll.gif','../images/mnI_mod4_5_roll4.gif','../images/mnI_mod4_5_roll5.gif','../images/mnI_mod5_roll.gif','../images/mnI_mod1_roll.gif','../images/mnI_active_2_3.gif','../images/mnI_active_3_4.gif')">
 <table border="0" align="center" cellpadding="2" cellspacing="0">
   <tr>
     <td bgcolor="#262b54"><table border="0" align="center" cellpadding="0" cellspacing="0" bgcolor="#FFFFFF">
       <tr>
-        <td valign="top" bgcolor="#FFFFFF"><img src="images/spacer.gif" width="44" height="45" /></td>
+        <td valign="top" bgcolor="#FFFFFF"><img src="../images/spacer.gif" width="44" height="45" /></td>
         <td align="right" valign="bottom" bgcolor="#FFFFFF">&nbsp;</td>
-        <td bgcolor="#FFFFFF"><img src="images/spacer.gif" width="44" height="45" /></td>
+        <td bgcolor="#FFFFFF"><img src="../images/spacer.gif" width="44" height="45" /></td>
       </tr>
       <tr>
-        <td valign="top" bgcolor="#FFFFFF"><img src="images/spacer.gif" width="44" height="45" /></td>
+        <td valign="top" bgcolor="#FFFFFF"><img src="../images/spacer.gif" width="44" height="45" /></td>
         <td bgcolor="#383431"><table border="0" cellspacing="1" cellpadding="0">
           
           <tr>
@@ -54,224 +54,264 @@ function MM_swapImage() { //v3.0
               <tr>
                 <td colspan="2"><table width="100%" border="0" cellpadding="0" cellspacing="0">
                   <tr>
-                    <td background="images/bg_topinterna.gif"><table width="100%" border="0" cellpadding="0" cellspacing="0">
+                    <td background="../images/bg_topinterna.gif"><table width="100%" border="0" cellpadding="0" cellspacing="0">
                         <tr>
-                          <td><img src="images/logo1_interna.gif" width="354" height="76" /></td>
-                          <td><img src="images/spacer.gif" width="20" height="76" /></td>
-                          <td align="right" valign="middle"><img src="images/logoBackusInterna.gif" alt="Backus" width="86" height="26" hspace="22" /></td>
+                          <td><img src="../images/logo1_interna.gif" width="354" height="76" /></td>
+                          <td><img src="../images/spacer.gif" width="20" height="76" /></td>
+                          <td align="right" valign="middle"><img src="../images/logoBackusInterna.gif" alt="Backus" width="86" height="26" hspace="22" /></td>
                         </tr>
                     </table></td>
                   </tr>
                   <tr>
-                    <td background="images/bg_menutopinterna.gif"><table border="0" cellspacing="0" cellpadding="0">
+                    <td background="../images/bg_menutopinterna.gif"><table border="0" cellspacing="0" cellpadding="0">
                         <tr>
-                          <td><img src="images/logo2_internas.gif" width="118" height="64" /></td>
-                          <td><img src="images/mnI_mod1_roll.gif" name="mod1" width="92" height="64" border="0" id="mod1" onmouseover="MM_swapImage('mod1','','images/mnI_mod1_roll.gif','mod1_2','','images/mnI_mod1_2_roll1.gif',1)" onmouseout="MM_swapImgRestore()" /></td>
-                          <td><img src="images/mnI_mod1_2_roll1.gif" name="mod1_2" width="19" height="64" id="mod1_2" /></td>
-                          <td><a href="mod2.html"><img src="images/mnI_mod2.gif" name="mod2" width="106" height="64" border="0" id="mod2" onmouseover="MM_swapImage('mod1_2','','images/mnI_active1_2.gif','mod2','','images/mnI_mod2_roll.gif','mod2_3','','images/mnI_mod2_3_roll2.gif',1)" onmouseout="MM_swapImgRestore()" /></a></td>
-                          <td><img src="images/mnI_mod2_3.gif" name="mod2_3" width="19" height="64" id="mod2_3" /></td>
-                          <td><a href="mod3.html"><img src="images/mnI_mod3.gif" name="mod3" width="102" height="64" border="0" id="mod3" onmouseover="MM_swapImage('mod2_3','','images/mnI_mod2_3_roll3.gif','mod3','','images/mnI_mod3_roll.gif','mod3_4','','images/mnI_mod3_4_roll3.gif',1)" onmouseout="MM_swapImgRestore()" /></a></td>
-                          <td><img src="images/mnI_mod3_4.gif" name="mod3_4" width="20" height="64" id="mod3_4" /></td>
-                          <td><a href="mod4.html"><img src="images/mnI_mod4.gif" name="mod4" width="71" height="64" border="0" id="mod4" onmouseover="MM_swapImage('mod3_4','','images/mnI_mod3_4_roll4.gif','mod4','','images/mnI_mod4_roll.gif','mod4_5','','images/mnI_mod4_5_roll4.gif',1)" onmouseout="MM_swapImgRestore()" /></a></td>
-                          <td><img src="images/mnI_mod4_5.gif" name="mod4_5" width="19" height="64" id="mod4_5" /></td>
-                          <td><a href="mod5.html"><img src="images/mnI_mod5.gif" name="mod5" width="109" height="64" border="0" id="mod5" onmouseover="MM_swapImage('mod4_5','','images/mnI_mod4_5_roll5.gif','mod5','','images/mnI_mod5_roll.gif',1)" onmouseout="MM_swapImgRestore()" /></a></td>
+                          <td><img src="../images/logo2_internas.gif" width="118" height="64" /></td>
+                          <td><a href="../pages/mod1.jsp"><img src="../images/mnI_mod1.gif" name="mod1" width="92" height="64" border="0" id="mod1" onmouseover="MM_swapImage('mod1','','../images/mnI_mod1_roll.gif','mod1_2','','../images/mnI_mod1_2_roll1.gif',1)" onmouseout="MM_swapImgRestore()" /></a></td>
+                          <td><img src="../images/mnI_mod1_2.gif" name="mod1_2" width="19" height="64" id="mod1_2" /></td>
+                          <td><a href="../pages/mod2.jsp"><img src="../images/mnI_mod2.gif" name="mod2" width="106" height="64" border="0" id="mod2" onmouseover="MM_swapImage('mod1_2','','../images/mnI_mod1_2_roll2.gif','mod2','','../images/mnI_mod2_roll.gif','mod2_3','','../images/mnI_active_2_3.gif',1)" onmouseout="MM_swapImgRestore()" /></a></td>
+                          <td><img src="../images/mnI_mod2_3_roll3.gif" name="mod2_3" width="19" height="64" id="mod2_3" /></td>
+                          <td><img src="../images/mnI_mod3_roll.gif" name="mod3" width="102" height="64" border="0" id="mod3" onmouseover="MM_swapImage('mod2_3','','../images/mnI_mod2_3_roll3.gif','mod3','','../images/mnI_mod3_roll.gif','mod3_4','','../images/mnI_mod3_4_roll3.gif',1)" onmouseout="MM_swapImgRestore()" /></td>
+                          <td><img src="../images/mnI_mod3_4_roll3.gif" name="mod3_4" width="20" height="64" id="mod3_4" /></td>
+                          <td><a href="../pages/mod4.jsp"><img src="../images/mnI_mod4.gif" name="mod4" width="71" height="64" border="0" id="mod4" onmouseover="MM_swapImage('mod3_4','','../images/mnI_active_3_4.gif','mod4','','../images/mnI_mod4_roll.gif','mod4_5','','../images/mnI_mod4_5_roll4.gif',1)" onmouseout="MM_swapImgRestore()" /></a></td>
+                          <td><img src="../images/mnI_mod4_5.gif" name="mod4_5" width="19" height="64" id="mod4_5" /></td>
+                          <td><a href="../pages/mod5.jsp"><img src="../images/mnI_mod5.gif" name="mod5" width="109" height="64" border="0" id="mod5" onmouseover="MM_swapImage('mod4_5','','../images/mnI_mod4_5_roll5.gif','mod5','','../images/mnI_mod5_roll.gif',1)" onmouseout="MM_swapImgRestore()" /></a></td>
                         </tr>
                     </table></td>
                   </tr>
                 </table></td>
                 </tr>
               <tr>
-                <td width="165"><img src="images/spacer.gif" width="165" height="4" /></td>
-                <td width="510"><img src="images/spacer.gif" width="510" height="4" /></td>
+                <td><img src="../images/spacer.gif" width="165" height="4" /></td>
+                <td><img src="../images/spacer.gif" width="510" height="4" /></td>
               </tr>
               <tr>
                 <td valign="top" bgcolor="#a3a6bf" ><table width="165" border="0" cellspacing="0" cellpadding="0">
   <tr>
     <td class="menuizq"><br />
       <ul>
-        <li class="menuizq"><a href="index.html">Inicio</a></li>
-        <li class="menuizq"><a href="intro.html">Introducci&oacute;n</a></li>
-        <li class="menuizq"><a href="pautas.html">Pautas</a></li>
-        <li class="menuizq"><a href="sistevaluacion.html">Sistema de Evaluaci&oacute;n</a></li>
-        <li class="menuizq"><a href="revmodulos.html">Revisi&oacute;n de los M&oacute;dulos</a> </li>
+        <li class="menuizq"><a href="../pages/index.jsp">Inicio</a></li>
+        <li class="menuizq"><a href="../pages/intro.jsp">Introducci&oacute;n</a></li>
+        <li class="menuizq"><a href="../pages/pautas.jsp">Pautas</a></li>
+        <li class="menuizq"><a href="../pages/sistevaluacion.jsp">Sistema de Evaluaci&oacute;n</a></li>
+        <li class="menuizq"><a href="../pages/revmodulos.jsp">Revisi&oacute;n de los M&oacute;dulos</a> </li>
       </ul></td>
   </tr>
   <tr>
-    <td align="center" bgcolor="#D2D2E2"><img src="images/spacer.gif" width="35" height="8" /></td>
+    <td align="center" bgcolor="#D2D2E2"><img src="../images/spacer.gif" width="35" height="8" /></td>
   </tr>
   <tr>
-    <td align="center" background="images/bg_titmetas.gif"><img src="images/tit_metas.gif" width="121" height="30" /></td>
+    <td align="center" background="../images/bg_titmetas.gif"><img src="../images/tit_metas.gif" width="121" height="30" /></td>
   </tr>
   <tr>
     <td valign="top"><span class="menuMetas"><ul>
-      <li><a href="est01.html">Planificaci&oacute;n de la carga.</a></li>
-      <li><a href="est07.html">Carga y descarga de veh&iacute;culos.</a></li>
-      <li>Despacho del reparto.        </li>
-    </ul></span><span class="menuMetasEst">
-      <ol start="12">
-        <li><a href="est12.html">Conocimiento de las metas y los objetivos del proceso de reparto</a></li>
-<li>Comunicación a clientes especiales acerca del tiempo estimado de llegada del reparto</li>
-<li><a href="est14.html">Comunicación a clientes especiales acerca de retrasos en el  reparto</a></li>
-<li><a href="est15.html">Comunicación a todos los clientes de los días de reparto establecidos</a></li>
-<li><a href="est16.html">Definición de ventanas de atención para clientes especiales</a></li>
-      </ol>
-      </span><span class="menuMetas"><ul>
-      <li><a href="est17.html">Entrega del producto.
-        </a></li>
-      <li><a href="est21.html">Procesos administrativos del reparto - despacho.
-        </a></li>
-      <li><a href="est24.html">Imagen y servicios del CD/APT.</a><br />
-        </li>
-      <li><a href="est29.html">Administraci&oacute;n de recursos.</a></li>
-    </ul></span></td>
+      <li>Planificación del mantenimiento</li>
+    </ul></span><span class="menuMetasEst"><ol start="11">
+<li><a href="../pages/est60.jsp">Conocimiento de  lineamientos, parámetros, instructivos y procedimientos relacionados al mantenimiento de flota </a></li>
+<li><a href="../pages/est12.jsp">Cumplimiento de los programas de mantenimiento de flota / montacargas.</a></li>
+<li>Se realiza un seguimiento y análisis del presupuesto de mantenimiento de flota /
+    montacargas<a href="../pages/est13.jsp">.</a></li>
+    </ol>
+    </span><span class="menuMetas"></span></td>
   </tr>
 </table>
 </td>
                 <td valign="top"><table border="0" cellspacing="0" cellpadding="0">
                   <tr>
-                    <td><img src="images/spacer.gif" width="24" height="31" /></td>
-                    <td><img src="images/spacer.gif" width="460" height="31" /></td>
-                    <td><img src="images/spacer.gif" width="24" height="31" /></td>
+                    <td><img src="../images/spacer.gif" width="24" height="31" /></td>
+                    <td><img src="../images/spacer.gif" width="460" height="31" /></td>
+                    <td><img src="../images/spacer.gif" width="24" height="31" /></td>
                   </tr>
                   
                   <tr>
                     <td>&nbsp;</td>
                     <td valign="top"><table width="460" border="0" cellspacing="0" cellpadding="0">
                       <tr>
-                        <td class="titulo"><span class="stitModulo">MODULO 1</span><br />
-                          Reparto  - Despacho</td>
+                        <td class="titulo"><span class="stitModulo">MODULO 3 </span><br />
+                          Mantenimiento de Flota / Montacargas&nbsp;</td>
                       </tr>
                       <tr>
-                        <td bgcolor="#535891"><img src="images/spacer.gif" width="150" height="1" /></td>
+                        <td bgcolor="#535891"><img src="../images/spacer.gif" width="150" height="1" /></td>
                       </tr>
                       <tr>
-                        <td class="subtitulo">DESPACHO DEL REPARTO </td>
+                        <td class="subtitulo">PLANIFICACI&Oacute;N DE MANTENIMIENTO </td>
                       </tr>
                       <tr>
-                        <td><img src="images/spacer.gif" width="71" height="10" /></td>
+                        <td><img src="../images/spacer.gif" width="71" height="10" /></td>
                       </tr>
                       <tr>
-                        <td valign="top" background="images/bg_celeste.gif"><img src="images/stit_estandar.gif" alt="Est&aacute;ndar" width="71" height="26" /></td>
+                        <td valign="top" background="../images/bg_celeste.gif"><img src="../images/stit_estandar.gif" alt="Est&aacute;ndar" width="71" height="26" /></td>
                       </tr>
                       <tr>
                         <td valign="top"><table width="100%" border="0" cellspacing="0" cellpadding="10">
                           <tr>
                             <td width="10%" align="center" class="numero">13.</td>
-                            <td class="nombreestandar">Comunicaci&oacute;n a clientes especiales acerca del tiempo estimado de llegada del reparto.</td>
+                            <td class="nombreestandar">Se realiza un seguimiento y an&aacute;lisis del presupuesto de mantenimiento de flota / montacargas.</td>
                           </tr>
                         </table></td>
                       </tr>
                       <tr>
-                        <td valign="top"><img src="images/spacer.gif" width="71" height="10" /></td>
+                        <td valign="top"><img src="../images/spacer.gif" width="71" height="10" /></td>
                       </tr>
                       <tr>
-                        <td valign="top" background="images/bg_celeste.gif"><img src="images/tit_comentarios.gif" alt="Comentarios" width="93" height="25" /></td>
+                        <td valign="top" background="../images/bg_celeste.gif"><img src="../images/tit_comentarios.gif" alt="Comentarios" width="93" height="25" /></td>
                       </tr>
                       <tr>
-                        <td valign="top"><img src="images/spacer.gif" width="71" height="10" /></td>
+                        <td valign="top"><img src="../images/spacer.gif" width="71" height="10" /></td>
                       </tr>
                       <tr>
-                        <td valign="top" class="texto" >Dado que los clientes tienen sus propias actividades, ellos necesitan saber en que momento llegara el cami&oacute;n de reparto con los productos seg&uacute;n un plan definido. Cualquier modificaci&oacute;n a &eacute;ste plan, debe ser informada oportunamente. Se debe identificar la los clientes especiales (por ejemplo mayoristas, imagen) para &eacute;ste est&aacute;ndar.</td>
+                        <td valign="top" class="texto" >El presupuesto de mantenimiento de flota, formulado por el proveedor de servicio de manera anual, necesita basarse en un adecuado programa de mantenimiento y debe ser revisado de manera trimestral. El personal del CD en colaboraci&oacute;n con la empresa proveedora deben analizar y revisar el control de los presupuestos, a fin de identificar posibles causas y acciones de mejora en la gesti&oacute;n de los costos y operaci&oacute;n.<br />
+                            <br />
+                            Para APT: Se considera los vehículos montacargas.</td>
                       </tr>
                       <tr>
-                        <td valign="top"><img src="images/spacer.gif" width="71" height="23" /></td>
+                        <td valign="top"><img src="../images/spacer.gif" width="71" height="23" /></td>
                       </tr>
                       <tr>
-                        <td valign="top" background="images/bg_celeste.gif"><img src="images/tit_evidencias.gif" alt="Evidencias" width="93" height="25" /></td>
+                        <td valign="top" background="../images/bg_celeste.gif"><img src="../images/tit_evidencias.gif" alt="Evidencias" width="93" height="25" /></td>
                       </tr>
                       <tr>
-                        <td><a href="evidencias/13.1.xls" target="_blank"><img src="images/ic_excel.gif" alt="13.1.xls" width="75" height="71" border="0" /></a></td>
-                      </tr>
-                      <tr>
-                        <td valign="top"><img src="images/spacer.gif" width="71" height="10" /></td>
-                      </tr>
-                      <tr>
-                        <td valign="top" background="images/bg_celeste.gif"><img src="images/tit_niveles.gif" alt="Niveles" width="93" height="25" /></td>
-                      </tr>
-                      <tr>
-                        <td valign="top"><img src="images/spacer.gif" width="71" height="5" /></td>
-                      </tr>
-                      <tr>
-                        <td valign="top" background="images/bg_azul.gif"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+                        <td valign="top" class="texto"><table border="0" cellspacing="0" cellpadding="0">
                           <tr>
-                            <td><img src="images/tit_pobre.gif" alt="Pobre" width="40" height="23" /></td>
-                            <td align="right"><img src="images/estrellas1.gif" width="61" height="23" /></td>
+                        <td><a href="../pages/evidencias/62.1.ppt" target="_blank"><img src="../images/ic_ppt.gif" alt="62.1.ppt" width="75" height="71" border="0" /></a></td>
                           </tr>
                         </table></td>
                       </tr>
                       <tr>
-                        <td valign="top" ><img src="images/spacer.gif" width="71" height="10" /></td>
+                        <td valign="top"><img src="../images/spacer.gif" width="71" height="10" /></td>
+                      </tr>
+                      <tr>
+                        <td valign="top" background="../images/bg_celeste.gif"><img src="../images/tit_niveles.gif" alt="Niveles" width="93" height="25" /></td>
+                      </tr>
+                      <tr>
+                        <td valign="top"><img src="../images/spacer.gif" width="71" height="5" /></td>
+                      </tr>
+                      <tr>
+                        <td valign="top" background="../images/bg_azul.gif"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+                          <tr>
+                            <td><img src="../images/tit_pobre.gif" alt="Pobre" width="40" height="23" /></td>
+                            <td align="right"><img src="../images/estrellas1.gif" width="61" height="23" /></td>
+                          </tr>
+                        </table></td>
+                      </tr>
+                      <tr>
+                        <td valign="top" ><img src="../images/spacer.gif" width="71" height="10" /></td>
+                      </tr>
+                      <tr>
+                        <td valign="top" class="texto"><ol><li>No se cuenta con informaci&oacute;n para el an&aacute;lisis del  presupuesto de mantenimiento de flota.<br />
+                                    </li>
+                            </ol></td></tr>
+                      <tr>
+                        <td valign="top"><img src="../images/spacer.gif" width="71" height="10" /></td>
+                      </tr>
+                      <tr>
+                        <td valign="top" background="../images/bg_azul.gif"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+                          <tr>
+                            <td><img src="../images/tit_debajo.gif" alt="Debajo del Est&aacute;ndar" width="116" height="23" /></td>
+                            <td align="right"><img src="../images/estrellas2.gif" width="61" height="23" /></td>
+                          </tr>
+                        </table></td>
+                      </tr>
+                      <tr>
+                        <td valign="top" ><img src="../images/spacer.gif" width="71" height="10" /></td>
                       </tr>
                       <tr>
                         <td valign="top" class="texto"><ol>
-                          <li>Falta de procedimientos  para definir la ventana horaria de llegada del reparto  al cliente.</li>
-                        </ol></td></tr>
-                      <tr>
-                        <td valign="top"><img src="images/spacer.gif" width="71" height="10" /></td>
+                          <li>Se cuenta con informaci&oacute;n para el an&aacute;lisis del  presupuesto de mantenimiento de flota, pero no existen evidencias del seguimiento y an&aacute;lisis mensual.</li>
+                          </ol></td>
                       </tr>
                       <tr>
-                        <td valign="top" background="images/bg_azul.gif"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+                        <td valign="top"><img src="../images/spacer.gif" width="71" height="10" /></td>
+                      </tr>
+                      <tr>
+                        <td valign="top" background="../images/bg_azul.gif"><table width="100%" border="0" cellspacing="0" cellpadding="0">
                           <tr>
-                            <td><img src="images/tit_debajo.gif" alt="Debajo del Est&aacute;ndar" width="116" height="23" /></td>
-                            <td align="right"><img src="images/estrellas2.gif" width="61" height="23" /></td>
+                            <td><img src="../images/tit_enestandar.gif" alt="En el Est&aacute;ndar" width="90" height="23" /></td>
+                            <td align="right"><img src="../images/estrellas3.gif" width="61" height="23" /></td>
                           </tr>
                         </table></td>
                       </tr>
                       <tr>
-                        <td valign="top" ><img src="images/spacer.gif" width="71" height="10" /></td>
+                        <td valign="top"><span class="texto"><img src="../images/spacer.gif" width="71" height="10" /></span></td>
                       </tr>
                       <tr>
                         <td valign="top" class="texto"><ol>
-                          <li>Pocos casos de falta de comunicaci&oacute;n a los clientes  especiales acerca de los cambios en &nbsp;la ventana  horaria establecida.</li>
-                          <li>Se han establecido procedimientos para comunicar a los  clientes especiales acerca de cambios &nbsp;en la  ventana horaria establecida </li>
-                        </ol></td></tr>
-                      <tr>
-                        <td valign="top"><img src="images/spacer.gif" width="71" height="10" /></td>
+                          <li>Se cuenta con informaci&oacute;n para el an&aacute;lisis del  presupuesto de mantenimiento de flota, y se cuenta con evidencias del seguimiento y an&aacute;lisis mensual del mismo.</li>
+                          </ol></td>
                       </tr>
                       <tr>
-                        <td valign="top" background="images/bg_azul.gif"><table width="100%" border="0" cellspacing="0" cellpadding="0">
-                          <tr>
-                            <td><img src="images/tit_enestandar.gif" alt="En el Est&aacute;ndar" width="90" height="23" /></td>
-                            <td align="right"><img src="images/estrellas3.gif" width="61" height="23" /></td>
-                          </tr>
-                        </table></td>
+                        <td valign="top"><img src="../images/spacer.gif" width="71" height="10" /></td>
                       </tr>
                       <tr>
-                        <td valign="top"><span class="texto"><img src="images/spacer.gif" width="71" height="10" /></span></td>
-                      </tr>
-                      <tr>
-                        <td valign="top" class="texto"><ol>
-                          <li>Se evidencia un procedimiento efectivo para  comunicar&nbsp; a los clientes especiales  acerca de los cambios en la ventana horaria  establecida. </li>
-                          <li>No existen casos acerca de falta de comunicaci&oacute;n acerca de  cambios en &nbsp;la ventana horaria establecida.</li>
-                        </ol></td></tr>
-                      <tr>
-                        <td valign="top"><img src="images/spacer.gif" width="71" height="10" /></td>
-                      </tr>
-                      <tr>
-                        <td valign="top" background="images/bg_azul.gif"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+                        <td valign="top" background="../images/bg_azul.gif"><table width="100%" border="0" cellspacing="0" cellpadding="0">
                             <tr>
-                              <td><img src="images/tit_excepcional.gif" alt="Excepcional" width="75" height="23" /></td>
-                              <td align="right"><img src="images/estrellas4.gif" width="61" height="23" /></td>
+                              <td><img src="../images/tit_excepcional.gif" alt="Excepcional" width="75" height="23" /></td>
+                              <td align="right"><img src="../images/estrellas4.gif" width="61" height="23" /></td>
                             </tr>
                           </table></td>
                       </tr>
                       <tr>
-                        <td valign="top"><img src="images/spacer.gif" width="71" height="10" /></td>
+                        <td valign="top"><img src="../images/spacer.gif" width="71" height="10" /></td>
                       </tr>
                       <tr>
                         <td valign="top" class="texto"><ol>
-                          <li>Los clientes especiales siempre son comunicados acerca  de la ventana horaria establecida y sus cambios  eventuales.</li>
-                          <li>Existen registros actualizados acerca de los cambios en &nbsp;la ventana horaria establecida.</li>
-                        </ol></td></tr><tr>
-                        <td valign="top"><p><span class="texto"><img src="images/spacer.gif" width="71" height="10" /></span></p>                          </td>
+                          <li>El presupuesto y el control presupuestal de mantenimiento de flota llega hasta el nivel de cada unidad o veh&iacute;culo. </li>
+                          <li> Ejemplo de acciones tomadas en coordinaci&oacute;n con el proveedor de servicio de acuerdo al siguiente esquema: situaci&oacute;n, plan de acci&oacute;n, ejecuci&oacute;n e impacto final. </li>
+                        </ol></td>
+                      </tr>
+                      <tr>
+                        <td valign="top"><form id="form1" name="form1" method="post" action="">
+                          <table width="406" border="0" align="center" class="stitModulo">
+                            <tr>
+                              <th width="145" height="26" align="center" bgcolor="#31367A" scope="row">Calificiaci&oacute;n</th>
+                              <td width="125" align="center" bgcolor="#31367A">Observaciones</td>
+                              <td width="125" align="center" bgcolor="#31367A">Recomendaciones</td>
+                            </tr>
+                            <tr>
+                              <th align="left" valign="top" scope="row"><table width="144" class="subtitulo">
+                                <tr>
+                                  <td width="146"><label>
+                                    <input type="radio" name="calificacion" value="0" id="calificacion_0" />
+                                    Pobre</label></td>
+                                </tr>
+                                <tr>
+                                  <td><label>
+                                    <input type="radio" name="calificacion" value="1" id="calificacion_1" />
+                                    Debajo del Est&aacute;ndar</label></td>
+                                </tr>
+                                <tr>
+                                  <td><label>
+                                    <input type="radio" name="calificacion" value="2" id="calificacion_2" />
+                                    En el Est&aacute;ndar</label></td>
+                                </tr>
+                                <tr>
+                                  <td><label>
+                                    <input type="radio" name="calificacion" value="3" id="calificacion_3" />
+                                    Excepcional</label></td>
+                                </tr>
+                              </table></th>
+                              <td align="left" valign="top"><label>
+                                <textarea name="textarea" id="textarea" cols="16" rows="7"></textarea>
+                              </label></td>
+                              <td align="left" valign="top"><textarea name="textarea2" id="textarea2" cols="16" rows="7"></textarea></td>
+                            </tr>
+                            <tr>
+                              <th colspan="3" align="center" valign="middle" scope="row"><p>
+                                <label>
+                                  <input type="submit" name="button" id="button" value="Calificar...!" />
+                                </label>
+                                <input name="hiddenField" type="hidden" id="hiddenField" value="est13" />
+                              </p></th>
+                            </tr>
+                          </table>
+                        </form>                          <p>&nbsp;</p>                          </td>
                       </tr>
                     </table></td>
                     <td>&nbsp;</td>
                   </tr>
                   <tr>
-                    <td><img src="images/spacer.gif" width="24" height="25" /></td>
+                    <td><img src="../images/spacer.gif" width="24" height="25" /></td>
                     <td><h1>&nbsp;</h1></td>
-                    <td><img src="images/spacer.gif" width="24" height="25" /></td>
+                    <td><img src="../images/spacer.gif" width="24" height="25" /></td>
                   </tr>
                 </table></td>
               </tr>
@@ -279,10 +319,10 @@ function MM_swapImage() { //v3.0
             </table></td>
           </tr>
         </table></td>
-        <td bgcolor="#FFFFFF"><img src="images/spacer.gif" width="44" height="45" /></td>
+        <td bgcolor="#FFFFFF"><img src="../images/spacer.gif" width="44" height="45" /></td>
       </tr>
       <tr>
-        <td colspan="3" valign="top" bgcolor="#FFFFFF"><img src="images/spacer.gif" width="174" height="32" /></td>
+        <td colspan="3" valign="top" bgcolor="#FFFFFF"><img src="../images/spacer.gif" width="174" height="32" /></td>
       </tr>
     </table></td>
   </tr>

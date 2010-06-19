@@ -3,7 +3,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
 <title>Est&aacute;ndares de Distribuci&oacute;n</title>
-<link href="styles.css" rel="stylesheet" type="text/css" />
+<link href="../pages/styles.css" rel="stylesheet" type="text/css" />
 <script type="text/JavaScript">
 <!--
 function MM_preloadImages() { //v3.0
@@ -30,19 +30,23 @@ function MM_swapImage() { //v3.0
 }
 //-->
 </script>
+<style type="text/css">
+<!--
+-->
+</style>
 </head>
 
-<body onload="MM_preloadImages('images/mnI_mod1_2_roll1.gif','images/mnI_mod2_roll.gif','images/mnI_mod2_3_roll2.gif','images/mnI_mod2_3_roll3.gif','images/mnI_mod3_roll.gif','images/mnI_mod3_4_roll3.gif','images/mnI_mod3_4_roll4.gif','images/mnI_mod4_roll.gif','images/mnI_mod4_5_roll4.gif','images/mnI_mod4_5_roll5.gif','images/mnI_mod5_roll.gif','images/mnI_mod1_roll.gif','images/mnI_active1_2.gif')">
+<body onload="MM_preloadImages('../images/mnI_mod1_2_roll2.gif','../images/mnI_mod2_roll.gif','../images/mnI_mod2_3_roll2.gif','../images/mnI_mod3_roll.gif','../images/mnI_mod3_4_roll3.gif','../images/mnI_mod3_4_roll4.gif','../images/mnI_mod4_roll.gif','../images/mnI_mod4_5_roll4.gif','../images/mnI_mod4_5_roll5.gif','../images/mnI_mod5_roll.gif','../images/mnI_mod1_roll.gif','../images/mnI_active1_2.gif','../images/mnI_active_2_3.gif')">
 <table border="0" align="center" cellpadding="2" cellspacing="0">
   <tr>
     <td bgcolor="#262b54"><table border="0" align="center" cellpadding="0" cellspacing="0" bgcolor="#FFFFFF">
       <tr>
-        <td valign="top" bgcolor="#FFFFFF"><img src="images/spacer.gif" width="44" height="45" /></td>
+        <td valign="top" bgcolor="#FFFFFF"><img src="../images/spacer.gif" width="44" height="45" /></td>
         <td align="right" valign="bottom" bgcolor="#FFFFFF">&nbsp;</td>
-        <td bgcolor="#FFFFFF"><img src="images/spacer.gif" width="44" height="45" /></td>
+        <td bgcolor="#FFFFFF"><img src="../images/spacer.gif" width="44" height="45" /></td>
       </tr>
       <tr>
-        <td valign="top" bgcolor="#FFFFFF"><img src="images/spacer.gif" width="44" height="45" /></td>
+        <td valign="top" bgcolor="#FFFFFF"><img src="../images/spacer.gif" width="44" height="45" /></td>
         <td bgcolor="#383431"><table border="0" cellspacing="1" cellpadding="0">
           
           <tr>
@@ -50,228 +54,270 @@ function MM_swapImage() { //v3.0
               <tr>
                 <td colspan="2"><table width="100%" border="0" cellpadding="0" cellspacing="0">
                   <tr>
-                    <td background="images/bg_topinterna.gif"><table width="100%" border="0" cellpadding="0" cellspacing="0">
+                    <td background="../images/bg_topinterna.gif"><table width="100%" border="0" cellpadding="0" cellspacing="0">
                         <tr>
-                          <td><img src="images/logo1_interna.gif" width="354" height="76" /></td>
-                          <td><img src="images/spacer.gif" width="20" height="76" /></td>
-                          <td align="right" valign="middle"><img src="images/logoBackusInterna.gif" alt="Backus" width="86" height="26" hspace="22" /></td>
+                          <td><img src="../images/logo1_interna.gif" width="354" height="76" /></td>
+                          <td><img src="../images/spacer.gif" width="20" height="76" /></td>
+                          <td align="right" valign="middle"><img src="../images/logoBackusInterna.gif" alt="Backus" width="86" height="26" hspace="22" /></td>
                         </tr>
                     </table></td>
                   </tr>
                   <tr>
-                    <td background="images/bg_menutopinterna.gif"><table border="0" cellspacing="0" cellpadding="0">
+                    <td background="../images/bg_menutopinterna.gif"><table border="0" cellspacing="0" cellpadding="0">
                         <tr>
-                          <td><img src="images/logo2_internas.gif" width="118" height="64" /></td>
-                          <td><img src="images/mnI_mod1_roll.gif" name="mod1" width="92" height="64" border="0" id="mod1" onmouseover="MM_swapImage('mod1','','images/mnI_mod1_roll.gif','mod1_2','','images/mnI_mod1_2_roll1.gif',1)" onmouseout="MM_swapImgRestore()" /></td>
-                          <td><img src="images/mnI_mod1_2_roll1.gif" name="mod1_2" width="19" height="64" id="mod1_2" /></td>
-                          <td><a href="mod2.html"><img src="images/mnI_mod2.gif" name="mod2" width="106" height="64" border="0" id="mod2" onmouseover="MM_swapImage('mod1_2','','images/mnI_active1_2.gif','mod2','','images/mnI_mod2_roll.gif','mod2_3','','images/mnI_mod2_3_roll2.gif',1)" onmouseout="MM_swapImgRestore()" /></a></td>
-                          <td><img src="images/mnI_mod2_3.gif" name="mod2_3" width="19" height="64" id="mod2_3" /></td>
-                          <td><a href="mod3.html"><img src="images/mnI_mod3.gif" name="mod3" width="102" height="64" border="0" id="mod3" onmouseover="MM_swapImage('mod2_3','','images/mnI_mod2_3_roll3.gif','mod3','','images/mnI_mod3_roll.gif','mod3_4','','images/mnI_mod3_4_roll3.gif',1)" onmouseout="MM_swapImgRestore()" /></a></td>
-                          <td><img src="images/mnI_mod3_4.gif" name="mod3_4" width="20" height="64" id="mod3_4" /></td>
-                          <td><a href="mod4.html"><img src="images/mnI_mod4.gif" name="mod4" width="71" height="64" border="0" id="mod4" onmouseover="MM_swapImage('mod3_4','','images/mnI_mod3_4_roll4.gif','mod4','','images/mnI_mod4_roll.gif','mod4_5','','images/mnI_mod4_5_roll4.gif',1)" onmouseout="MM_swapImgRestore()" /></a></td>
-                          <td><img src="images/mnI_mod4_5.gif" name="mod4_5" width="19" height="64" id="mod4_5" /></td>
-                          <td><a href="mod5.html"><img src="images/mnI_mod5.gif" name="mod5" width="109" height="64" border="0" id="mod5" onmouseover="MM_swapImage('mod4_5','','images/mnI_mod4_5_roll5.gif','mod5','','images/mnI_mod5_roll.gif',1)" onmouseout="MM_swapImgRestore()" /></a></td>
+                          <td><img src="../images/logo2_internas.gif" width="118" height="64" /></td>
+                          <td><a href="../pages/mod1.jsp"><img src="../images/mnI_mod1.gif" name="mod1" width="92" height="64" border="0" id="mod1" onmouseover="MM_swapImage('mod1','','../images/mnI_mod1_roll.gif','mod1_2','','../images/mnI_active1_2.gif',1)" onmouseout="MM_swapImgRestore()" /></a></td>
+                          <td><img src="../images/mnI_mod1_2_roll2.gif" name="mod1_2" width="19" height="64" id="mod1_2" /></td>
+                          <td><img src="../images/mnI_mod2_roll.gif" name="mod2" width="106" height="64" border="0" id="mod2" onmouseover="MM_swapImage('mod1_2','','../images/mnI_mod1_2_roll2.gif','mod2','','../images/mnI_mod2_roll.gif','mod2_3','','../images/mnI_mod2_3_roll2.gif',1)" onmouseout="MM_swapImgRestore()" /></td>
+                          <td><img src="../images/mnI_mod2_3_roll2.gif" name="mod2_3" width="19" height="64" id="mod2_3" /></td>
+                          <td><a href="../pages/mod3.jsp"><img src="../images/mnI_mod3.gif" name="mod3" width="102" height="64" border="0" id="mod3" onmouseover="MM_swapImage('mod2_3','','../images/mnI_active_2_3.gif','mod3','','../images/mnI_mod3_roll.gif','mod3_4','','../images/mnI_mod3_4_roll3.gif',1)" onmouseout="MM_swapImgRestore()" /></a></td>
+                          <td><img src="../images/mnI_mod3_4.gif" name="mod3_4" width="20" height="64" id="mod3_4" /></td>
+                          <td><a href="../pages/mod4.jsp"><img src="../images/mnI_mod4.gif" name="mod4" width="71" height="64" border="0" id="mod4" onmouseover="MM_swapImage('mod3_4','','../images/mnI_mod3_4_roll4.gif','mod4','','../images/mnI_mod4_roll.gif','mod4_5','','../images/mnI_mod4_5_roll4.gif',1)" onmouseout="MM_swapImgRestore()" /></a></td>
+                          <td><img src="../images/mnI_mod4_5.gif" name="mod4_5" width="19" height="64" id="mod4_5" /></td>
+                          <td><a href="../pages/mod5.jsp"><img src="../images/mnI_mod5.gif" name="mod5" width="109" height="64" border="0" id="mod5" onmouseover="MM_swapImage('mod4_5','','../images/mnI_mod4_5_roll5.gif','mod5','','../images/mnI_mod5_roll.gif',1)" onmouseout="MM_swapImgRestore()" /></a></td>
                         </tr>
                     </table></td>
                   </tr>
                 </table></td>
                 </tr>
               <tr>
-                <td width="165"><img src="images/spacer.gif" width="165" height="4" /></td>
-                <td width="510"><img src="images/spacer.gif" width="510" height="4" /></td>
+                <td><img src="../images/spacer.gif" width="165" height="4" /></td>
+                <td><img src="../images/spacer.gif" width="510" height="4" /></td>
               </tr>
               <tr>
                 <td valign="top" bgcolor="#a3a6bf" ><table width="165" border="0" cellspacing="0" cellpadding="0">
   <tr>
     <td class="menuizq"><br />
       <ul>
-        <li class="menuizq"><a href="index.html">Inicio</a></li>
-        <li class="menuizq"><a href="intro.html">Introducci&oacute;n</a></li>
-        <li class="menuizq"><a href="pautas.html">Pautas</a></li>
-        <li class="menuizq"><a href="sistevaluacion.html">Sistema de Evaluaci&oacute;n</a></li>
-        <li class="menuizq"><a href="revmodulos.html">Revisi&oacute;n de los M&oacute;dulos</a> </li>
+        <li class="menuizq"><a href="../pages/index.jsp">Inicio</a></li>
+        <li class="menuizq"><a href="../pages/intro.jsp">Introducci&oacute;n</a></li>
+        <li class="menuizq"><a href="../pages/pautas.jsp">Pautas</a></li>
+        <li class="menuizq"><a href="../pages/sistevaluacion.jsp">Sistema de Evaluaci&oacute;n</a></li>
+        <li class="menuizq"><a href="../pages/revmodulos.jsp">Revisi&oacute;n de los M&oacute;dulos</a> </li>
       </ul></td>
   </tr>
   <tr>
-    <td align="center" bgcolor="#D2D2E2"><img src="images/spacer.gif" width="35" height="8" /></td>
+    <td align="center" bgcolor="#D2D2E2"><img src="../images/spacer.gif" width="35" height="8" /></td>
   </tr>
   <tr>
-    <td align="center" background="images/bg_titmetas.gif"><img src="images/tit_metas.gif" width="121" height="30" /></td>
+    <td align="center" background="../images/bg_titmetas.gif"><img src="../images/tit_metas.gif" width="121" height="30" /></td>
   </tr>
   <tr>
-    <td valign="top"><span class="menuMetas"><ul>
-      <li>Planificaci&oacute;n de la carga.</li></ul></span><span class="menuMetasEst"><ol><li><a href="est01.html">Conocimiento profundo del cliente y de los servicios que &eacute;stos requieren.</a></li>
-        <li><a href="est02.html">Aseguramiento de altos est&aacute;ndares de servicio</a></li>
-        <li><a href="est03.html">Optimizaci&oacute;n del ruteo y generaci&oacute;n del programa de entrega a clientes</a></li>
-        <li><a href="est04.html">Servicios de reparto extraordinarios</a></li>
-        <li><a href="est05.html">Sistema planificado y efectivo de recojo de envases del mercado</a></li>
-        <li>Procedimiento para el recojo de productos no conformes o supuestamente no conformes</li>
-      </ol></span><span class="menuMetas">
-      <ul>
-      <li><a href="est07.html">Carga y descarga de veh&iacute;culos.</a>        </li>
-      <li><a href="est12.html">Despacho del reparto.</a>        </li>
-      <li><a href="est17.html">Entrega del producto.
-        </a></li>
-      <li><a href="est21.html">Procesos administrativos del reparto - despacho.
-        </a></li>
-      <li><a href="est24.html">Imagen y servicios del CD/APT.</a><br />
-        </li>
-      <li><a href="est29.html">Administraci&oacute;n de recursos.</a></li>
-    </ul></span></td>
+    <td valign="top"><span class="menuMetas"><ul><li>Planificación de la reposición </li>
+    </ul></span><span class="menuMetasEst"><ol start="06">
+<li>Planeamiento del reabastecimiento de stocks</li>
+<li><a href="../pages/est07.jsp">Entregas para reposición de emergencia para evitar roturas de stock</a></li>
+<li><a href="../pages/est08.jsp">Horas de operación definidas para la atención de unidades de transporte primario </a></li>
+<li><a href="../pages/est09.jsp">Planificación del retorno de envases a Planta </a></li>
+<li><a href="../pages/est10.jsp">Comunicación al operador de transporte primario sobre posible demora en la atención de unidades</a></li>
+    </ol>
+    </span><span class="menuMetas"></span></td>
   </tr>
 </table>
 </td>
                 <td valign="top"><table border="0" cellspacing="0" cellpadding="0">
                   <tr>
-                    <td><img src="images/spacer.gif" width="24" height="31" /></td>
-                    <td><img src="images/spacer.gif" width="460" height="31" /></td>
-                    <td><img src="images/spacer.gif" width="24" height="31" /></td>
+                    <td><img src="../images/spacer.gif" width="24" height="31" /></td>
+                    <td><img src="../images/spacer.gif" width="460" height="31" /></td>
+                    <td style="width: 36px"><img src="../images/spacer.gif" width="24" height="31" /></td>
                   </tr>
                   
                   <tr>
                     <td>&nbsp;</td>
                     <td valign="top"><table width="460" border="0" cellspacing="0" cellpadding="0">
                       <tr>
-                        <td class="titulo"><span class="stitModulo">MODULO 1</span><br />
-                          Reparto  - Despacho</td>
+                        <td class="titulo"><span class="stitModulo">MODULO 2 </span><br />
+                          Reposici&oacute;n y Almacenamiento </td>
                       </tr>
                       <tr>
-                        <td bgcolor="#535891"><img src="images/spacer.gif" width="150" height="1" /></td>
+                        <td bgcolor="#535891"><img src="../images/spacer.gif" width="150" height="1" /></td>
                       </tr>
                       <tr>
-                        <td class="subtitulo">PLANIFICACI&Oacute;N DE LA CARGA </td>
+                        <td class="subtitulo">PLANIFICACI&Oacute;N DE LA REPOSICI&Oacute;N </td>
                       </tr>
                       <tr>
-                        <td><img src="images/spacer.gif" width="71" height="10" /></td>
+                        <td><img src="../images/spacer.gif" width="71" height="10" /></td>
                       </tr>
                       <tr>
-                        <td valign="top" background="images/bg_celeste.gif"><img src="images/stit_estandar.gif" alt="Est&aacute;ndar" width="71" height="26" /></td>
+                        <td valign="top" background="../images/bg_celeste.gif"><img src="../images/stit_estandar.gif" alt="Est&aacute;ndar" width="71" height="26" /></td>
                       </tr>
                       <tr>
                         <td valign="top"><table width="100%" border="0" cellspacing="0" cellpadding="10">
                           <tr>
-                            <td width="10%" align="center" class="numero">6.</td>
-                            <td class="nombreestandar">Procedimiento para el recojo de productos no conformes o supuestamente no conformes.</td>
+                            <td width="10%" align="center" class="numero">06.</td>
+                            <td class="nombreestandar">Planeamiento del reabastecimiento de stocks.</td>
                           </tr>
                         </table></td>
                       </tr>
                       <tr>
-                        <td valign="top"><img src="images/spacer.gif" width="71" height="10" /></td>
+                        <td valign="top"><img src="../images/spacer.gif" width="71" height="10" /></td>
                       </tr>
                       <tr>
-                        <td valign="top" background="images/bg_celeste.gif"><img src="images/tit_comentarios.gif" alt="Comentarios" width="93" height="25" /></td>
+                        <td valign="top" background="../images/bg_celeste.gif"><img src="../images/tit_comentarios.gif" alt="Comentarios" width="93" height="25" /></td>
                       </tr>
                       <tr>
-                        <td valign="top"><img src="images/spacer.gif" width="71" height="10" /></td>
+                        <td valign="top"><img src="../images/spacer.gif" width="71" height="10" /></td>
                       </tr>
                       <tr>
-                        <td valign="top" class="texto" >Como la compa&ntilde;&iacute;a est&aacute; comprometida con proveer productos de alta calidad al mercado, cualquier problema de calidad representa una molestia o complicaci&oacute;n. Por lo tanto debe implementarse un procedimiento para que el  CD recoja y reemplace los productos en la siguiente entrega.  El personal de ventas determina o no el cambio de alg&uacute;n producto en el local del cliente. El personal de distribuci&oacute;n ejecuta el cambio programado.</td></tr><tr>
-                        <td valign="top"><img src="images/spacer.gif" width="71" height="23" /></td></tr><tr>
-                        <td valign="top" background="images/bg_celeste.gif"><img src="images/tit_evidencias.gif" alt="Evidencias" width="93" height="25" /></td>
+                        <td valign="top" class="texto" >Los problemas con los niveles de stock pueden crear dificultades en la operaci&oacute;n del CD / APT y pueden impactar negativamente en el volumen de las ventas. La rotura de stock de productos esta definida como la falta de SKU en el almac&eacute;n del
+                            CD / APT en cualquier momento.<br />
+                            La operaci&oacute;n del transporte primario en cooperaci&oacute;n con planificaci&oacute;n del suministro, producci&oacute;n y el CD/APT debe estar orientada a definir como prevenir las roturas de stock y asegurar los requerimientos de stocks de seguridad.</td>
                       </tr>
                       <tr>
-                        <td valign="top" class="texto"><table border="0" cellspacing="0" cellpadding="0">
+                        <td valign="top"><img src="../images/spacer.gif" width="71" height="23" /></td>
+                      </tr>
+                      <tr>
+                        <td valign="top" background="../images/bg_celeste.gif"><img src="../images/tit_evidencias.gif" alt="Evidencias" width="93" height="25" /></td>
+                      </tr>
+                      <tr>
+                        <td><table border="0" cellspacing="0" cellpadding="0">
                           <tr>
-                            <td width="75"><a href="evidencias/6.1.xls" target="_blank"><img src="images/ic_excel.gif" alt="6.1.xls" width="75" height="71" border="0" /></a></td>
-                            <td width="75"><a href="evidencias/6.2.xls" target="_blank"><img src="images/ic_excel.gif" alt="6.2.xls" width="75" height="71" border="0" /></a></td>
-                            <td width="76"><a href="evidencias/Procedimiento_de_cambios_1.doc" target="_blank"><img src="images/ic_word.gif" alt="procedimiento_de_cambios.xls" width="75" height="71" border="0" /></a></td>
-                          </tr>
-                        </table></td>
+                            <td><a href="../pages/evidencias/34.1.htm" target="_blank"><img src="../images/ic_html.gif" alt="34.1.htm" width="75" height="71" border="0" /></a></td>
+                            <td><a href="../pages/evidencias/34.2.xls" target="_blank"><img src="../images/ic_excel.gif" alt="34.2.xls" width="75" height="71" border="0" /></a></td>
+                            <td><a href="../pages/evidencias/34.3.xls" target="_blank"><img src="../images/ic_excel.gif" alt="34.3.xls" width="75" height="71" border="0" /></a></td>
+                            </tr>
+                        </table>                          
+                          </td>
+                      </tr>
+                     
+
+                      <tr>
+                        <td valign="top"><img src="../images/spacer.gif" width="71" height="10" /></td>
                       </tr>
                       <tr>
-                        <td valign="top"><img src="images/spacer.gif" width="71" height="10" /></td>
+                        <td valign="top" background="../images/bg_celeste.gif"><img src="../images/tit_niveles.gif" alt="Niveles" width="93" height="25" /></td>
                       </tr>
                       <tr>
-                        <td valign="top" background="images/bg_celeste.gif"><img src="images/tit_niveles.gif" alt="Niveles" width="93" height="25" /></td>
+                        <td valign="top"><img src="../images/spacer.gif" width="71" height="5" /></td>
                       </tr>
                       <tr>
-                        <td valign="top"><img src="images/spacer.gif" width="71" height="5" /></td>
-                      </tr>
-                      <tr>
-                        <td valign="top" background="images/bg_azul.gif"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+                        <td valign="top" background="../images/bg_azul.gif"><table width="100%" border="0" cellspacing="0" cellpadding="0">
                           <tr>
-                            <td><img src="images/tit_pobre.gif" alt="Pobre" width="40" height="23" /></td>
-                            <td align="right"><img src="images/estrellas1.gif" width="61" height="23" /></td>
+                            <td><img src="../images/tit_pobre.gif" alt="Pobre" width="40" height="23" /></td>
+                            <td align="right"><img src="../images/estrellas1.gif" width="61" height="23" /></td>
                           </tr>
                         </table></td>
                       </tr>
                       <tr>
-                        <td valign="top" ><img src="images/spacer.gif" width="71" height="10" /></td>
+                        <td valign="top" ><img src="../images/spacer.gif" width="71" height="10" /></td>
                       </tr>
                       <tr>
                         <td valign="top" class="texto"><ol>
-                          <li> Los procedimientos definidos por ventas acerca de la calidad de la cerveza no han sido comunicados al personal de distribuci&oacute;n.</li>
-                        </ol></td>
+                          <li>No existe un procedimiento  de seguimiento de rotura de stocks.                                </li>
+                            </ol>                            </td></tr>
+                      <tr>
+                        <td valign="top"><img src="../images/spacer.gif" width="71" height="10" /></td>
                       </tr>
                       <tr>
-                        <td valign="top"><img src="images/spacer.gif" width="71" height="10" /></td>
-                      </tr>
-                      <tr>
-                        <td valign="top" background="images/bg_azul.gif"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+                        <td valign="top" background="../images/bg_azul.gif"><table width="100%" border="0" cellspacing="0" cellpadding="0">
                           <tr>
-                            <td><img src="images/tit_debajo.gif" alt="Debajo del Est&aacute;ndar" width="116" height="23" /></td>
-                            <td align="right"><img src="images/estrellas2.gif" width="61" height="23" /></td>
+                            <td><img src="../images/tit_debajo.gif" alt="Debajo del Est&aacute;ndar" width="116" height="23" /></td>
+                            <td align="right"><img src="../images/estrellas2.gif" width="61" height="23" /></td>
                           </tr>
                         </table></td>
                       </tr>
                       <tr>
-                        <td valign="top" ><img src="images/spacer.gif" width="71" height="10" /></td>
+                        <td valign="top" ><img src="../images/spacer.gif" width="71" height="10" /></td>
                       </tr>
                       <tr>
                         <td valign="top" class="texto"><ol>
-                          <li> Los procedimientos definidos por ventas acerca de la calidad de la cerveza son comunicados al personal de distribuci&oacute;n. </li>
-                          <li> El producto evaluado y programado para recojo por el personal de ventas, no siempre es recogido en la siguiente entrega del reparto. </li>
-                            <li>Existe el procedimiento para el recojo de cambios; pero no está actualizado o no
-                                se cumple en su totalidad.</li>
-                        </ol></td></tr>
-                      <tr>
-                        <td valign="top"><img src="images/spacer.gif" width="71" height="10" /></td>
+                          <li>Se tiene un &nbsp;procedimiento de seguimiento de rotura de  stocks pero es usado de manera espor&aacute;dica.</li>
+                          </ol>                        </td>
                       </tr>
                       <tr>
-                        <td valign="top" background="images/bg_azul.gif"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+                        <td valign="top"><img src="../images/spacer.gif" width="71" height="10" /></td>
+                      </tr>
+                      <tr>
+                        <td valign="top" background="../images/bg_azul.gif"><table width="100%" border="0" cellspacing="0" cellpadding="0">
                           <tr>
-                            <td><img src="images/tit_enestandar.gif" alt="En el Est&aacute;ndar" width="90" height="23" /></td>
-                            <td align="right"><img src="images/estrellas3.gif" width="61" height="23" /></td>
+                            <td><img src="../images/tit_enestandar.gif" alt="En el Est&aacute;ndar" width="90" height="23" /></td>
+                            <td align="right"><img src="../images/estrellas3.gif" width="61" height="23" /></td>
                           </tr>
                         </table></td>
                       </tr>
                       <tr>
-                        <td valign="top"><span class="texto"><img src="images/spacer.gif" width="71" height="10" /></span></td>
+                        <td valign="top"><span class="texto"><img src="../images/spacer.gif" width="71" height="10" /></span></td>
                       </tr>
                       <tr>
                         <td valign="top" class="texto"><ol>
-                          <li> Si en las labores de reparto, el personal de distribuci&oacute;n encuentra ocasionalmente productos vencidos o por vencer o de sospechoso nivel de calidad, debe informar inmediatamente al jefe/supervisor de distribuci&oacute;n y &eacute;ste al personal de ventas para ser evaluado y recogido en la siguiente entrega del reparto. </li>
-                          <li> El producto evaluado por el personal de ventas y programado para recojo siempre es recogido en la siguiente entrega.  Para ello se cuenta con el indicador de %  de efectividad de recojo de cambios .</li>
-                            <li>Existe el procedimiento para el recojo de cambios; pero no está actualizado o no
-                                se cumple en su totalidad.</li>
-                        </ol></td></tr><tr>
-                        <td valign="top"><img src="images/spacer.gif" width="71" height="10" /></td>
+                          <li>Se tiene un &nbsp;procedimiento de seguimiento de rotura de  stocks &nbsp;usado permanentemente.</li>
+                          <li>En los &uacute;ltimos 6 meses, se trabaja permanentemente con  un procedimiento de planificaci&oacute;n de monitoreos de stocks :  CDs: Stock Inicial  + Reabastecimiento &ndash; Ventas = Stock Final  APTs Stock Inicial  + Transferencias + Plan de Producci&oacute;n &ndash; Ventas - Despacho = Stock Final. </li>
+                          </ol>                        </td>
                       </tr>
-                      <tr>
-                        <td valign="top" background="images/bg_azul.gif"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+                      <tr style="color: #000000">
+                        <td valign="top"><img src="../images/spacer.gif" width="71" height="10" /></td>
+                      </tr>
+                      <tr style="color: #000000">
+                        <td valign="top" background="../images/bg_azul.gif"><table width="100%" border="0" cellspacing="0" cellpadding="0">
                             <tr>
-                              <td><img src="images/tit_excepcional.gif" alt="Excepcional" width="75" height="23" /></td>
-                              <td align="right"><img src="images/estrellas4.gif" width="61" height="23" /></td>
+                              <td><img src="../images/tit_excepcional.gif" alt="Excepcional" width="75" height="23" /></td>
+                              <td align="right"><img src="../images/estrellas4.gif" width="61" height="23" /></td>
                             </tr>
                           </table></td>
                       </tr>
-                      <tr>
-                        <td valign="top"><img src="images/spacer.gif" width="71" height="10" /></td>
+                      <tr style="color: #000000">
+                        <td valign="top"><img src="../images/spacer.gif" width="71" height="10" /></td>
+                      </tr>
+                      <tr style="color: #000000">
+                        <td valign="top" class="texto"><ol>
+                          <li>En los &uacute;ltimos 12 meses se trabaja permanentemente con  un procedimiento de planificaci&oacute;n de monitoreo de Stocks. </li>
+                          </ol>
+                            <p>                            </p>                        </td>
                       </tr>
                       <tr>
-                        <td valign="top" class="texto"><ol>
-                          <li> Se evidencia ejemplo de una adecuada coordinaci&oacute;n entre el personal de ventas y distribuci&oacute;n para el recojo de productos con problemas de calidad.</li>
-                        </ol></td></tr>
-                      <tr>
-                        <td valign="top"><p><span class="texto"><img src="images/spacer.gif" width="71" height="10" /></span></p>                          </td>
+                        <td valign="top"><form id="form1" name="form1" method="post" action="">
+                          <table width="406" border="0" align="center" class="stitModulo">
+                            <tr>
+                              <th width="145" height="26" align="center" bgcolor="#31367A" scope="row">Calificiaci&oacute;n</th>
+                              <td width="125" align="center" bgcolor="#31367A">Observaciones</td>
+                              <td width="125" align="center" bgcolor="#31367A">Recomendaciones</td>
+                            </tr>
+                            <tr>
+                              <th align="left" valign="top" scope="row"><table width="144" class="subtitulo">
+                                <tr>
+                                  <td width="146"><label>
+                                    <input type="radio" name="calificacion" value="0" id="calificacion_0" />
+                                    Pobre</label></td>
+                                </tr>
+                                <tr>
+                                  <td><label>
+                                    <input type="radio" name="calificacion" value="1" id="calificacion_1" />
+                                    Debajo del Est&aacute;ndar</label></td>
+                                </tr>
+                                <tr>
+                                  <td><label>
+                                    <input type="radio" name="calificacion" value="2" id="calificacion_2" />
+                                    En el Est&aacute;ndar</label></td>
+                                </tr>
+                                <tr>
+                                  <td><label>
+                                    <input type="radio" name="calificacion" value="3" id="calificacion_3" />
+                                    Excepcional</label></td>
+                                </tr>
+                              </table></th>
+                              <td align="left" valign="top"><label>
+                                <textarea name="textarea" id="textarea" cols="16" rows="7"></textarea>
+                              </label></td>
+                              <td align="left" valign="top"><textarea name="textarea2" id="textarea2" cols="16" rows="7"></textarea></td>
+                            </tr>
+                            <tr>
+                              <th colspan="3" align="center" valign="middle" scope="row"><p>
+                                <label>
+                                  <input type="submit" name="button" id="button" value="Calificar...!" />
+                                </label>
+                                <input name="hiddenField" type="hidden" id="hiddenField" value="est6" />
+                              </p></th>
+                            </tr>
+                          </table>
+                        </form>                          <p>&nbsp;</p></td>
                       </tr>
                     </table></td>
-                    <td></td>
+                    <td style="width: 36px">&nbsp;</td>
                   </tr>
                   <tr>
-                    <td><img src="images/spacer.gif" width="24" height="25" /></td>
+                    <td><img src="../images/spacer.gif" width="24" height="25" /></td>
                     <td><h1>&nbsp;</h1></td>
-                    <td><img src="images/spacer.gif" width="24" height="25" /></td>
+                    <td style="width: 36px"><img src="../images/spacer.gif" width="24" height="25" /></td>
                   </tr>
                 </table></td>
               </tr>
@@ -279,10 +325,10 @@ function MM_swapImage() { //v3.0
             </table></td>
           </tr>
         </table></td>
-        <td bgcolor="#FFFFFF"><img src="images/spacer.gif" width="44" height="45" /></td>
+        <td bgcolor="#FFFFFF"><img src="../images/spacer.gif" width="44" height="45" /></td>
       </tr>
       <tr>
-        <td colspan="3" valign="top" bgcolor="#FFFFFF"><img src="images/spacer.gif" width="174" height="32" /></td>
+        <td colspan="3" valign="top" bgcolor="#FFFFFF"><img src="../images/spacer.gif" width="174" height="32" /></td>
       </tr>
     </table></td>
   </tr>
