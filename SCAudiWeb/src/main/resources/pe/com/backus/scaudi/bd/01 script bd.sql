@@ -140,6 +140,9 @@ INDEX T_ENCUESTA_has_T_ESTANDAR_FKIndex2(IN_IDESTANDAR),
       ON UPDATE NO ACTION);
 
 
+insert into t_usuario (IN_IDUSUARIO,VC_NOMBRE,VC_LOGIN,VC_PASSWORD,IN_TIPO,IN_ESTADO) values (1, 'Jossymar Cabanillas', 'jcabanillas', '123456', 1, 1);
+
+
 insert into t_region (in_idregion, vc_descripcion) values (1, 'Centro');
 insert into t_region (in_idregion, vc_descripcion) values (2, 'Lima');
 insert into t_region (in_idregion, vc_descripcion) values (3, 'Norte');
