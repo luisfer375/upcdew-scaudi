@@ -85,7 +85,7 @@ function MM_swapImage() { //v3.0
   <tr>
     <td class="menuizq"><br />
       <ul>
-        <li class="menuizq"><a href="../pages/index.jsp">Inicio</a></li>
+        <li class="menuizq"><a href="../index.jsp">Inicio</a></li>
         <li class="menuizq"><a href="../pages/intro.jsp">Introducci&oacute;n</a></li>
         <li class="menuizq"><a href="../pages/pautas.jsp">Pautas</a></li>
         <li class="menuizq"><a href="../pages/sistevaluacion.jsp">Sistema de Evaluaci&oacute;n</a></li>

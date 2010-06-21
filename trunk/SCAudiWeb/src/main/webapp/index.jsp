@@ -10,6 +10,6 @@
         <body>
              <h1>JSP Page</h1>
                 <br/>
-            <jsp:forward page="/pages/welcome.jsp"/>
+            <jsp:forward page="/pages/index.jsp"/>
         </body>
 </html>
