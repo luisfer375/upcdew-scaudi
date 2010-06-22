@@ -14,6 +14,12 @@ public class Comentario {
     private Integer   idComentario;
     private String    descripcion;
 
+    public Comentario() {
+    }
+
+    
+
+
     public String getDescripcion() {
         return descripcion;
     }

@@ -15,6 +15,11 @@ public class EstandarComentario {
     private Estandar    estandar;
     private String     descripcion;
 
+    public EstandarComentario() {
+    }
+
+    
+
     public Comentario getComentario() {
         return comentario;
     }

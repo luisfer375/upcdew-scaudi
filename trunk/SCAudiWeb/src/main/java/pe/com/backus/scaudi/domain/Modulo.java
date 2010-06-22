@@ -14,6 +14,11 @@ public class Modulo {
     private Integer idModulo;
     private String descripcion;
 
+    public Modulo() {
+    }
+
+    
+
     public String getDescripcion() {
         return descripcion;
     }

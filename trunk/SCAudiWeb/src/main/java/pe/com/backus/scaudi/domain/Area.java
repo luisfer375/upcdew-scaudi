@@ -16,6 +16,12 @@ public class Area {
     private String descripcion;
     private Integer peso;
 
+    public Area() {
+    }
+
+
+
+
     public String getDescripcion() {
         return descripcion;
     }

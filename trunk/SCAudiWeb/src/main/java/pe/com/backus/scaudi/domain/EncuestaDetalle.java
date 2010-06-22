@@ -17,6 +17,11 @@ public class EncuestaDetalle {
     private String    observacion;
     private String    recomendacion;
 
+    public EncuestaDetalle() {
+    }
+
+    
+
     public Integer getCalificacion() {
         return calificacion;
     }

@@ -11,12 +11,18 @@ package pe.com.backus.scaudi.domain;
  */
 public class Usuario {
 
+    
+
+    
     private Integer idUsuario;
     private String  nombre;
     private String  login;
     private String  password;
     private Integer tipo;
     private Integer estado;
+
+    public Usuario() {
+    }
 
 
     public Integer getEstado() {
