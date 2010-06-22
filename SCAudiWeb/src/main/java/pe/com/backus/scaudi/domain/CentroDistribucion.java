@@ -15,6 +15,12 @@ public class CentroDistribucion {
     private Region  region;
     private String  descripcion;
 
+    public CentroDistribucion() {
+    }
+
+
+    
+
     public String getDescripcion() {
         return descripcion;
     }

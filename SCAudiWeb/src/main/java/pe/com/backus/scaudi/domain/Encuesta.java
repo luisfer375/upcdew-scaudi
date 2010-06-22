@@ -20,6 +20,11 @@ public class Encuesta {
     private Date fecha;
     private Integer estado;
 
+    public Encuesta() {
+    }
+
+
+
     public CentroDistribucion getCentro() {
         return centro;
     }

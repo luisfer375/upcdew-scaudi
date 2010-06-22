@@ -16,6 +16,11 @@ public class Estandar {
     private String  desripcion;
     private Integer  peso;
 
+    public Estandar() {
+    }
+
+    
+
     public Area getArea() {
         return area;
     }

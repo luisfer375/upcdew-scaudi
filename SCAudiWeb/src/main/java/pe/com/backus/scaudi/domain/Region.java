@@ -14,6 +14,12 @@ public class Region {
     private Integer idRegion;
     private String descripcion;
 
+    public Region() {
+    }
+
+
+    
+
     public String getDescripcion() {
         return descripcion;
     }
