@@ -9,7 +9,14 @@
     <property name="hibernate.connection.password">admin</property>
   </session-factory>
 
-  <!-- Si descomentamos esto se crearan las tablas cada vez que carguemos la aplicacion -->
-   <property name="hbm2ddl.auto">create</property>
+    <!-- untuk dipanggil melalui view  -->
+        <resource-bundle>
+            <base-name>message</base-name>
+            <var>msg</var>
+        </resource-bundle>
+        <!--  untuk dipanggil melalui kode java -->
+        <message-bundle>message</message-bundle>
 
+  <!-- Si descomentamos esto se crearan las tablas cada vez que carguemos la aplicacion -->
+  <property name="hbm2ddl.auto">create</property>
 </hibernate-configuration>
