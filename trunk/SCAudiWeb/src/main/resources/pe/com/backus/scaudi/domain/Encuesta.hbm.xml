@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+                                   "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+    <class name="pe.com.backus.scaudi.domain.Encuesta" table="ENCUESTA">
+        <id column="ID_ENCUESTA" name="idEncuesta" type="java.lang.Integer">
+            <generator class="native"/>
+        </id>
+        <property name="estado" not-null="false" type="java.lang.Integer">
+            <column name="ESTADO" sql-type="INTEGER"/>
+        </property>
+        <property name="fecha" not-null="true" type="java.util.Date">
+            <column name="FECHA" sql-type="DATETIME"/>
+        </property>
+        <many-to-one
+            class="pe.com.backus.scaudi.domain.CentroDistribucion"
+            name="centro" not-null="true">
+            <column name="CENTRO_DISTRIBUCION_ID"/>
+        </many-to-one>
+        <many-to-one class="pe.com.backus.scaudi.domain.Modulo"
+            name="modulo" not-null="true">
+            <column name="MODULO_ID"/>
+        </many-to-one>
+        <many-to-one class="pe.com.backus.scaudi.domain.Usuario"
+            name="usuario" not-null="true">
+            <column name="USUARIO_ID"/>
+        </many-to-one>
+    </class>
+</hibernate-mapping>

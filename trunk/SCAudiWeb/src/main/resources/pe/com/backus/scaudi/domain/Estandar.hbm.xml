@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+                                   "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+    <class name="pe.com.backus.scaudi.domain.Estandar" table="ESTANDAR">
+        <id column="ID_ESTANDAR" name="idEstandar" type="java.lang.Integer">
+            <generator class="native"/>
+        </id>
+        <property length="255" name="desripcion" not-null="true" type="java.lang.String">
+            <column name="DESRIPCION" sql-type="VARCHAR"/>
+        </property>
+        <property name="peso" not-null="false" type="java.lang.Integer">
+            <column name="PESO" sql-type="INTEGER"/>
+        </property>
+        <many-to-one class="pe.com.backus.scaudi.domain.Area"
+            name="area" not-null="true">
+            <column name="AREA_ID"/>
+        </many-to-one>
+    </class>
+</hibernate-mapping>
