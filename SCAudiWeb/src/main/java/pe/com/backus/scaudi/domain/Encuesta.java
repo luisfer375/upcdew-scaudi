@@ -13,12 +13,12 @@ import java.util.Date;
  */
 public class Encuesta {
 
-    private Integer idEncuesta;
+    private long idEncuesta;
     private Modulo  modulo;
     private CentroDistribucion  centro;
     private Usuario  usuario;
     private Date fecha;
-    private Integer estado;
+    private long estado;
 
     public Encuesta() {
     }
@@ -33,11 +33,11 @@ public class Encuesta {
         this.centro = centro;
     }
 
-    public Integer getEstado() {
+    public long getEstado() {
         return estado;
     }
 
-    public void setEstado(Integer estado) {
+    public void setEstado(long estado) {
         this.estado = estado;
     }
 
@@ -49,11 +49,11 @@ public class Encuesta {
         this.fecha = fecha;
     }
 
-    public Integer getIdEncuesta() {
+    public long getIdEncuesta() {
         return idEncuesta;
     }
 
-    public void setIdEncuesta(Integer idEncuesta) {
+    public void setIdEncuesta(long idEncuesta) {
         this.idEncuesta = idEncuesta;
     }
 

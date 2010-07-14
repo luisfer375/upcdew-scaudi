@@ -65,7 +65,9 @@
                             <directory>src/main/webapp/WEB-INF</directory>
                         </scanTargetPattern>
                     </scanTargetPatterns>
-          </configuration>
+          <source>1.5</source>
+          <target>1.5</target>
+        </configuration>
       </plugin>
     </plugins>
     <finalName>SCAudiWeb</finalName>
@@ -79,4 +81,5 @@
     </repository>
   </repositories>
 </project>
+
 
