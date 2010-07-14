@@ -2,19 +2,19 @@
 <!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
                                    "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
 <hibernate-mapping>
-    <class name="pe.com.backus.scaudi.domain.Area" table="AREA">
-        <id column="ID_AREA" name="idArea" type="java.lang.Integer">
+    <class name="pe.com.backus.scaudi.domain.Area" table="T_AREA">
+        <id column="IN_IDAREA" name="idArea" type="java.lang.Integer">
             <generator class="native"/>
         </id>
-        <property length="255" name="descripcion" not-null="true" type="java.lang.String">
-            <column name="DESCRIPCION" sql-type="VARCHAR"/>
+        <property length="50" name="descripcion" not-null="true" type="java.lang.String">
+            <column name="VC_DESCRIPCION" sql-type="VARCHAR"/>
         </property>
         <property name="peso" not-null="false" type="java.lang.Integer">
-            <column name="PESO" sql-type="INTEGER"/>
+            <column name="IN_PESO" sql-type="INTEGER"/>
         </property>
         <many-to-one class="pe.com.backus.scaudi.domain.Modulo"
             name="modulo" not-null="true">
-            <column name="MODULO_ID"/>
+            <column name="IN_IDMODULO"/>
         </many-to-one>
     </class>
 </hibernate-mapping>
