@@ -2,12 +2,12 @@
 <!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
                                    "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
 <hibernate-mapping>
-    <class name="pe.com.backus.scaudi.domain.Region" table="REGION">
-        <id column="ID_REGION" name="idRegion" type="java.lang.Integer">
+    <class name="pe.com.backus.scaudi.domain.Region" table="T_REGION">
+        <id column="IN_IDREGION" name="idRegion" type="java.lang.Integer">
             <generator class="native"/>
         </id>
-        <property length="255" name="descripcion" not-null="true" type="java.lang.String">
-            <column name="DESCRIPCION" sql-type="VARCHAR"/>
+        <property length="50" name="descripcion" not-null="true" type="java.lang.String">
+            <column name="VC_DESCRIPCION" sql-type="VARCHAR"/>
         </property>
     </class>
 </hibernate-mapping>

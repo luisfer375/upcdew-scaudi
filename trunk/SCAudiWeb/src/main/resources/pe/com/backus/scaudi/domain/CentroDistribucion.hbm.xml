@@ -2,16 +2,16 @@
 <!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
                                    "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
 <hibernate-mapping>
-    <class name="pe.com.backus.scaudi.domain.CentroDistribucion" table="CENTRO_DISTRIBUCION">
+    <class name="pe.com.backus.scaudi.domain.CentroDistribucion" table="T_CENTRODIST">
         <id column="ID_CENTRO_DIST" name="idCentroDist" type="java.lang.Integer">
             <generator class="native"/>
         </id>
-        <property length="255" name="descripcion" not-null="true" type="java.lang.String">
-            <column name="DESCRIPCION" sql-type="VARCHAR"/>
+        <property length="50" name="descripcion" not-null="true" type="java.lang.String">
+            <column name="VC_DESCRIPCION" sql-type="VARCHAR"/>
         </property>
         <many-to-one class="pe.com.backus.scaudi.domain.Region"
             name="region" not-null="true">
-            <column name="REGION_ID"/>
+            <column name="IN_IDREGION"/>
         </many-to-one>
     </class>
 </hibernate-mapping>
