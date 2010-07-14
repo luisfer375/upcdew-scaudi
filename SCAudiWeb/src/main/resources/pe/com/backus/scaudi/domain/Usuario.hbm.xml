@@ -1,14 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
-<hibernate-mapping package="pe.com.backus.scaudi.domain">
-  <class name="Usuario" table="T_USUARIO">
-    <id column="IN_IDUSUARIO" name="idUsuario">
-      <generator class="increment"/>
-    </id>
-    <property column="VC_NOMBRE" length="30" name="nombre"/>
-    <property column="VC_LOGIN" length="30" name="login"/>
-    <property column="VC_PASSWORD" length="30" name="password"/>
-    <property column="IN_TIPO" name="tipo" type="INTEGER"/>
-    <property column="IN_ESTADO" name="estado" type="INTEGER"/>
-  </class>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+                                   "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+    <class name="pe.com.backus.scaudi.domain.Usuario" table="USUARIO">
+        <id column="ID_USUARIO" name="idUsuario" type="java.lang.Integer">
+            <generator class="native"/>
+        </id>
+        <property name="estado" not-null="false" type="java.lang.Integer">
+            <column name="ESTADO" sql-type="INTEGER"/>
+        </property>
+        <property length="255" name="login" not-null="true" type="java.lang.String">
+            <column name="LOGIN" sql-type="VARCHAR"/>
+        </property>
+        <property length="255" name="nombre" not-null="true" type="java.lang.String">
+            <column name="NOMBRE" sql-type="VARCHAR"/>
+        </property>
+        <property length="255" name="password" not-null="true" type="java.lang.String">
+            <column name="PASSWORD" sql-type="VARCHAR"/>
+        </property>
+        <property name="tipo" not-null="false" type="java.lang.Integer">
+            <column name="TIPO" sql-type="INTEGER"/>
+        </property>
+    </class>
 </hibernate-mapping>
