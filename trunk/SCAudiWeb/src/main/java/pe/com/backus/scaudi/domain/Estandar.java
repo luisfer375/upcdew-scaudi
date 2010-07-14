@@ -11,10 +11,10 @@ package pe.com.backus.scaudi.domain;
  */
 public class Estandar {
 
-    private Integer idEstandar;
+    private long idEstandar;
     private Area    area;
     private String  desripcion;
-    private Integer  peso;
+    private long  peso;
 
     public Estandar() {
     }
@@ -37,19 +37,19 @@ public class Estandar {
         this.desripcion = desripcion;
     }
 
-    public Integer getIdEstandar() {
+    public long getIdEstandar() {
         return idEstandar;
     }
 
-    public void setIdEstandar(Integer idEstandar) {
+    public void setIdEstandar(long idEstandar) {
         this.idEstandar = idEstandar;
     }
 
-    public Integer getPeso() {
+    public long getPeso() {
         return peso;
     }
 
-    public void setPeso(Integer peso) {
+    public void setPeso(long peso) {
         this.peso = peso;
     }
 

@@ -11,7 +11,7 @@ package pe.com.backus.scaudi.domain;
  */
 public class Comentario {
 
-    private Integer   idComentario;
+    private long   idComentario;
     private String    descripcion;
 
     public Comentario() {
@@ -28,11 +28,11 @@ public class Comentario {
         this.descripcion = descripcion;
     }
 
-    public Integer getIdComentario() {
+    public long getIdComentario() {
         return idComentario;
     }
 
-    public void setIdComentario(Integer idComentario) {
+    public void setIdComentario(long idComentario) {
         this.idComentario = idComentario;
     }
 
