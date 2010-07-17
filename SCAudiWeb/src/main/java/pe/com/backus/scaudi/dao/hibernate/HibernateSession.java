@@ -3,10 +3,10 @@
  * and open the template in the editor.
  */
 
-package pe.com.backus.scaudi.dao;
+package pe.com.backus.scaudi.dao.hibernate;
 
 
-//import org.hibernate.cfg.AnnotationConfiguration;
+import org.hibernate.cfg.AnnotationConfiguration;
 import org.hibernate.SessionFactory;
 
 /**
@@ -14,10 +14,10 @@ import org.hibernate.SessionFactory;
  *
  * @author Administrador
  */
-public class HibernateConexion {
-   // private static final SessionFactory sessionFactory;
+public class HibernateSession {
+    private static final SessionFactory sessionFactory;
 
-  /*  static {
+    static {
         try {
             // Create the SessionFactory from standard (hibernate.cfg.xml) 
             // config file.
@@ -27,12 +27,9 @@ public class HibernateConexion {
             System.err.println("Initial SessionFactory creation failed." + ex);
             throw new ExceptionInInitializerError(ex);
         }
-
-}
+    }
 
     public static SessionFactory getSessionFactory() {
         return sessionFactory;
     }
-*/
-
 }
