@@ -3,7 +3,7 @@
  * and open the template in the editor.
  */
 
-package pe.com.backus.scaudi.dao.hibernate;
+package pe.com.backus.scaudi.app;
 
 
 import org.hibernate.cfg.AnnotationConfiguration;
