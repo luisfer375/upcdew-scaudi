@@ -38,9 +38,9 @@ public class RegionDAOHibernate implements RegionDAO{
     }
 
     public List<Region> listarRegiones() {
-         List<Region> regions= sessionFactory.getCurrentSession()
+         List<Region> regiones= sessionFactory.getCurrentSession()
                 .createQuery("from Region order by idRegion").list();
-        return regions;
+        return regiones;
 
     }
 

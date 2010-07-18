@@ -38,9 +38,9 @@ public class CentroDistribucionDAOHibernate implements CentroDistribucionDAO{
     }
 
     public List<CentroDistribucion> listarCentroDistribuciones() {
-         List<CentroDistribucion> centroDistribucions= sessionFactory.getCurrentSession()
+         List<CentroDistribucion> centroDistribuciones= sessionFactory.getCurrentSession()
                 .createQuery("from CentroDistribucion order by idCentroDistribucion").list();
-        return centroDistribucions;
+        return centroDistribuciones;
 
     }
 

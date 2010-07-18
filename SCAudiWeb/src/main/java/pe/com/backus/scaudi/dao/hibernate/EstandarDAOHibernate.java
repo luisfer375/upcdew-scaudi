@@ -38,9 +38,9 @@ public class EstandarDAOHibernate implements EstandarDAO{
     }
 
     public List<Estandar> listarEstandares() {
-         List<Estandar> estandars= sessionFactory.getCurrentSession()
+         List<Estandar> estandares= sessionFactory.getCurrentSession()
                 .createQuery("from Estandar order by idEstandar").list();
-        return estandars;
+        return estandares;
 
     }
 
