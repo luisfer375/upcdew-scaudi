@@ -8,12 +8,13 @@ package pe.com.backus.scaudi.service.impl;
 import java.util.List;
 import pe.com.backus.scaudi.dao.ComentarioDAO;
 import pe.com.backus.scaudi.domain.Comentario;
+import pe.com.backus.scaudi.service.ComentarioService;
 
 /**
  *
  * @author Administrador
  */
-public class ComentarioServiceImpl implements ComentarioDAO{
+public class ComentarioServiceImpl implements ComentarioService{
 
     private ComentarioDAO comentarioDAO;
 

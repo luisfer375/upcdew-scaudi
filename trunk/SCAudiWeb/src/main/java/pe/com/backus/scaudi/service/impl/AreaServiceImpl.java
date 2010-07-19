@@ -8,12 +8,13 @@ package pe.com.backus.scaudi.service.impl;
 import java.util.List;
 import pe.com.backus.scaudi.dao.AreaDAO;
 import pe.com.backus.scaudi.domain.Area;
+import pe.com.backus.scaudi.service.AreaService;
 
 /**
  *
  * @author Administrador
  */
-public class AreaServiceImpl implements AreaDAO{
+public class AreaServiceImpl implements AreaService{
 
     private AreaDAO areaDAO;
 

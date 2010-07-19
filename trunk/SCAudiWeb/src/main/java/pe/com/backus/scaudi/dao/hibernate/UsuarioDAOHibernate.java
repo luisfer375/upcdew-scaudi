@@ -44,5 +44,14 @@ public class UsuarioDAOHibernate implements UsuarioDAO{
 
     }
 
+    public Usuario validarUsuario(String login, String password) {
+      Usuario usuario =
+                (Usuario) sessionFactory.getCurrentSession()
+                //Aquí cada uno pone su consulta.
+                .createQuery("from Usuario u  where u.login=? and u.password=?")
+                .setParameter(0, login).setParameter(1, password).uniqueResult();
+        return usuario;
+    }
+
 
 }

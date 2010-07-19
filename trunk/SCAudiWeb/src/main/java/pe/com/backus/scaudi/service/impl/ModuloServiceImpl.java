@@ -8,12 +8,13 @@ package pe.com.backus.scaudi.service.impl;
 import java.util.List;
 import pe.com.backus.scaudi.dao.ModuloDAO;
 import pe.com.backus.scaudi.domain.Modulo;
+import pe.com.backus.scaudi.service.ModuloService;
 
 /**
  *
  * @author Administrador
  */
-public class ModuloServiceImpl implements ModuloDAO{
+public class ModuloServiceImpl implements ModuloService{
 
     private ModuloDAO moduloDAO;
 

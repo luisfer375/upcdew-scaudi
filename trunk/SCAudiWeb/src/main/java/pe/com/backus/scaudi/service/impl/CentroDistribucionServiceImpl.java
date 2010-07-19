@@ -8,12 +8,13 @@ package pe.com.backus.scaudi.service.impl;
 import java.util.List;
 import pe.com.backus.scaudi.dao.CentroDistribucionDAO;
 import pe.com.backus.scaudi.domain.CentroDistribucion;
+import pe.com.backus.scaudi.service.CentroDistribucionService;
 
 /**
  *
  * @author Administrador
  */
-public class CentroDistribucionServiceImpl implements CentroDistribucionDAO{
+public class CentroDistribucionServiceImpl implements CentroDistribucionService{
 
     private CentroDistribucionDAO centroDistribucionDAO;
 

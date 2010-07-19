@@ -6,16 +6,15 @@
 package pe.com.backus.scaudi.service.impl;
 
 import java.util.List;
-import org.hibernate.SessionFactory;
-import pe.com.backus.scaudi.app.HibernateSession;
 import pe.com.backus.scaudi.dao.EncuestaDAO;
 import pe.com.backus.scaudi.domain.Encuesta;
+import pe.com.backus.scaudi.service.EncuestaService;
 
 /**
  *
  * @author Administrador
  */
-public class EncuestaServiceImpl implements EncuestaDAO{
+public class EncuestaServiceImpl implements EncuestaService{
 
     private EncuestaDAO encuestaDAO;
 
