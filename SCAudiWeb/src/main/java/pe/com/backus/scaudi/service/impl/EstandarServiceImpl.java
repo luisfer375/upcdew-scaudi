@@ -8,12 +8,13 @@ package pe.com.backus.scaudi.service.impl;
 import java.util.List;
 import pe.com.backus.scaudi.dao.EstandarDAO;
 import pe.com.backus.scaudi.domain.Estandar;
+import pe.com.backus.scaudi.service.EstandarService;
 
 /**
  *
  * @author Administrador
  */
-public class EstandarServiceImpl implements EstandarDAO{
+public class EstandarServiceImpl implements EstandarService{
 
     private EstandarDAO estandarDAO;
 

@@ -11,6 +11,8 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import pe.com.backus.scaudi.domain.Usuario;
+import pe.com.backus.scaudi.service.UsuarioService;
+import pe.com.backus.scaudi.service.impl.UsuarioServiceImpl;
 
 /**
  *
@@ -28,13 +30,14 @@ public class LoginServlet extends HttpServlet {
      */
     protected void doPost(HttpServletRequest req, HttpServletResponse resp)
            throws ServletException, IOException {
-        Usuario usuario = new Usuario();
-        System.out.println("Entro al servidor");
 
-        String nombre = req.getParameter("login");
+        UsuarioService usuarioService = new UsuarioServiceImpl();
+        //Usuario usuario = usuarioService.obtenerUsuario(nombre);
+        //Usuario usuario = usuarioService
+        System.out.println("Entro al servidor");
+        String login = req.getParameter("login");
         String password = req.getParameter("password");
-        usuario.setNombre(nombre);
-        usuario.setPassword(password);
+        Usuario usuario = usuarioService.validarUsuario(login, password);
         getServletContext().getRequestDispatcher("/pages/intro.jsp");
 
 

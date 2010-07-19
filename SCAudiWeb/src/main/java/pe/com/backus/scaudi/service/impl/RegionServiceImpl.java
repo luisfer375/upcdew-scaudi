@@ -8,12 +8,13 @@ package pe.com.backus.scaudi.service.impl;
 import java.util.List;
 import pe.com.backus.scaudi.dao.RegionDAO;
 import pe.com.backus.scaudi.domain.Region;
+import pe.com.backus.scaudi.service.RegionService;
 
 /**
  *
  * @author Administrador
  */
-public class RegionServiceImpl implements RegionDAO{
+public class RegionServiceImpl implements RegionService{
 
     private RegionDAO regionDAO;
 

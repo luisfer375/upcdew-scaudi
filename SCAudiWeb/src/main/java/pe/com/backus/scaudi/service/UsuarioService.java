@@ -21,6 +21,8 @@ public interface UsuarioService {
 
     public Usuario obtenerUsuario(Integer codigo);
 
+    public Usuario validarUsuario(String login, String password);
+
     public List<Usuario> listarUsuarios();
 
 }

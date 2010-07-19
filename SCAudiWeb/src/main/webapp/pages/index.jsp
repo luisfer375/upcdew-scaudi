@@ -87,7 +87,6 @@ function MM_swapImage() { //v3.0
                     <td width="213" align="right" valign="bottom"><table border="0" cellspacing="0" cellpadding="2">
                       <tr>
                         <td colspan=2 valign="top" class="texto" style="text-align: right">
-                            Versión 1.3: Mayo 2010
                         </td> 
                       </tr>
                       <tr>

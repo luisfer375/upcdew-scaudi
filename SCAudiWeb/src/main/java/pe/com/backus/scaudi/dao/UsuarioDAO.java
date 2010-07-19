@@ -23,4 +23,6 @@ public interface UsuarioDAO {
 
     public List<Usuario> listarUsuarios();
 
+    public Usuario validarUsuario(String login, String password);
+
 }

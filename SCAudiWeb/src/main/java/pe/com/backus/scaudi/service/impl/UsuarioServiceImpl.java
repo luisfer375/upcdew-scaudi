@@ -8,12 +8,13 @@ package pe.com.backus.scaudi.service.impl;
 import java.util.List;
 import pe.com.backus.scaudi.dao.UsuarioDAO;
 import pe.com.backus.scaudi.domain.Usuario;
+import pe.com.backus.scaudi.service.UsuarioService;
 
 /**
  *
  * @author Administrador
  */
-public class UsuarioServiceImpl implements UsuarioDAO{
+public class UsuarioServiceImpl implements UsuarioService{
 
     private UsuarioDAO usuarioDAO;
 
@@ -36,6 +37,10 @@ public class UsuarioServiceImpl implements UsuarioDAO{
     public List<Usuario> listarUsuarios() {
         return usuarioDAO.listarUsuarios();
 
+    }
+
+    public Usuario validarUsuario(String login, String password) {
+        return usuarioDAO.validarUsuario(login, password);
     }
 
 
