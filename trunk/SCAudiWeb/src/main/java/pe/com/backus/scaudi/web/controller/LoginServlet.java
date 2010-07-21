@@ -13,6 +13,7 @@ import javax.servlet.http.HttpServletResponse;
 import pe.com.backus.scaudi.domain.Usuario;
 import pe.com.backus.scaudi.service.UsuarioService;
 import pe.com.backus.scaudi.service.impl.UsuarioServiceImpl;
+import pe.com.backus.scaudi.util.Log;
 
 /**
  *
@@ -34,9 +35,11 @@ public class LoginServlet extends HttpServlet {
         UsuarioService usuarioService = new UsuarioServiceImpl();
         //Usuario usuario = usuarioService.obtenerUsuario(nombre);
         //Usuario usuario = usuarioService
-        System.out.println("Entro al servidor");
+        Log.info("Entro al servidor");
         String login = req.getParameter("login");
+        Log.debug("Login: " + login);
         String password = req.getParameter("password");
+        Log.debug("Clave: " + password);
         Usuario usuario = usuarioService.validarUsuario(login, password);
         getServletContext().getRequestDispatcher("/pages/intro.jsp");
 
