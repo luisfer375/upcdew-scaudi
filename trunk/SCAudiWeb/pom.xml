@@ -99,6 +99,10 @@
       <name>Repository for library Library[hibernate-support]</name>
     </repository>
   </repositories>
+    <properties>
+        <netbeans.hint.deploy.server>Tomcat60</netbeans.hint.deploy.server>
+    </properties>
 </project>
+
 
 

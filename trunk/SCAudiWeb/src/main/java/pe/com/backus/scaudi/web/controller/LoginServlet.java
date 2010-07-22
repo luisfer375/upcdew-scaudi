@@ -41,6 +41,7 @@ public class LoginServlet extends HttpServlet {
         String password = req.getParameter("password");
         Log.debug("Clave: " + password);
         Usuario usuario = usuarioService.validarUsuario(login, password);
+        Log.debug("Usuario - nombre: " + usuario.getNombre());
         getServletContext().getRequestDispatcher("/pages/intro.jsp");
 
 
