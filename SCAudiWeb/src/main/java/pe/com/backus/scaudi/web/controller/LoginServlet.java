@@ -10,6 +10,7 @@ import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
 import pe.com.backus.scaudi.domain.Usuario;
 import pe.com.backus.scaudi.service.UsuarioService;
 import pe.com.backus.scaudi.service.impl.UsuarioServiceImpl;
@@ -32,6 +33,7 @@ public class LoginServlet extends HttpServlet {
     protected void doPost(HttpServletRequest req, HttpServletResponse resp)
            throws ServletException, IOException {
 
+        HttpSession session = req.getSession();
         UsuarioService usuarioService = new UsuarioServiceImpl();
         //Usuario usuario = usuarioService.obtenerUsuario(nombre);
         //Usuario usuario = usuarioService
@@ -41,10 +43,13 @@ public class LoginServlet extends HttpServlet {
         String password = req.getParameter("password");
         Log.debug("Clave: " + password);
         Usuario usuario = usuarioService.validarUsuario(login, password);
-        Log.debug("Usuario - nombre: " + usuario.getNombre());
-        getServletContext().getRequestDispatcher("/pages/intro.jsp");
 
-
+        if(usuario!= null){
+            Log.debug("Usuario - nombre: " + usuario.getNombre());
+            session.setAttribute("Usuario", usuario);
+            req.getRequestDispatcher("/pages/welcome.jsp").forward(req, resp);
+        }
+        
     }
 
     /** 

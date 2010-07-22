@@ -6,6 +6,7 @@
 package pe.com.backus.scaudi.dao.hibernate;
 
 import java.util.List;
+import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import pe.com.backus.scaudi.app.HibernateSession;
 import pe.com.backus.scaudi.dao.UsuarioDAO;
@@ -18,7 +19,14 @@ import pe.com.backus.scaudi.util.Log;
  */
 public class UsuarioDAOHibernate implements UsuarioDAO{
 
-    private SessionFactory sessionFactory = HibernateSession.getSessionFactory();;
+    private SessionFactory sessionFactory = HibernateSession.getSessionFactory();
+
+/*    public void setSessionFactory(SessionFactory sessionFactory) {
+        this.sessionFactory = sessionFactory;
+    }
+*/
+    
+
 
 
     public void guardar(Usuario usuario) {
@@ -47,13 +55,18 @@ public class UsuarioDAOHibernate implements UsuarioDAO{
     }
 
     public Usuario validarUsuario(String login, String password) {
-      Log.debug("Entro a validar Usuario");
-      Usuario usuario =
-                (Usuario) sessionFactory.getCurrentSession()
-                //Aquí cada uno pone su consulta.
-                .createQuery("from t_usuario u  where u.vc_login=? and u.vc_password=?")
-                .setParameter(0, login).setParameter(1, password).uniqueResult();
-        return usuario;
+          Log.debug("Entro a validar Usuario");
+          Session session = sessionFactory.getCurrentSession();
+          session.beginTransaction();
+          Usuario usuario =
+                    (Usuario) sessionFactory.getCurrentSession()
+                    //Aquí cada uno pone su consulta.
+                    .createQuery("from Usuario u  where u.login=? and u.password=?")
+                    .setParameter(0, login).setParameter(1, password).uniqueResult();
+
+          session.getTransaction().commit();
+
+         return usuario;
     }
 
 

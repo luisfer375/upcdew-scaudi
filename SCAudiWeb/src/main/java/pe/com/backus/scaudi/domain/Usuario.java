@@ -14,29 +14,29 @@ public class Usuario {
     
 
     
-    private long idUsuario;
+    private Integer idUsuario;
     private String  nombre;
     private String  login;
     private String  password;
-    private long tipo;
-    private long estado;
+    private Integer tipo;
+    private Integer estado;
 
     public Usuario() {
     }
 
-    public long getEstado() {
+    public Integer getEstado() {
         return estado;
     }
 
-    public void setEstado(long estado) {
+    public void setEstado(Integer estado) {
         this.estado = estado;
     }
 
-    public long getIdUsuario() {
+    public Integer getIdUsuario() {
         return idUsuario;
     }
 
-    public void setIdUsuario(long idUsuario) {
+    public void setIdUsuario(Integer idUsuario) {
         this.idUsuario = idUsuario;
     }
 
@@ -64,14 +64,14 @@ public class Usuario {
         this.password = password;
     }
 
-    public long getTipo() {
+    public Integer getTipo() {
         return tipo;
     }
 
-    public void setTipo(long tipo) {
+    public void setTipo(Integer tipo) {
         this.tipo = tipo;
     }
 
-
+   
 
 }

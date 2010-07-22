@@ -4,7 +4,6 @@
 <head>
     <%@ include file="/pages/cabecera.jsp" %>
 </head>
-
 <body>
 <table border="0" align="center" cellpadding="2" cellspacing="0">
   <tr>
@@ -51,8 +50,9 @@
                               </label></td>
                             </tr>
                             <tr>
-                              <th colspan="2" scope="row"><input type="submit" name="button" id="button" value="Logueo..!" />
-                                <input type="hidden" name="hiddenField" id="hiddenField" /></th>
+                              <th colspan="1" scope="row">
+                                  <input type="submit" name="button" id="button" value="Logueo..!" />
+                                </th>
                             </tr>
                           </table>
                         </form>
