@@ -7,8 +7,10 @@ package pe.com.backus.scaudi.service.impl;
 
 import java.util.List;
 import pe.com.backus.scaudi.dao.UsuarioDAO;
+import pe.com.backus.scaudi.dao.hibernate.UsuarioDAOHibernate;
 import pe.com.backus.scaudi.domain.Usuario;
 import pe.com.backus.scaudi.service.UsuarioService;
+import pe.com.backus.scaudi.util.Log;
 
 /**
  *
@@ -16,11 +18,7 @@ import pe.com.backus.scaudi.service.UsuarioService;
  */
 public class UsuarioServiceImpl implements UsuarioService{
 
-    private UsuarioDAO usuarioDAO;
-
-    public void setUsuarioDAO(UsuarioDAO usuarioDAO) {
-        this.usuarioDAO = usuarioDAO;
-    }
+    private UsuarioDAO usuarioDAO = new UsuarioDAOHibernate();
 
     public void guardar(Usuario usuario) {
         usuarioDAO.guardar(usuario);
@@ -40,6 +38,7 @@ public class UsuarioServiceImpl implements UsuarioService{
     }
 
     public Usuario validarUsuario(String login, String password) {
+        Log.debug("Entro service");
         return usuarioDAO.validarUsuario(login, password);
     }
 

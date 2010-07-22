@@ -7,8 +7,9 @@
     <property name="hibernate.connection.url">jdbc:mysql://localhost:3306/DBSGA</property>
     <property name="hibernate.connection.username">root</property>
     <property name="hibernate.connection.password">admin</property>
-    <property name="hibernate.show_sql">true</property>
-     <property name="hbm2ddl.auto">create</property>
+    <property name="hibernate.current_session_context_class">thread</property>
+        <property name="hibernate.show_sql">false</property>
+    <!--<property name="hbm2ddl.auto">create</property>-->
 
     <mapping resource="pe/com/backus/scaudi/domain/Area.hbm.xml"/>
     <mapping resource="pe/com/backus/scaudi/domain/CentroDistribucion.hbm.xml"/>
