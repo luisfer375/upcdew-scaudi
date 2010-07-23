@@ -77,7 +77,7 @@
                     <td>&nbsp;</td>
                     <td valign="top"><table width="460" border="0" cellspacing="0" cellpadding="0">
                       <tr>
-                        <td class="titulo">Bienvenido: ${session.usuario.nombre}</td>
+                        <td class="titulo">Bienvenido: ${sessionScope.usuario.nombre}</td>
                       </tr>
                       <tr>
                         <td bgcolor="#535891"><img src="../images/spacer.gif" width="150" height="1" /></td>

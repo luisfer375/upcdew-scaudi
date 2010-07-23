@@ -46,9 +46,10 @@ public class LoginServlet extends HttpServlet {
 
         if(usuario!= null){
             Log.debug("Usuario - nombre: " + usuario.getNombre());
-            session.setAttribute("Usuario", usuario);
+            session.setAttribute("usuario", usuario);
             resp.sendRedirect("pages/welcome.jsp");
-        }
+        }else
+            resp.sendRedirect("/");
         
     }
 
