@@ -1,12 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <web-app version="2.5" xmlns="http://java.sun.com/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd">
     <display-name>Sistema de Control de Auditoria de Distribucion</display-name>
-
-    
     <context-param>
         <param-name>contextConfigLocation</param-name>
         <param-value>hibernate.ctx.xml</param-value>
     </context-param>
+    <filter>
+        <filter-name>LoginFiltro</filter-name>
+        <filter-class>pe.com.backus.scaudi.filter.LoginFiltro</filter-class>
+    </filter>
+    <filter-mapping>
+        <filter-name>LoginFiltro</filter-name>
+        <url-pattern>/pages/welcome.jsp</url-pattern>
+    </filter-mapping>
     <servlet>
         <servlet-name>LoginServlet</servlet-name>
         <servlet-class>pe.com.backus.scaudi.web.controller.LoginServlet</servlet-class>
@@ -24,5 +30,4 @@
     <welcome-file-list>
         <welcome-file>index.jsp</welcome-file>
     </welcome-file-list>
-    
 </web-app>
