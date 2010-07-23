@@ -1,0 +1,42 @@
+ 
+ 
+ - <chart palette="2" caption="PUNTAJE TOTAL RED REGION LIMA F10 Vs. F09"  showValues="0" divLineDecimalPrecision="1" limitsDecimalPrecision="1" PYAxisName="%" SYAxisName="CD"  formatNumberScale="0">
+- <categories>
+  <category label="CD Comas" /> 
+  <category label="CD Rimac" /> 
+  <category label="CD Callao" /> 
+  <category label="CD Cono Sur" /> 
+  <category label="CD Cono Norte" /> 
+  </categories>
+    
+- <dataset seriesName="RED F10">
+  <set value="84.40" /> 
+  <set value="82.90" /> 
+  <set value="81.20" /> 
+  <set value="82.30"/> 
+  <set value="86.20" /> 
+  </dataset>
+  
+- <dataset seriesName="RED F09" renderAs="Line">
+  <set value="60.22" /> 
+  <set value="63.43" /> 
+  <set value="62.81" /> 
+  <set value="60.76" /> 
+  <set value="" /> 
+   
+  </dataset>
+  
+  <styles>
+ <definition>
+  <style name="Anim1" type="animation" param="_xscale" start="0" duration="1" /> 
+  <style name="Anim2" type="animation" param="_alpha" start="0" duration="1" /> 
+  <style name="DataShadow" type="Shadow" alpha="20" /> 
+  </definition>
+<application>
+  <apply toObject="DIVLINES" styles="Anim1" /> 
+  <apply toObject="HGRID" styles="Anim2" /> 
+  <apply toObject="DATALABELS" styles="DataShadow,Anim2" /> 
+  </application>
+  </styles>
+  
+  </chart>
