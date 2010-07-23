@@ -33,7 +33,7 @@ public class LoginServlet extends HttpServlet {
     protected void doPost(HttpServletRequest req, HttpServletResponse resp)
            throws ServletException, IOException {
 
-        HttpSession session = req.getSession();
+        HttpSession session = req.getSession(true);
         UsuarioService usuarioService = new UsuarioServiceImpl();
         //Usuario usuario = usuarioService.obtenerUsuario(nombre);
         //Usuario usuario = usuarioService
@@ -47,7 +47,7 @@ public class LoginServlet extends HttpServlet {
         if(usuario!= null){
             Log.debug("Usuario - nombre: " + usuario.getNombre());
             session.setAttribute("Usuario", usuario);
-            req.getRequestDispatcher("/pages/welcome.jsp").forward(req, resp);
+            resp.sendRedirect("pages/welcome.jsp");
         }
         
     }
