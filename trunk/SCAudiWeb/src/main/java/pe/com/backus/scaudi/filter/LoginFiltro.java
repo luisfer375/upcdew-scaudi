@@ -14,6 +14,7 @@ import javax.servlet.ServletRequest;
 import javax.servlet.ServletResponse;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import pe.com.backus.scaudi.util.Log;
 
 /**
  *
@@ -29,15 +30,9 @@ public class LoginFiltro implements Filter{
 		HttpServletRequest request = (HttpServletRequest) servletRequest;
 		HttpServletResponse response = (HttpServletResponse) servletResponse;
 
-		if (request.getSession().getAttribute("usuario") != null){
-			//Authentication passed.
-		}
-		else {
-			if (!request.getServletPath().endsWith("login.jsp")){
-				//response.sendRedirect("http://www.google.ca");
-				System.out.println("url: " + request.getContextPath() + "/login.jsp");
-				response.sendRedirect(request.getContextPath() + "/login.jsp");
-			}
+		if (request.getSession().getAttribute("usuario") == null){
+                    Log.info("url: " + request.getContextPath() + "/pages/login.jsp");
+                    response.sendRedirect(request.getContextPath() + "/pages/login.jsp");
 		}
 	}
 
