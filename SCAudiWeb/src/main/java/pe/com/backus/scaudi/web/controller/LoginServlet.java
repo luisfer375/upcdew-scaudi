@@ -49,7 +49,7 @@ public class LoginServlet extends HttpServlet {
             session.setAttribute("usuario", usuario);
             resp.sendRedirect("pages/welcome.jsp");
         }else
-            resp.sendRedirect("/");
+            resp.sendRedirect("pages/login.jsp");
         
     }
 
