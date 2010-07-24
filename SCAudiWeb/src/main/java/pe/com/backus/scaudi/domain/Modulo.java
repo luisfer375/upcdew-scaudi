@@ -11,7 +11,7 @@ package pe.com.backus.scaudi.domain;
  */
 public class Modulo {
 
-    private long idModulo;
+    private Integer idModulo;
     private String descripcion;
 
     public Modulo() {
@@ -27,11 +27,11 @@ public class Modulo {
         this.descripcion = descripcion;
     }
 
-    public long getIdModulo() {
+    public Integer getIdModulo() {
         return idModulo;
     }
 
-    public void setIdModulo(long idModulo) {
+    public void setIdModulo(Integer idModulo) {
         this.idModulo = idModulo;
     }
 
