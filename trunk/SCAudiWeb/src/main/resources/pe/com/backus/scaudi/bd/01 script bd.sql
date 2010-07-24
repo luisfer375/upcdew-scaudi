@@ -141,7 +141,7 @@ INDEX T_ENCUESTA_has_T_ESTANDAR_FKIndex2(IN_IDESTANDAR),
 
 
 insert into t_usuario (IN_IDUSUARIO,VC_NOMBRE,VC_LOGIN,VC_PASSWORD,IN_TIPO,IN_ESTADO) values (1, 'Jossymar Cabanillas', 'jcabanillas', '123456', 1, 1);
-insert into t_usuario (IN_IDUSUARIO,VC_NOMBRE,VC_LOGIN,VC_PASSWORD,IN_TIPO,IN_ESTADO) values (2, 'Jossymar Cabanillas', 'emiranda', '123456', 1, 1);
+insert into t_usuario (IN_IDUSUARIO,VC_NOMBRE,VC_LOGIN,VC_PASSWORD,IN_TIPO,IN_ESTADO) values (2, 'Eduardo Miranda', 'emiranda', '123456', 1, 1);
 insert into t_usuario (IN_IDUSUARIO,VC_NOMBRE,VC_LOGIN,VC_PASSWORD,IN_TIPO,IN_ESTADO) values (3, 'Erick Tapia', 'etapia', '123456', 1, 1);
 insert into t_usuario (IN_IDUSUARIO,VC_NOMBRE,VC_LOGIN,VC_PASSWORD,IN_TIPO,IN_ESTADO) values (4, 'Jorge Cortez', 'jcortez', '123456', 1, 1);
 insert into t_usuario (IN_IDUSUARIO,VC_NOMBRE,VC_LOGIN,VC_PASSWORD,IN_TIPO,IN_ESTADO) values (5, 'Juan Jose Chiroque', 'jjchiroque', '123456', 1, 1);
