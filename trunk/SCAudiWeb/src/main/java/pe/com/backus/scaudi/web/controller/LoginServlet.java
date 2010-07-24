@@ -6,6 +6,7 @@
 package pe.com.backus.scaudi.web.controller;
 
 import java.io.IOException;
+import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
@@ -33,23 +34,21 @@ public class LoginServlet extends HttpServlet {
     protected void doPost(HttpServletRequest req, HttpServletResponse resp)
            throws ServletException, IOException {
 
+       // RequestDispatcher dispacher = req.getRequestDispatcher("/index.jsp");
         HttpSession session = req.getSession(true);
-        UsuarioService usuarioService = new UsuarioServiceImpl();
-        //Usuario usuario = usuarioService.obtenerUsuario(nombre);
-        //Usuario usuario = usuarioService
-        Log.info("Entro al servidor");
         String login = req.getParameter("login");
-        Log.debug("Login: " + login);
         String password = req.getParameter("password");
-        Log.debug("Clave: " + password);
-        Usuario usuario = usuarioService.validarUsuario(login, password);
-
-        if(usuario!= null){
-            Log.debug("Usuario - nombre: " + usuario.getNombre());
-            session.setAttribute("usuario", usuario);
+        String mensaje = validar(login, password, session);
+        if("".equals(mensaje)){
             resp.sendRedirect("pages/welcome.jsp");
-        }else
+        }else{
+            Log.debug("Mensaje:" + mensaje);
+            resp.setStatus(HttpServletResponse.SC_UNAUTHORIZED);
+            req.setAttribute("mensaje", mensaje);
             resp.sendRedirect("pages/login.jsp");
+            //resp.sendRedirect("pages/login.jsp");
+        }
+            
         
     }
 
@@ -60,5 +59,23 @@ public class LoginServlet extends HttpServlet {
     public String getServletInfo() {
         return "Short description";
     }// </editor-fold>
+
+    private String validar(String login, String password, HttpSession session) {
+
+         UsuarioService usuarioService = new UsuarioServiceImpl();
+         Usuario usuario = usuarioService.validarUsuario(login, password);
+         if("".equals(login))
+             return  "Ingrese al usuario";
+         else if("".equals(password))
+             return "Ingrese al password";
+
+         if(usuario == null)
+            return "Usuario o clave incorrecta";
+         else{
+            Log.debug("Usuario - nombre: " + usuario.getNombre());
+            session.setAttribute("usuario", usuario);
+         }
+        return "";
+    }
 
 }

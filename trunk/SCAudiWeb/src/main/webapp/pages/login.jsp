@@ -26,12 +26,15 @@
                   <tr>
                     <td width="435" align="center" valign="middle">
                       <form id="FrmLogin" name="FrmLogin" method="post" action="../LoginServlet">
-                          <table width="193" height="127" border="0" align="center" class="subtitulo">
+                          <table width="197" height="127" border="0" align="center" class="subtitulo">
                             <tr>
                               <th width="80" align="left" valign="middle" scope="row">User</th>
-                              <td width="144"><label>
-                                <input name="login" type="text" class="menuhome" id="login"  />
-                              </label></td>
+                              <td width="144">
+                                  <label>
+                                         <input name="login" type="text" class="menuhome" id="login"  />
+                                 </label>
+                                  
+                              </td>
                             </tr>
                             <tr>
                               <th align="left" valign="middle" scope="row">Password</th>
@@ -54,6 +57,17 @@
                                   <input type="submit" name="button" id="button" value="Logueo..!" />
                                 </th>
                             </tr>
+                              <tr>
+                                   <th colspan="1" scope="row">
+                                        <td width="180" align="left" valign="middle">
+                                          <c:if test="${!empty requestScope.mensaje}">
+                                          <label>
+                                                 ${requestScope.mensaje}
+                                               </label>
+                                          </c:if>
+                                        </td>
+                                    </th>
+                                  </tr>
                           </table>
                         </form>
                     </td>
