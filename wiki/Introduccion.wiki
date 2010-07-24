@@ -4,4 +4,5 @@ Sobre el Proyecto:
 
 Módulos a implementar:
 
-•	Gestión de la seguridad. (Usuarios, roles). •	Asignación de Centros de distribución (módulos, ciudad). •	Evaluación de Desempeño: (5 preguntas cada uno) o	Módulo 1: Reparto o	Módulo 2: Almacenamiento y Calidad o	Módulo 3: Gestión de la Flota o	Módulo 4: Administración del Cede. • Gestión de reportes: Resultados de la auditoría.
+•	Gestión de la seguridad. (Usuarios, roles). •	Asignación de Centros de distribución (módulos, localidad).
+•	Evaluación de Desempeño: (5 preguntas cada uno) o	Módulo 1: Reparto o	Módulo 2: Almacenamiento y Calidad o	Módulo 3: Gestión de la Flota o	Módulo 4: Administración del Cede. • Gestión de reportes: Resultados de la auditoría.
