@@ -14,6 +14,7 @@ import javax.servlet.ServletRequest;
 import javax.servlet.ServletResponse;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
 import pe.com.backus.scaudi.util.Log;
 
 /**
@@ -29,12 +30,24 @@ public class LoginFiltro implements Filter{
 	public void doFilter(ServletRequest servletRequest, ServletResponse servletResponse, FilterChain filterChain) throws IOException, ServletException {
 		HttpServletRequest request = (HttpServletRequest) servletRequest;
 		HttpServletResponse response = (HttpServletResponse) servletResponse;
+                HttpSession sesion = null;
 
-		if (request.getSession().getAttribute("usuario") == null){
-                    Log.info("url: " + request.getContextPath() + "/pages/login.jsp");
-                    response.sendRedirect(request.getContextPath() + "/pages/login.jsp");
-		}
-	}
+                Log.debug("Servlet Path:" + request.getServletPath().substring(7));
+                if(request.getServletPath().substring(7).equals("login.jsp")){
+                    filterChain.doFilter(request, response);
+                }else{
+                    if(request instanceof HttpServletRequest){
+                        sesion = request.getSession();
+                        if(sesion.getAttribute("usuario") != null)
+                            filterChain.doFilter(request, response);
+                        else{
+                //            Log.info("url: " + request.getContextPath() + "/pages/login.jsp");
+                            response.sendRedirect(request.getContextPath() + "/pages/login.jsp");
+                        }
+
+                    }
+                }
+        }
 
 
 	public void init(FilterConfig arg0) throws ServletException {
