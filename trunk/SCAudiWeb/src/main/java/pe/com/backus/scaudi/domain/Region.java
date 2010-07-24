@@ -11,7 +11,7 @@ package pe.com.backus.scaudi.domain;
  */
 public class Region {
 
-    private long idRegion;
+    private Integer idRegion;
     private String descripcion;
 
     public Region() {
@@ -28,11 +28,11 @@ public class Region {
         this.descripcion = descripcion;
     }
 
-    public long getIdRegion() {
+    public Integer getIdRegion() {
         return idRegion;
     }
 
-    public void setIdRegion(long idRegion) {
+    public void setIdRegion(Integer idRegion) {
         this.idRegion = idRegion;
     }
 

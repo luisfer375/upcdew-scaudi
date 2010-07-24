@@ -11,7 +11,7 @@ package pe.com.backus.scaudi.domain;
  */
 public class Area {
 
-    private long idArea;
+    private Integer idArea;
     private Modulo modulo;
     private String descripcion;
     private Integer peso;
@@ -30,11 +30,11 @@ public class Area {
         this.descripcion = descripcion;
     }
 
-    public long getIdArea() {
+    public Integer getIdArea() {
         return idArea;
     }
 
-    public void setIdArea(long idArea) {
+    public void setIdArea(Integer idArea) {
         this.idArea = idArea;
     }
 

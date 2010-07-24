@@ -13,7 +13,7 @@ public class EncuestaDetalle {
 
     private Estandar estandar;
     private Encuesta  encuesta;
-    private long   calificacion;
+    private Integer   calificacion;
     private String    observacion;
     private String    recomendacion;
 
@@ -22,11 +22,11 @@ public class EncuestaDetalle {
 
     
 
-    public long getCalificacion() {
+    public Integer getCalificacion() {
         return calificacion;
     }
 
-    public void setCalificacion(long calificacion) {
+    public void setCalificacion(Integer calificacion) {
         this.calificacion = calificacion;
     }
 
