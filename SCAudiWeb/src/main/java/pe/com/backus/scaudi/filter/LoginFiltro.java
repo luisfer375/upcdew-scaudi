@@ -30,14 +30,17 @@ public class LoginFiltro implements Filter{
 	public void doFilter(ServletRequest servletRequest, ServletResponse servletResponse, FilterChain filterChain) throws IOException, ServletException {
 		HttpServletRequest request = (HttpServletRequest) servletRequest;
 		HttpServletResponse response = (HttpServletResponse) servletResponse;
-                HttpSession sesion = null;
+                HttpSession sesion =  request.getSession();
 
                 Log.debug("Servlet Path:" + request.getServletPath().substring(7));
                 if(request.getServletPath().substring(7).equals("login.jsp")){
+                    if(sesion.getAttribute("usuario") !=null)
+                        sesion.removeAttribute("usuario");
+                    
                     filterChain.doFilter(request, response);
                 }else{
                     if(request instanceof HttpServletRequest){
-                        sesion = request.getSession();
+                        
                         if(sesion.getAttribute("usuario") != null)
                             filterChain.doFilter(request, response);
                         else{
