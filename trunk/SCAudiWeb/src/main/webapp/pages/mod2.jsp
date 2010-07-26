@@ -72,7 +72,7 @@
   </tr>
   <tr>
     <td class="menuMetas"><ul>
-      <li><a href="../pages/est06.jsp">Planificaci&oacute;n de la reposici&oacute;n</a><br />
+      <li><a href="../pages/est6.jsp">Planificaci&oacute;n de la reposici&oacute;n</a><br />
       </li>
     </ul></td>
   </tr>
@@ -101,7 +101,7 @@
                       <tr>
                         <td valign="top" class="texto"><p align="left">Este modulo abarca las funciones de transporte, administraci&oacute;n de  stocks, almacenamiento y adecuaci&oacute;n a los est&aacute;ndares de calidad del producto en  los CDs y APTs</p>
                           <p align="center"><span class="tituloModulo">METAS PRINCIPALES</span><br />
-                            <a href="../pages/est06.jsp">Planificaci&oacute;n de la reposici&oacute;n</a><br />
+                            <a href="../pages/est6.jsp">Planificaci&oacute;n de la reposici&oacute;n</a><br />
                           </p>
                           </td>
                       </tr>

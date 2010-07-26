@@ -2,10 +2,10 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <%@ include file="/pages/cabecera.jsp" %>
-        <link href="pages/styles.css" rel="stylesheet" type="text/css" />
+    <link href="pages/styles.css" rel="stylesheet" type="text/css" />
 </head>
 
-<body>
+<body >
 <table border="0" align="center" cellpadding="2" cellspacing="0">
   <tr>
     <td bgcolor="#262b54"><table border="0" align="center" cellpadding="0" cellspacing="0" bgcolor="#FFFFFF">
@@ -35,14 +35,14 @@
                     <td background="images/bg_menutopinterna.gif"><table border="0" cellspacing="0" cellpadding="0">
                         <tr>
                           <td><img src="images/logo2_internas.gif" width="118" height="64" /></td>
-                          <td><a href="pages/mod1.jsp"><img src="images/mnI_mod1.gif" name="mod1" width="92" height="64" border="0" id="mod1"/></a></td>
-                          <td><img src="images/mnI_mod1_2.gif" name="mod1_2" width="19" height="64" id="mod1_2" /></td>
+                          <td><img src="images/mnI_mod1_roll.gif" name="mod1" width="92" height="64" border="0" id="mod1"/></td>
+                          <td><img src="images/mnI_mod1_2_roll1.gif" name="mod1_2" width="19" height="64" id="mod1_2" /></td>
                           <td><a href="pages/mod2.jsp"><img src="images/mnI_mod2.gif" name="mod2" width="106" height="64" border="0" id="mod2" /></a></td>
                           <td><img src="images/mnI_mod2_3.gif" name="mod2_3" width="19" height="64" id="mod2_3" /></td>
                           <td><a href="pages/mod3.jsp"><img src="images/mnI_mod3.gif" name="mod3" width="102" height="64" border="0" id="mod3"/></a></td>
-                          <td><img src="images/mnI_mod3_4_roll4.gif" name="mod3_4" width="20" height="64" id="mod3_4" /></td>
-                          <td><img src="images/mnI_mod4_roll.gif" name="mod4" width="71" height="64" border="0" id="mod4"/></td>
-                          <td><img src="images/mnI_mod4_5_roll4.gif" name="mod4_5" width="19" height="64" id="mod4_5" /></td>
+                          <td><img src="images/mnI_mod3_4.gif" name="mod3_4" width="20" height="64" id="mod3_4" /></td>
+                          <td><a href="pages/mod4.jsp"><img src="images/mnI_mod4.gif" name="mod4" width="71" height="64" border="0" id="mod4"/></a></td>
+                          <td><img src="images/mnI_mod4_5.gif" name="mod4_5" width="19" height="64" id="mod4_5" /></td>
                           <td><a href="pages/mod5.jsp"><img src="images/mnI_mod5.gif" name="mod5" width="109" height="64" border="0" id="mod5"/></a></td>
                         </tr>
                     </table></td>
@@ -50,8 +50,8 @@
                 </table></td>
                 </tr>
               <tr>
-                <td><img src="images/spacer.gif" width="165" height="4" /></td>
-                <td><img src="images/spacer.gif" width="510" height="4" /></td>
+                <td width="165"><img src="images/spacer.gif" width="165" height="4" /></td>
+                <td width="510"><img src="images/spacer.gif" width="510" height="4" /></td>
               </tr>
               <tr>
                 <td valign="top" bgcolor="#a3a6bf" ><table width="165" border="0" cellspacing="0" cellpadding="0">
@@ -73,13 +73,13 @@
   </tr>
   <tr>
     <td valign="top"><span class="menuMetas"><ul>
-      <li>Performance Management</li>
-	  </ul></span><span class="menuMetasEst"><ol start="14">
-<li>Formulaci&oacute;n y Despliegue  de metas individuales y de equipo</li>
-<li><a href="pages/est84.jsp">One on One y Revisi&oacute;n de  Desempe&ntilde;o</a></li>
-<li><a href="pages/est85.jsp">Comunicaci&oacute;n verbal y  gerencia visible</a></li>
-	  </ol>
-	  </span><span class="menuMetas"></span></td>
+      <li>Planificaci&oacute;n de la carga.</li></ul></span><span class="menuMetasEst"><ol><li><a href="pages/est1.jsp">Conocimiento profundo del cliente y de los servicios que &eacute;stos requieren.</a></li>
+        <li>Aseguramiento de altos est&aacute;ndares de servicio</li>
+        <li><a href="pages/est3.jsp">Optimizaci&oacute;n del ruteo y generaci&oacute;n del programa de entrega a clientes</a></li>
+        <li><a href="pages/est4.jsp">Servicios de reparto extraordinarios</a></li>
+        <li><a href="pages/est5.jsp">Sistema planificado y efectivo de recojo de envases del mercado</a></li>
+      </ol>
+      </span></td>
   </tr>
 </table>
 </td>
@@ -94,14 +94,14 @@
                     <td>&nbsp;</td>
                     <td valign="top"><table width="460" border="0" cellspacing="0" cellpadding="0">
                       <tr>
-                        <td class="titulo"><span class="stitModulo">MODULO 4 </span><br />
-                          Gesti&oacute;n del CD Y APT</td>
+                        <td class="titulo"><span class="stitModulo">MODULO 1</span><br />
+                          Reparto  - Despacho</td>
                       </tr>
                       <tr>
                         <td bgcolor="#535891"><img src="images/spacer.gif" width="150" height="1" /></td>
                       </tr>
                       <tr>
-                        <td class="subtitulo">PERFORMANCE MANAGEMENT </td>
+                        <td class="subtitulo">PLANIFICACI&Oacute;N DE LA CARGA </td>
                       </tr>
                       <tr>
                         <td><img src="images/spacer.gif" width="71" height="10" /></td>
@@ -112,8 +112,8 @@
                       <tr>
                         <td valign="top"><table width="100%" border="0" cellspacing="0" cellpadding="10">
                           <tr>
-                            <td width="10%" align="center" class="numero">14.</td>
-                            <td class="nombreestandar">Formulaci&oacute;n y Despliegue  de metas individuales y de equipo</td>
+                            <td width="10%" align="center" class="numero">2.</td>
+                            <td class="nombreestandar">Aseguramiento  de altos est&aacute;ndares de servicio.</td>
                           </tr>
                         </table></td>
                       </tr>
@@ -127,8 +127,7 @@
                         <td valign="top"><img src="images/spacer.gif" width="71" height="10" /></td>
                       </tr>
                       <tr>
-                        <td valign="top" class="texto" >Los &eacute;xitos de la compa&ntilde;&iacute;a dependen de la habilidad para alinear estrat&eacute;gicamente las diferentes unidades de negocio con las estrategias y metas de la organizaci&oacute;n, as&iacute; como con las expectativas y requerimientos de cada operaci&oacute;n y de nuestros clientes internos y externos.<br />
-                          Estos objetivos deben ser traducidos en metas grupales e individuales, las cuales deben ser revisadas permanentemente.</td>
+                        <td valign="top" class="texto" >Los  proveedores de clase mundial deben ser suficientemente flexibles para proveer  el mayor nivel de servicio y ser capaces de cumplir con los pedidos de los  clientes incluso excediendo los est&aacute;ndares acordados.</td>
                       </tr>
                       <tr>
                         <td valign="top"><img src="images/spacer.gif" width="71" height="23" /></td>
@@ -139,13 +138,12 @@
                       <tr>
                         <td valign="top" class="texto"><table border="0" cellspacing="0" cellpadding="0">
                           <tr>
-                        <td><a href="pages/evidencias/83.1.xls" target="_blank"><img src="images/ic_excel.gif" alt="83.1.xls" width="75" height="71" border="0" /></a></td>
-                        <td><a href="pages/evidencias/83.2.xls" target="_blank"><img src="images/ic_excel.gif" alt="83.2.xls" width="75" height="71" border="0" /></a></td>
-                        <td><a href="pages/evidencias/83.4.xls" target="_blank"><img src="images/ic_excel.gif" alt="83.4.xls" width="75" height="71" border="0" /></a></td>
+                        <td><a href="pages/evidencias/2.2.xls" target="_blank"><img src="images/ic_excel.gif" alt="2.2.xls" width="75" height="71" border="0" /></a></td>
+                        <td><a href="pages/evidencias/packmodulo_reparto.xls" target="_blank"><img src="images/ic_excel.gif" alt="packmodulo_reparto.xls" width="75" height="71" border="0" /></a></td>
+                        <td><a href="pages/evidencias/2.3.msg" target="_blank"><img src="images/ic_mail.gif" alt="2.3.msg" width="75" height="71" border="0" /></a></td>
                           </tr>
                         </table></td>
-                      </tr>
-                      <tr>
+                      </tr>                      <tr>
                         <td valign="top"><img src="images/spacer.gif" width="71" height="10" /></td>
                       </tr>
                       <tr>
@@ -166,10 +164,10 @@
                         <td valign="top" ><img src="images/spacer.gif" width="71" height="10" /></td>
                       </tr>
                       <tr>
-                        <td valign="top" class="texto"><ol><li>El personal no ha recibido capacitaci&oacute;n en Performance  Management</li>
-                            <li>No existen hojas de meta individuales y de equipo</li>
-                            <li> No se han definido a nivel de CD las metas para  el periodo fiscal</li>
-                        </ol></td></tr>
+                        <td valign="top" class="texto"><ol><li>No  existen registros de pedidos extraordinarios (fuera de ruta).<br />
+                                    </li>
+                            </ol></td>
+                      </tr>
                       <tr>
                         <td valign="top"><img src="images/spacer.gif" width="71" height="10" /></td>
                       </tr>
@@ -186,9 +184,16 @@
                       </tr>
                       <tr>
                         <td valign="top" class="texto"><ol>
-                          <li>Existe personal que no ha recibido capacitaci&oacute;n en Performance Management</li><li> Existe personal que no tiene hoja de meta individual</li><li>Se han definido a nivel de CD las metas para el periodo fiscal<br />
+                          <li>Los clientes son comunicados acerca del personal designado para atenderlos. </li>
+                          <li> Existe un registro actualizado de pedidos extraordinarios: 
+                            <ol type="a">
+                              <li> Entregas fuera de ruta  </li>
+                              <li> Camiones exclusivos para recojo de envases diariamente </li>
+                              <li> Entregas excepcionales  &ldquo;pedido de hoy &ndash; entrega hoy&rdquo; </li>
+                              <li> Otros requerimientos extraordinarios. </li>
+                            </ol>
                           </li>
-                        </ol></td>
+                          </ol></td>
                       </tr>
                       <tr>
                         <td valign="top"><img src="images/spacer.gif" width="71" height="10" /></td>
@@ -206,8 +211,17 @@
                       </tr>
                       <tr>
                         <td valign="top" class="texto"><ol>
-                          <li>Todo el personal ha recibido capacitaci&oacute;n en Performance Management</li><li>Todo el personal tiene hoja de meta individual</li><li>Se han definido a nivel CD las metas (objetivos de gestión) para el periodo fiscal</li>
-                        </ol></td>
+                          <li> Registro y an&aacute;lisis de requerimientos:  
+                            <ol type="a">
+                              <li> Entregas fuera de ruta (si est&aacute; acordado)  </li>
+                              <li> Camiones exclusivos para recojo de envases diariamente </li>
+                              <li> Entregas excepcionales &ldquo;pedido de hoy,-entrega hoy&rdquo; </li>
+                              </ol>
+                          </li>
+                          <li> En los &uacute;ltimos 6 meses con &eacute;nfasis en los siguientes indicadores: 
+                            <ol type="a">
+                              <li> % de camiones para recojo de envases por d&iacute;a (Cantidad de camiones utilizados exclusivamente para recojo de envases / total de camiones utilizados) </li>
+                              <li> % de pedidos del mismo d&iacute;a (N&ordm; de pedidos entregadas el mismo d&iacute;a del pedido / pedidos programados el d&iacute;a anterior) </li></ol></li></ol></td>
                       </tr>
                       <tr>
                         <td valign="top"><img src="images/spacer.gif" width="71" height="10" /></td>
@@ -224,14 +238,12 @@
                         <td valign="top"><img src="images/spacer.gif" width="71" height="10" /></td>
                       </tr>
                       <tr>
-                        <td valign="top" class="texto"><ol>
-                          <li>Las metas definidas poseen  sustentos y evidencias que garanticen la factibilidad en el logro de los mismos  (impacto potencial, simulaci&oacute;n de escenarios, an&aacute;lisis de probabilidades, entre  otros)</li>
-                            <li>Se han definido metas (objetivos de gestión) a nivel de cada proceso del CD (almacén,
-                                administración, distribución) para el periodo fiscal</li>
-                        </ol></td>
+                        <td valign="top" class="texto"><p>Ejemplo  de actividades que ayudan a asegurar los m&aacute;s altos est&aacute;ndares de servicio  descritos de acuerdo al siguiente esquema: situaci&oacute;n, plan de acci&oacute;n, ejecuci&oacute;n  e impacto fin.</p>
+                          <p>&nbsp;</p></td>
                       </tr>
                       <tr>
-                        <td valign="top"><form id="FormularioEstandar14" name="FormularioEstandar14" method="post" action="EstandarServlet">
+                        <td align="left" valign="top">
+                          <form id="FormularioEstandar2" name="FormularioEstandar2" method="post" action="EstandarServlet">
                           <table width="406" border="0" align="center" class="stitModulo">
                             <tr>
                               <th width="145" height="26" align="center" bgcolor="#31367A" scope="row">Calificiaci&oacute;n</th>
@@ -271,11 +283,11 @@
                                 <label>
                                   <input type="submit" name="button" id="button" value="Calificar...!" />
                                 </label>
-                                <input name="hiddenField" type="hidden" id="hiddenField" value="14" />
+                                <input name="hiddenField" type="hidden" id="hiddenField" value="2" />
                               </p></th>
                             </tr>
                           </table>
-                        </form>                          <p>&nbsp;</p>                          </td>
+                        </form></td>
                       </tr>
                     </table></td>
                     <td>&nbsp;</td>

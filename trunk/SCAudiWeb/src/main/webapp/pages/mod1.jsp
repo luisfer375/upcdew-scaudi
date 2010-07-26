@@ -79,7 +79,7 @@
   </tr>
   <tr>
     <td class="menuMetas"><ul>
-      <li><a href="../pages/est01.jsp">Planificaci&oacute;n de la carga.</a></li>
+      <li><a href="../pages/est1.jsp">Planificaci&oacute;n de la carga.</a></li>
     </ul></td>
   </tr>
 </table>
@@ -110,7 +110,7 @@
                             <p>
                           La definici&oacute;n de estos est&aacute;ndares es rigurosa, y requerir&aacute;n esfuerzos consistentes para lograrlos. Sin embargo, la excelencia en servicio al cliente, el control permanente de los costos y una mejora continua son fundamentales conductores de la competitividad.</p>
                           <p align="center"><span class="tituloModulo">Metas principales</span><br />
-                            <a href="../pages/est01.jsp">Planificaci&oacute;n de la carga.</a><span class="style3"><br />
+                            <a href="../pages/est1.jsp">Planificaci&oacute;n de la carga.</a><span class="style3"><br />
                               </span>                             </p></td>
                       </tr>
                     </table></td>
