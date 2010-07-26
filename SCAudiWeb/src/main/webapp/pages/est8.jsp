@@ -5,7 +5,7 @@
         <link href="pages/styles.css" rel="stylesheet" type="text/css" />
 </head>
 
-<body>
+<body >
 <table border="0" align="center" cellpadding="2" cellspacing="0">
   <tr>
     <td bgcolor="#262b54"><table border="0" align="center" cellpadding="0" cellspacing="0" bgcolor="#FFFFFF">
@@ -35,14 +35,14 @@
                     <td background="images/bg_menutopinterna.gif"><table border="0" cellspacing="0" cellpadding="0">
                         <tr>
                           <td><img src="images/logo2_internas.gif" width="118" height="64" /></td>
-                          <td><a href="pages/mod1.jsp"><img src="images/mnI_mod1.gif" name="mod1" width="92" height="64" border="0" id="mod1"/></a></td>
-                          <td><img src="images/mnI_mod1_2.gif" name="mod1_2" width="19" height="64" id="mod1_2" /></td>
-                          <td><a href="pages/mod2.jsp"><img src="images/mnI_mod2.gif" name="mod2" width="106" height="64" border="0" id="mod2" /></a></td>
-                          <td><img src="images/mnI_mod2_3.gif" name="mod2_3" width="19" height="64" id="mod2_3" /></td>
-                          <td><a href="pages/mod3.jsp"><img src="images/mnI_mod3.gif" name="mod3" width="102" height="64" border="0" id="mod3"/></a></td>
-                          <td><img src="images/mnI_mod3_4_roll4.gif" name="mod3_4" width="20" height="64" id="mod3_4" /></td>
-                          <td><img src="images/mnI_mod4_roll.gif" name="mod4" width="71" height="64" border="0" id="mod4"/></td>
-                          <td><img src="images/mnI_mod4_5_roll4.gif" name="mod4_5" width="19" height="64" id="mod4_5" /></td>
+                          <td><a href="pages/mod1.jsp"><img src="images/mnI_mod1.gif" name="mod1" width="92" height="64" border="0" id="mod1" onmouseover="MM_swapImage('mod1','','images/mnI_mod1_roll.gif','mod1_2','','images/mnI_active1_2.gif',1)" onmouseout="MM_swapImgRestore()" /></a></td>
+                          <td><img src="images/mnI_mod1_2_roll2.gif" name="mod1_2" width="19" height="64" id="mod1_2" /></td>
+                          <td><img src="images/mnI_mod2_roll.gif" name="mod2" width="106" height="64" border="0" id="mod2" /></td>
+                          <td><img src="images/mnI_mod2_3_roll2.gif" name="mod2_3" width="19" height="64" id="mod2_3" /></td>
+                          <td><a href="pages/mod3.jsp"><img src="images/mnI_mod3.gif" name="mod3" width="102" height="64" border="0" id="mod3" onmouseover="MM_swapImage('mod2_3','','images/mnI_active_2_3.gif','mod3','','images/mnI_mod3_roll.gif','mod3_4','','images/mnI_mod3_4_roll3.gif',1)" onmouseout="MM_swapImgRestore()" /></a></td>
+                          <td><img src="images/mnI_mod3_4.gif" name="mod3_4" width="20" height="64" id="mod3_4" /></td>
+                          <td><a href="pages/mod4.jsp"><img src="images/mnI_mod4.gif" name="mod4" width="71" height="64" border="0" id="mod4"/></a></td>
+                          <td><img src="images/mnI_mod4_5.gif" name="mod4_5" width="19" height="64" id="mod4_5" /></td>
                           <td><a href="pages/mod5.jsp"><img src="images/mnI_mod5.gif" name="mod5" width="109" height="64" border="0" id="mod5"/></a></td>
                         </tr>
                     </table></td>
@@ -72,14 +72,17 @@
     <td align="center" background="images/bg_titmetas.gif"><img src="images/tit_metas.gif" width="121" height="30" /></td>
   </tr>
   <tr>
-    <td valign="top"><span class="menuMetas"><ul>
-      <li>Performance Management</li>
-	  </ul></span><span class="menuMetasEst"><ol start="14">
-<li>Formulaci&oacute;n y Despliegue  de metas individuales y de equipo</li>
-<li><a href="pages/est84.jsp">One on One y Revisi&oacute;n de  Desempe&ntilde;o</a></li>
-<li><a href="pages/est85.jsp">Comunicaci&oacute;n verbal y  gerencia visible</a></li>
-	  </ol>
-	  </span><span class="menuMetas"></span></td>
+    <td valign="top"><span class="menuMetas"><ul><li>Planificación de la reposición </li>
+    </ul></span><span class="menuMetasEst"><ol start="6">
+<li><a href="pages/est6.jsp">Planeamiento del reabastecimiento de stocks</a></li>
+<li><a href="pages/est7.jsp">Entregas para reposición de emergencia para evitar roturas de stock</a></li>
+<li>Horas de operación definidas para la atención de unidades de transporte primario </li>
+<li><a href="pages/est9.jsp">Planificación del retorno de envases a Planta </a></li>
+<li><a href="pages/est10.jsp">Comunicación al operador de transporte primario sobre posible demora en la atención de unidades</a></li>
+
+
+    </ol>
+    </span><span class="menuMetas"></span></td>
   </tr>
 </table>
 </td>
@@ -94,68 +97,66 @@
                     <td>&nbsp;</td>
                     <td valign="top"><table width="460" border="0" cellspacing="0" cellpadding="0">
                       <tr>
-                        <td class="titulo"><span class="stitModulo">MODULO 4 </span><br />
-                          Gesti&oacute;n del CD Y APT</td>
+                        <td class="titulo" style="width: 453px"><span class="stitModulo">MODULO 2 </span><br />
+                          Reposici&oacute;n y Almacenamiento </td>
                       </tr>
                       <tr>
-                        <td bgcolor="#535891"><img src="images/spacer.gif" width="150" height="1" /></td>
+                        <td bgcolor="#535891" style="width: 453px"><img src="images/spacer.gif" width="150" height="1" /></td>
                       </tr>
                       <tr>
-                        <td class="subtitulo">PERFORMANCE MANAGEMENT </td>
+                        <td class="subtitulo" style="width: 453px">PLANIFICACI&Oacute;N DE LA REPOSICI&Oacute;N </td>
                       </tr>
                       <tr>
-                        <td><img src="images/spacer.gif" width="71" height="10" /></td>
+                        <td style="width: 453px"><img src="images/spacer.gif" width="71" height="10" /></td>
                       </tr>
                       <tr>
-                        <td valign="top" background="images/bg_celeste.gif"><img src="images/stit_estandar.gif" alt="Est&aacute;ndar" width="71" height="26" /></td>
+                        <td valign="top" background="images/bg_celeste.gif" style="width: 453px"><img src="images/stit_estandar.gif" alt="Est&aacute;ndar" width="71" height="26" /></td>
                       </tr>
                       <tr>
-                        <td valign="top"><table width="100%" border="0" cellspacing="0" cellpadding="10">
+                        <td valign="top" style="width: 453px"><table width="100%" border="0" cellspacing="0" cellpadding="10">
                           <tr>
-                            <td width="10%" align="center" class="numero">14.</td>
-                            <td class="nombreestandar">Formulaci&oacute;n y Despliegue  de metas individuales y de equipo</td>
+                            <td width="10%" align="center" class="numero">08.</td>
+                            <td class="nombreestandar">Horas de operaci&oacute;n definidas para la atenci&oacute;n de unidades de transporte primario.</td>
                           </tr>
                         </table></td>
                       </tr>
                       <tr>
-                        <td valign="top"><img src="images/spacer.gif" width="71" height="10" /></td>
+                        <td valign="top" style="width: 453px"><img src="images/spacer.gif" width="71" height="10" /></td>
                       </tr>
                       <tr>
-                        <td valign="top" background="images/bg_celeste.gif"><img src="images/tit_comentarios.gif" alt="Comentarios" width="93" height="25" /></td>
+                        <td valign="top" background="images/bg_celeste.gif" style="width: 453px"><img src="images/tit_comentarios.gif" alt="Comentarios" width="93" height="25" /></td>
                       </tr>
                       <tr>
-                        <td valign="top"><img src="images/spacer.gif" width="71" height="10" /></td>
+                        <td valign="top" style="width: 453px"><img src="images/spacer.gif" width="71" height="10" /></td>
                       </tr>
                       <tr>
-                        <td valign="top" class="texto" >Los &eacute;xitos de la compa&ntilde;&iacute;a dependen de la habilidad para alinear estrat&eacute;gicamente las diferentes unidades de negocio con las estrategias y metas de la organizaci&oacute;n, as&iacute; como con las expectativas y requerimientos de cada operaci&oacute;n y de nuestros clientes internos y externos.<br />
-                          Estos objetivos deben ser traducidos en metas grupales e individuales, las cuales deben ser revisadas permanentemente.</td>
+                        <td valign="top" class="texto" style="width: 453px" >El Operador de transporte primario debe mantenerse informado sobre las horas de operaci&oacute;n de los CD/APT para la programaci&oacute;n de los viajes.</td>
                       </tr>
                       <tr>
-                        <td valign="top"><img src="images/spacer.gif" width="71" height="23" /></td>
+                        <td valign="top" style="width: 453px"><img src="images/spacer.gif" width="71" height="23" /></td>
                       </tr>
                       <tr>
-                        <td valign="top" background="images/bg_celeste.gif"><img src="images/tit_evidencias.gif" alt="Evidencias" width="93" height="25" /></td>
+                        <td valign="top" background="images/bg_celeste.gif" style="width: 453px"><img src="images/tit_evidencias.gif" alt="Evidencias" width="93" height="25" /></td>
                       </tr>
                       <tr>
                         <td valign="top" class="texto"><table border="0" cellspacing="0" cellpadding="0">
                           <tr>
-                        <td><a href="pages/evidencias/83.1.xls" target="_blank"><img src="images/ic_excel.gif" alt="83.1.xls" width="75" height="71" border="0" /></a></td>
-                        <td><a href="pages/evidencias/83.2.xls" target="_blank"><img src="images/ic_excel.gif" alt="83.2.xls" width="75" height="71" border="0" /></a></td>
-                        <td><a href="pages/evidencias/83.4.xls" target="_blank"><img src="images/ic_excel.gif" alt="83.4.xls" width="75" height="71" border="0" /></a></td>
+                        <td><a href="pages/evidencias/36.2.gif" target="_blank"><img src="images/ic_imagen.gif" alt="36.2.gif" width="75" height="71" border="0" /></a></td>
+                        <td><a href="pages/evidencias/36.3.gif" target="_blank"><img src="images/ic_imagen.gif" alt="36.3.gif" width="75" height="71" border="0" /></a></td>
                           </tr>
                         </table></td>
                       </tr>
                       <tr>
-                        <td valign="top"><img src="images/spacer.gif" width="71" height="10" /></td>
+                        <td valign="top" style="width: 453px"><img src="images/spacer.gif" width="71" height="10" /></td>
                       </tr>
                       <tr>
-                        <td valign="top" background="images/bg_celeste.gif"><img src="images/tit_niveles.gif" alt="Niveles" width="93" height="25" /></td>
+                        <td valign="top" background="images/bg_celeste.gif" style="width: 453px"><img src="images/tit_niveles.gif" alt="Niveles" width="93" height="25" /></td>
                       </tr>
                       <tr>
-                        <td valign="top"><img src="images/spacer.gif" width="71" height="5" /></td>
+                        <td valign="top" style="width: 453px"><img src="images/spacer.gif" width="71" height="5" /></td>
                       </tr>
                       <tr>
-                        <td valign="top" background="images/bg_azul.gif"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+                        <td valign="top" background="images/bg_azul.gif" style="width: 453px"><table width="100%" border="0" cellspacing="0" cellpadding="0">
                           <tr>
                             <td><img src="images/tit_pobre.gif" alt="Pobre" width="40" height="23" /></td>
                             <td align="right"><img src="images/estrellas1.gif" width="61" height="23" /></td>
@@ -163,18 +164,19 @@
                         </table></td>
                       </tr>
                       <tr>
-                        <td valign="top" ><img src="images/spacer.gif" width="71" height="10" /></td>
+                        <td valign="top" style="width: 453px" ><img src="images/spacer.gif" width="71" height="10" /></td>
                       </tr>
                       <tr>
-                        <td valign="top" class="texto"><ol><li>El personal no ha recibido capacitaci&oacute;n en Performance  Management</li>
-                            <li>No existen hojas de meta individuales y de equipo</li>
-                            <li> No se han definido a nivel de CD las metas para  el periodo fiscal</li>
+                        <td valign="top" class="texto" style="width: 453px"><ol>
+                          <li>Las horas de operaci&oacute;n del CD / APT no est&aacute;n acordadas o est&aacute;n acordadas pero el operador de transporte primario no est&aacute; informado.</li>
+                            <li>No se lleva un registro de atenci&oacute;n de veh&iacute;culos  fuera de la ventana horaria.<br />
+                              </li>
                         </ol></td></tr>
                       <tr>
-                        <td valign="top"><img src="images/spacer.gif" width="71" height="10" /></td>
+                        <td valign="top" style="width: 453px"><img src="images/spacer.gif" width="71" height="10" /></td>
                       </tr>
                       <tr>
-                        <td valign="top" background="images/bg_azul.gif"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+                        <td valign="top" background="images/bg_azul.gif" style="width: 453px"><table width="100%" border="0" cellspacing="0" cellpadding="0">
                           <tr>
                             <td><img src="images/tit_debajo.gif" alt="Debajo del Est&aacute;ndar" width="116" height="23" /></td>
                             <td align="right"><img src="images/estrellas2.gif" width="61" height="23" /></td>
@@ -182,19 +184,20 @@
                         </table></td>
                       </tr>
                       <tr>
-                        <td valign="top" ><img src="images/spacer.gif" width="71" height="10" /></td>
+                        <td valign="top" style="width: 453px" ><img src="images/spacer.gif" width="71" height="10" /></td>
                       </tr>
                       <tr>
-                        <td valign="top" class="texto"><ol>
-                          <li>Existe personal que no ha recibido capacitaci&oacute;n en Performance Management</li><li> Existe personal que no tiene hoja de meta individual</li><li>Se han definido a nivel de CD las metas para el periodo fiscal<br />
-                          </li>
-                        </ol></td>
+                        <td valign="top" class="texto" style="width: 453px"><ol>
+                          <li> Las horas de operaci&oacute;n del CD est&aacute;n acordadas. </li>
+                          <li>Se lleva espor&aacute;dicamente un registro de atenci&oacute;n de  veh&iacute;culos fuera de la ventana horaria.</li>
+                        </ol>
+                            <p>&nbsp;</p></td>
                       </tr>
                       <tr>
-                        <td valign="top"><img src="images/spacer.gif" width="71" height="10" /></td>
+                        <td valign="top" style="width: 453px"><img src="images/spacer.gif" width="71" height="10" /></td>
                       </tr>
                       <tr>
-                        <td valign="top" background="images/bg_azul.gif"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+                        <td valign="top" background="images/bg_azul.gif" style="width: 453px"><table width="100%" border="0" cellspacing="0" cellpadding="0">
                           <tr>
                             <td><img src="images/tit_enestandar.gif" alt="En el Est&aacute;ndar" width="90" height="23" /></td>
                             <td align="right"><img src="images/estrellas3.gif" width="61" height="23" /></td>
@@ -202,18 +205,21 @@
                         </table></td>
                       </tr>
                       <tr>
-                        <td valign="top"><span class="texto"><img src="images/spacer.gif" width="71" height="10" /></span></td>
+                        <td valign="top" style="width: 453px"><span class="texto"><img src="images/spacer.gif" width="71" height="10" /></span></td>
                       </tr>
                       <tr>
-                        <td valign="top" class="texto"><ol>
-                          <li>Todo el personal ha recibido capacitaci&oacute;n en Performance Management</li><li>Todo el personal tiene hoja de meta individual</li><li>Se han definido a nivel CD las metas (objetivos de gestión) para el periodo fiscal</li>
-                        </ol></td>
+                        <td valign="top" class="texto" style="width: 453px"><ol>
+                          <li>Las horas de atenci&oacute;n del  CD / APT al transporte primario est&aacute;n acordadas.</li>
+                          <li>Se lleva permanentemente &nbsp;un registro de atenci&oacute;n de veh&iacute;culos fuera de  la ventana horaria.</li>
+                          <li>Se comunica mensualmente al Gerente del CD y al Operador  de Transporte acerca de unidades de transporte primario atendidas fuera de la  ventana horaria&nbsp; acordada.</li>
+                        </ol>
+                            </td>
                       </tr>
                       <tr>
-                        <td valign="top"><img src="images/spacer.gif" width="71" height="10" /></td>
+                        <td valign="top" style="width: 453px"><img src="images/spacer.gif" width="71" height="10" /></td>
                       </tr>
                       <tr>
-                        <td valign="top" background="images/bg_azul.gif"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+                        <td valign="top" background="images/bg_azul.gif" style="width: 453px"><table width="100%" border="0" cellspacing="0" cellpadding="0">
                             <tr>
                               <td><img src="images/tit_excepcional.gif" alt="Excepcional" width="75" height="23" /></td>
                               <td align="right"><img src="images/estrellas4.gif" width="61" height="23" /></td>
@@ -221,17 +227,16 @@
                           </table></td>
                       </tr>
                       <tr>
-                        <td valign="top"><img src="images/spacer.gif" width="71" height="10" /></td>
+                        <td valign="top" style="width: 453px"><img src="images/spacer.gif" width="71" height="10" /></td>
                       </tr>
                       <tr>
-                        <td valign="top" class="texto"><ol>
-                          <li>Las metas definidas poseen  sustentos y evidencias que garanticen la factibilidad en el logro de los mismos  (impacto potencial, simulaci&oacute;n de escenarios, an&aacute;lisis de probabilidades, entre  otros)</li>
-                            <li>Se han definido metas (objetivos de gestión) a nivel de cada proceso del CD (almacén,
-                                administración, distribución) para el periodo fiscal</li>
-                        </ol></td>
+                        <td valign="top" class="texto" style="width: 453px"><ol>
+                          <li>Se evidencia tendencia de&nbsp; reducci&oacute;n constante en los &uacute;ltimos 6  meses&nbsp; acerca de las unidades de  transporte primario atendidas fuera de la ventana horaria&nbsp; acordada.</li>
+                          </ol></td>
                       </tr>
                       <tr>
-                        <td valign="top"><form id="FormularioEstandar14" name="FormularioEstandar14" method="post" action="EstandarServlet">
+                        <td valign="top" style="width: 453px">
+                              <form id="FormularioEstandar8" name="FormularioEstandar8" method="post" action="EstandarServlet">
                           <table width="406" border="0" align="center" class="stitModulo">
                             <tr>
                               <th width="145" height="26" align="center" bgcolor="#31367A" scope="row">Calificiaci&oacute;n</th>
@@ -271,7 +276,7 @@
                                 <label>
                                   <input type="submit" name="button" id="button" value="Calificar...!" />
                                 </label>
-                                <input name="hiddenField" type="hidden" id="hiddenField" value="14" />
+                                <input name="hiddenField" type="hidden" id="hiddenField" value="8" />
                               </p></th>
                             </tr>
                           </table>

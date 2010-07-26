@@ -97,25 +97,25 @@
                             <td align="center" bgcolor="#FFFFFF" class="textotabla">CD Comas</td>
                             <td align="center" bgcolor="#FFFFFF" class="textotabla">1</td>
                             <td align="center" valign="middle" bgcolor="#FFFFFF" class="textotabla">01/06/2010</td>
-                            <td align="center" valign="middle" bgcolor="#FFFFFF" class="textotabla"><a href="../pages/est01.jsp">Auditar</a></td>
+                            <td align="center" valign="middle" bgcolor="#FFFFFF" class="textotabla"><a href="../pages/est1.jsp">Auditar</a></td>
                           </tr>
                           <tr>
                             <td align="center" nowrap="nowrap" bgcolor="#FFFFFF" class="textotabla">CD Cusco</td>
                             <td align="center" bgcolor="#FFFFFF" class="textotabla">1</td>
                             <td align="center" valign="middle" bgcolor="#FFFFFF" class="textotabla">08/06/2010</td>
-                            <td align="center" valign="middle" bgcolor="#FFFFFF" class="textotabla"><a href="../pages/est01.jsp">Auditar</a></td>
+                            <td align="center" valign="middle" bgcolor="#FFFFFF" class="textotabla"><a href="../pages/est1.jsp">Auditar</a></td>
                           </tr>
                           <tr>
                             <td align="center" bgcolor="#FFFFFF" class="textotabla">CD Iquitos</td>
                             <td align="center" bgcolor="#FFFFFF" class="textotabla">4</td>
                             <td align="center" valign="middle" bgcolor="#FFFFFF" class="textotabla">15/06/2010</td>
-                            <td align="center" valign="middle" bgcolor="#FFFFFF" class="textotabla"><a href="../pages/est01.jsp">Auditar</a></td>
+                            <td align="center" valign="middle" bgcolor="#FFFFFF" class="textotabla"><a href="../pages/est1.jsp">Auditar</a></td>
                           </tr>
                           <tr>
                             <td align="center" bgcolor="#FFFFFF" class="textotabla">CD Arequipa</td>
                             <td align="center" bgcolor="#FFFFFF" class="textotabla">4</td>
                             <td align="center" valign="middle" bgcolor="#FFFFFF" class="textotabla">22/06/2010</td>
-                            <td align="center" valign="middle" bgcolor="#FFFFFF" class="textotabla"><a href="../pages/est01.jsp">Auditar</a></td>
+                            <td align="center" valign="middle" bgcolor="#FFFFFF" class="textotabla"><a href="../pages/est1.jsp">Auditar</a></td>
                           </tr>
                         </table>                          
                           <p>&nbsp;</p>
