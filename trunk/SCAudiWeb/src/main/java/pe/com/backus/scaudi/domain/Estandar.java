@@ -11,30 +11,63 @@ package pe.com.backus.scaudi.domain;
  */
 public class Estandar {
 
+
+    private Integer idModulo;
+    private String nombreModulo;
+    private Integer idMeta;
+    private String nombreMeta;
     private Integer idEstandar;
-    private Area    area;
-    private String  desripcion;
-    private Integer  peso;
+    private String nombreEstandar;
+    private String comentario;
+    private String esPobre;
+    private String esDebajoEstandar;
+    private String esEstandar;
+    private String esExcepcional;
+    private int peso;
+
+
 
     public Estandar() {
     }
 
-    
-
-    public Area getArea() {
-        return area;
+    public String getComentario() {
+        return comentario;
     }
 
-    public void setArea(Area area) {
-        this.area = area;
+    public void setComentario(String comentario) {
+        this.comentario = comentario;
     }
 
-    public String getDesripcion() {
-        return desripcion;
+    public String getEsDebajoEstandar() {
+        return esDebajoEstandar;
     }
 
-    public void setDesripcion(String desripcion) {
-        this.desripcion = desripcion;
+    public void setEsDebajoEstandar(String esDebajoEstandar) {
+        this.esDebajoEstandar = esDebajoEstandar;
+    }
+
+    public String getEsEstandar() {
+        return esEstandar;
+    }
+
+    public void setEsEstandar(String esEstandar) {
+        this.esEstandar = esEstandar;
+    }
+
+    public String getEsExcepcional() {
+        return esExcepcional;
+    }
+
+    public void setEsExcepcional(String esExcepcional) {
+        this.esExcepcional = esExcepcional;
+    }
+
+    public String getEsPobre() {
+        return esPobre;
+    }
+
+    public void setEsPobre(String esPobre) {
+        this.esPobre = esPobre;
     }
 
     public Integer getIdEstandar() {
@@ -45,14 +78,56 @@ public class Estandar {
         this.idEstandar = idEstandar;
     }
 
-    public Integer getPeso() {
+    public Integer getIdMeta() {
+        return idMeta;
+    }
+
+    public void setIdMeta(Integer idMeta) {
+        this.idMeta = idMeta;
+    }
+
+    public Integer getIdModulo() {
+        return idModulo;
+    }
+
+    public void setIdModulo(Integer idModulo) {
+        this.idModulo = idModulo;
+    }
+
+    public String getNombreEstandar() {
+        return nombreEstandar;
+    }
+
+    public void setNombreEstandar(String nombreEstandar) {
+        this.nombreEstandar = nombreEstandar;
+    }
+
+    public String getNombreMeta() {
+        return nombreMeta;
+    }
+
+    public void setNombreMeta(String nombreMeta) {
+        this.nombreMeta = nombreMeta;
+    }
+
+    public String getNombreModulo() {
+        return nombreModulo;
+    }
+
+    public void setNombreModulo(String nombreModulo) {
+        this.nombreModulo = nombreModulo;
+    }
+
+    public int getPeso() {
         return peso;
     }
 
-    public void setPeso(Integer peso) {
+    public void setPeso(int peso) {
         this.peso = peso;
     }
 
+
+    
 
 
 

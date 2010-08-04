@@ -6,7 +6,7 @@
 package pe.com.backus.scaudi.dao;
 
 import java.util.List;
-import pe.com.backus.scaudi.domain.Encuesta;
+import pe.com.backus.scaudi.domain.Evaluacion;
 
 /**
  *
@@ -15,12 +15,12 @@ import pe.com.backus.scaudi.domain.Encuesta;
 public interface EncuestaDAO {
 
 
-    public void guardar(Encuesta encuesta);
+    public void guardar(Evaluacion encuesta);
 
-    public void eliminar(Encuesta encuesta);
+    public void eliminar(Evaluacion encuesta);
 
-    public Encuesta obtenerEncuesta(Integer codigo);
+    public Evaluacion obtenerEncuesta(Integer codigo);
 
-    public List<Encuesta> listarEncuestas();
+    public List<Evaluacion> listarEncuestas();
 
 }

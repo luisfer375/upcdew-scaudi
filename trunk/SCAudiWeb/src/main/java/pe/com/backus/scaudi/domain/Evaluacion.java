@@ -11,7 +11,7 @@ import java.util.Date;
  *
  * @author u201000244
  */
-public class Encuesta {
+public class Evaluacion {
 
     private Integer idEncuesta;
     private Modulo  modulo;
@@ -20,7 +20,7 @@ public class Encuesta {
     private Date fecha;
     private Integer estado;
 
-    public Encuesta() {
+    public Evaluacion() {
     }
 
 

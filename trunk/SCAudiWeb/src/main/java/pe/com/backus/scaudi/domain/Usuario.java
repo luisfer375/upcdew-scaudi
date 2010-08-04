@@ -19,17 +19,8 @@ public class Usuario {
     private String  login;
     private String  password;
     private Integer tipo;
-    private Integer estado;
 
     public Usuario() {
-    }
-
-    public Integer getEstado() {
-        return estado;
-    }
-
-    public void setEstado(Integer estado) {
-        this.estado = estado;
     }
 
     public Integer getIdUsuario() {
