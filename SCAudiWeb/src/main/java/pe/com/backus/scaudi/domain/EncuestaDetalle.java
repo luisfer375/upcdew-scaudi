@@ -12,7 +12,7 @@ package pe.com.backus.scaudi.domain;
 public class EncuestaDetalle {
 
     private Estandar estandar;
-    private Encuesta  encuesta;
+    private Evaluacion  encuesta;
     private Integer   calificacion;
     private String    observacion;
     private String    recomendacion;
@@ -30,11 +30,11 @@ public class EncuestaDetalle {
         this.calificacion = calificacion;
     }
 
-    public Encuesta getEncuesta() {
+    public Evaluacion getEncuesta() {
         return encuesta;
     }
 
-    public void setEncuesta(Encuesta encuesta) {
+    public void setEncuesta(Evaluacion encuesta) {
         this.encuesta = encuesta;
     }
 

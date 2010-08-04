@@ -1,18 +1,42 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
 <hibernate-mapping>
-  <class name="pe.com.backus.scaudi.domain.Estandar" table="T_ESTANDAR">
-    <id column="IN_IDESTANDAR" name="idEstandar" type="java.lang.Integer">
+  <class name="pe.com.backus.scaudi.domain.Estandar" table="Estandar">
+    <id column="idEstandar" name="idEstandar" type="java.lang.Integer">
       <generator class="native"/>
     </id>
-    <property length="100" name="desripcion" not-null="true" type="java.lang.String">
-      <column name="VC_DESCRIPCION" sql-type="VARCHAR"/>
+    <property name="idModulo" not-null="false" type="java.lang.Integer">
+      <column name="idModulo" sql-type="INTEGER"/>
     </property>
-    <property name="peso" not-null="false" type="java.lang.Integer">
-      <column name="IN_PESO" sql-type="INTEGER"/>
+    <property length="45" name="nombreModulo" not-null="true" type="java.lang.String">
+      <column name="nombreModulo" sql-type="VARCHAR"/>
     </property>
-    <many-to-one class="pe.com.backus.scaudi.domain.Area" name="area" not-null="true">
-      <column name="IN_IDAREA"/>
-    </many-to-one>
+    <property name="idMeta" not-null="false" type="java.lang.Integer">
+      <column name="idMeta" sql-type="INTEGER"/>
+    </property>
+    <property length="45" name="nombreMeta" not-null="true" type="java.lang.String">
+      <column name="nombreMeta" sql-type="VARCHAR"/>
+    </property>
+    <property length="45" name="nombreEstandar" not-null="true" type="java.lang.String">
+      <column name="nombreEstandar" sql-type="VARCHAR"/>
+    </property>
+    <property length="8000" name="comentario" not-null="true" type="java.lang.String">
+      <column name="comentario" sql-type="VARCHAR"/>
+    </property>
+    <property length="8000" name="esPobre" not-null="true" type="java.lang.String">
+      <column name="esPobre" sql-type="VARCHAR"/>
+    </property>
+    <property length="8000" name="esDebajoEstandar" not-null="true" type="java.lang.String">
+      <column name="esDebajoEstandar" sql-type="VARCHAR"/>
+    </property>
+    <property length="8000" name="esEstandar" not-null="true" type="java.lang.String">
+      <column name="esEstandar" sql-type="VARCHAR"/>
+    </property>
+    <property length="8000" name="esExcepcional" not-null="true" type="java.lang.String">
+      <column name="esExcepcional" sql-type="VARCHAR"/>
+    </property>
+    <property name="peso" not-null="false" type="int">
+      <column name="peso" sql-type="int"/>
+    </property>
   </class>
 </hibernate-mapping>

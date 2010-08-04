@@ -7,7 +7,7 @@ package pe.com.backus.scaudi.service.impl;
 
 import java.util.List;
 import pe.com.backus.scaudi.dao.EncuestaDAO;
-import pe.com.backus.scaudi.domain.Encuesta;
+import pe.com.backus.scaudi.domain.Evaluacion;
 import pe.com.backus.scaudi.service.EncuestaService;
 
 /**
@@ -23,19 +23,19 @@ public class EncuestaServiceImpl implements EncuestaService{
     }
 
 
-    public void guardar(Encuesta encuesta) {
+    public void guardar(Evaluacion encuesta) {
        encuestaDAO.guardar(encuesta);
     }
 
-    public void eliminar(Encuesta encuesta) {
+    public void eliminar(Evaluacion encuesta) {
         encuestaDAO.eliminar(encuesta);
     }
 
-    public Encuesta obtenerEncuesta(Integer codigo) {
+    public Evaluacion obtenerEncuesta(Integer codigo) {
         return encuestaDAO.obtenerEncuesta(codigo);
     }
 
-    public List<Encuesta> listarEncuestas() {
+    public List<Evaluacion> listarEncuestas() {
         return encuestaDAO.listarEncuestas();
 
     }
