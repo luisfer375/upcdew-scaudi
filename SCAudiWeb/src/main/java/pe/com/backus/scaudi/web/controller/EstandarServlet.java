@@ -54,8 +54,6 @@ public class EstandarServlet extends HttpServlet {
         area.setModulo(modulo);
         area.setDescripcion("Distribucion");
         area.setPeso(1);
-        estandar.setArea(area);
-        estandar.setDesripcion("Despacho");
         estandar.setPeso(1);
         encuestaDetalle.setEstandar(estandar);
         encuestaDetalle.setObservacion(observacion);
