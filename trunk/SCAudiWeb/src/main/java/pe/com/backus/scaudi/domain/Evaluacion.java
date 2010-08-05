@@ -13,17 +13,13 @@ import java.util.Date;
  */
 public class Evaluacion {
 
-    private Integer idEncuesta;
-    private Modulo  modulo;
+    private Integer periodo;
     private CentroDistribucion  centro;
     private Usuario  usuario;
-    private Date fecha;
-    private Integer estado;
+    private int posiblePuntaje;
 
     public Evaluacion() {
     }
-
-
 
     public CentroDistribucion getCentro() {
         return centro;
@@ -33,36 +29,20 @@ public class Evaluacion {
         this.centro = centro;
     }
 
-    public Integer getEstado() {
-        return estado;
+    public Integer getPeriodo() {
+        return periodo;
     }
 
-    public void setEstado(Integer estado) {
-        this.estado = estado;
+    public void setPeriodo(Integer periodo) {
+        this.periodo = periodo;
     }
 
-    public Date getFecha() {
-        return fecha;
+    public int getPosiblePuntaje() {
+        return posiblePuntaje;
     }
 
-    public void setFecha(Date fecha) {
-        this.fecha = fecha;
-    }
-
-    public Integer getIdEncuesta() {
-        return idEncuesta;
-    }
-
-    public void setIdEncuesta(Integer idEncuesta) {
-        this.idEncuesta = idEncuesta;
-    }
-
-    public Modulo getModulo() {
-        return modulo;
-    }
-
-    public void setModulo(Modulo modulo) {
-        this.modulo = modulo;
+    public void setPosiblePuntaje(int posiblePuntaje) {
+        this.posiblePuntaje = posiblePuntaje;
     }
 
     public Usuario getUsuario() {

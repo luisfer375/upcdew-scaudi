@@ -6,6 +6,7 @@
 package pe.com.backus.scaudi.web.controller;
 
 import java.io.IOException;
+
 import java.util.ArrayList;
 import java.util.List;
 import javax.servlet.RequestDispatcher;
@@ -13,10 +14,8 @@ import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-import pe.com.backus.scaudi.domain.Area;
-import pe.com.backus.scaudi.domain.EncuestaDetalle;
+import pe.com.backus.scaudi.domain.DetalleEvaluacion;
 import pe.com.backus.scaudi.domain.Estandar;
-import pe.com.backus.scaudi.domain.Modulo;
 import pe.com.backus.scaudi.util.Log;
 
 /**
@@ -35,7 +34,7 @@ public class EstandarServlet extends HttpServlet {
     protected void processRequest(HttpServletRequest request, HttpServletResponse response)
     throws ServletException, IOException {
 
-        List<EncuestaDetalle> listaEncuestaDetalle = null;
+        List<DetalleEvaluacion> listaEncuestaDetalle = null;
         RequestDispatcher rd = null;
         String calificacion = request.getParameter("calificacion");
         String tipo =  request.getParameter("hiddenField");
@@ -43,25 +42,17 @@ public class EstandarServlet extends HttpServlet {
         String recomendacion = request.getParameter("recomendacion");
         Log.debug("Calificacion: " +  calificacion);
         Log.debug("Estandar: " +  tipo);
-        EncuestaDetalle encuestaDetalle = new EncuestaDetalle();
+        DetalleEvaluacion encuestaDetalle = new DetalleEvaluacion();
         Estandar estandar = new Estandar();
-        Area area = new Area();
-        Modulo modulo = new Modulo();
-        estandar.setIdEstandar(1);
-        modulo.setDescripcion("Reparto");
-        modulo.setIdModulo(1);
-        area.setIdArea(1);
-        area.setModulo(modulo);
-        area.setDescripcion("Distribucion");
-        area.setPeso(1);
+           estandar.setIdEstandar(1);
         estandar.setPeso(1);
         encuestaDetalle.setEstandar(estandar);
         encuestaDetalle.setObservacion(observacion);
         encuestaDetalle.setRecomendacion(recomendacion);
 
-        listaEncuestaDetalle = (ArrayList<EncuestaDetalle>) request.getAttribute("listaEncuestaDetalle");
+        listaEncuestaDetalle = (ArrayList<DetalleEvaluacion>) request.getAttribute("listaEncuestaDetalle");
         if(listaEncuestaDetalle == null){
-            listaEncuestaDetalle = new ArrayList<EncuestaDetalle>();
+            listaEncuestaDetalle = new ArrayList<DetalleEvaluacion>();
         }else{
             request.removeAttribute("listaEncuestaDetalle");
         }

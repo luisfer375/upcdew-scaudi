@@ -9,7 +9,7 @@ package pe.com.backus.scaudi.domain;
  *
  * @author u201000244
  */
-public class EncuestaDetalle {
+public class DetalleEvaluacion {
 
     private Estandar estandar;
     private Evaluacion  encuesta;
@@ -17,7 +17,7 @@ public class EncuestaDetalle {
     private String    observacion;
     private String    recomendacion;
 
-    public EncuestaDetalle() {
+    public DetalleEvaluacion() {
     }
 
     
