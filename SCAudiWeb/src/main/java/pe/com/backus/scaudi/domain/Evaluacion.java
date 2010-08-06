@@ -5,7 +5,6 @@
 
 package pe.com.backus.scaudi.domain;
 
-import java.util.Date;
 
 /**
  *
@@ -14,19 +13,19 @@ import java.util.Date;
 public class Evaluacion {
 
     private Integer periodo;
-    private CentroDistribucion  centro;
+    private CentroDistribucion  centroDistribucion;
     private Usuario  usuario;
     private int posiblePuntaje;
 
     public Evaluacion() {
     }
 
-    public CentroDistribucion getCentro() {
-        return centro;
+    public CentroDistribucion getCentroDistribucion() {
+        return centroDistribucion;
     }
 
-    public void setCentro(CentroDistribucion centro) {
-        this.centro = centro;
+    public void setCentroDistribucion(CentroDistribucion centroDistribucion) {
+        this.centroDistribucion = centroDistribucion;
     }
 
     public Integer getPeriodo() {
@@ -53,6 +52,6 @@ public class Evaluacion {
         this.usuario = usuario;
     }
 
-
+   
 
 }
