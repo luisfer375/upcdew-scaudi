@@ -11,15 +11,12 @@ package pe.com.backus.scaudi.domain;
  */
 public class CentroDistribucion {
 
-    private Integer idCentroDist;
+    private Integer idCentroDistribucion;
     private Region  region;
     private String  descripcion;
 
     public CentroDistribucion() {
     }
-
-
-    
 
     public String getDescripcion() {
         return descripcion;
@@ -29,12 +26,12 @@ public class CentroDistribucion {
         this.descripcion = descripcion;
     }
 
-    public Integer getIdCentroDist() {
-        return idCentroDist;
+    public Integer getIdCentroDistribucion() {
+        return idCentroDistribucion;
     }
 
-    public void setIdCentroDist(Integer idCentroDist) {
-        this.idCentroDist = idCentroDist;
+    public void setIdCentroDistribucion(Integer idCentroDistribucion) {
+        this.idCentroDistribucion = idCentroDistribucion;
     }
 
     public Region getRegion() {
@@ -45,6 +42,9 @@ public class CentroDistribucion {
         this.region = region;
     }
 
+    
+
+ 
 
 
 }

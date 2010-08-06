@@ -12,30 +12,21 @@ package pe.com.backus.scaudi.domain;
 public class DetalleEvaluacion {
 
     private Estandar estandar;
-    private Evaluacion  encuesta;
-    private Integer   calificacion;
-    private String    observacion;
-    private String    recomendacion;
+    private Evaluacion  evaluacion;
+    private CentroDistribucion centroDistribucion;
+    private int   puntaje;
+    private String    observaciones;
+    private String    oportuniadades;
 
     public DetalleEvaluacion() {
     }
 
-    
-
-    public Integer getCalificacion() {
-        return calificacion;
+    public CentroDistribucion getCentroDistribucion() {
+        return centroDistribucion;
     }
 
-    public void setCalificacion(Integer calificacion) {
-        this.calificacion = calificacion;
-    }
-
-    public Evaluacion getEncuesta() {
-        return encuesta;
-    }
-
-    public void setEncuesta(Evaluacion encuesta) {
-        this.encuesta = encuesta;
+    public void setCentroDistribucion(CentroDistribucion centroDistribucion) {
+        this.centroDistribucion = centroDistribucion;
     }
 
     public Estandar getEstandar() {
@@ -46,21 +37,42 @@ public class DetalleEvaluacion {
         this.estandar = estandar;
     }
 
-    public String getObservacion() {
-        return observacion;
+    public Evaluacion getEvaluacion() {
+        return evaluacion;
     }
 
-    public void setObservacion(String observacion) {
-        this.observacion = observacion;
+    public void setEvaluacion(Evaluacion evaluacion) {
+        this.evaluacion = evaluacion;
     }
 
-    public String getRecomendacion() {
-        return recomendacion;
+    public String getObservaciones() {
+        return observaciones;
     }
 
-    public void setRecomendacion(String recomendacion) {
-        this.recomendacion = recomendacion;
+    public void setObservaciones(String observaciones) {
+        this.observaciones = observaciones;
     }
+
+    public String getOportuniadades() {
+        return oportuniadades;
+    }
+
+    public void setOportuniadades(String oportuniadades) {
+        this.oportuniadades = oportuniadades;
+    }
+
+    public int getPuntaje() {
+        return puntaje;
+    }
+
+    public void setPuntaje(int puntaje) {
+        this.puntaje = puntaje;
+    }
+
+    
+
+
+
 
 
 

@@ -1,12 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
 <hibernate-mapping>
-  <class name="pe.com.backus.scaudi.domain.Region" table="Region">
-    <id column="idRegion" name="idRegion" type="java.lang.Integer">
+  <class name="pe.com.backus.scaudi.domain.CentroDistribucion" table="CD">
+    <id column="idCD" name="idCentroDist" type="java.lang.Integer">
       <generator class="native"/>
     </id>
     <property length="45" name="descripcion" not-null="true" type="java.lang.String">
-      <column name="descripcionRegion" sql-type="VARCHAR"/>
+      <column name="descripcionCD" sql-type="VARCHAR"/>
     </property>
+    <many-to-one class="pe.com.backus.scaudi.domain.Region" name="region" not-null="true">
+      <column name="idRegion"/>
+    </many-to-one>
   </class>
 </hibernate-mapping>

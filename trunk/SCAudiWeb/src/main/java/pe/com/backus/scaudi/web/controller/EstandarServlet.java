@@ -42,13 +42,8 @@ public class EstandarServlet extends HttpServlet {
         String recomendacion = request.getParameter("recomendacion");
         Log.debug("Calificacion: " +  calificacion);
         Log.debug("Estandar: " +  tipo);
-        DetalleEvaluacion encuestaDetalle = new DetalleEvaluacion();
-        Estandar estandar = new Estandar();
-           estandar.setIdEstandar(1);
-        estandar.setPeso(1);
-        encuestaDetalle.setEstandar(estandar);
-        encuestaDetalle.setObservacion(observacion);
-        encuestaDetalle.setRecomendacion(recomendacion);
+        DetalleEvaluacion detalleEvaluacion = new DetalleEvaluacion();
+
 
         listaEncuestaDetalle = (ArrayList<DetalleEvaluacion>) request.getAttribute("listaEncuestaDetalle");
         if(listaEncuestaDetalle == null){
@@ -64,7 +59,7 @@ public class EstandarServlet extends HttpServlet {
      //       request.setAttribute("mensaje", "Auditoria finalizada");
         }else{
             ruta +=  (Integer.parseInt(tipo) + 1) + ".jsp";
-            listaEncuestaDetalle.add(encuestaDetalle);
+     //       listaEncuestaDetalle.add(encuestaDetalle);
             request.setAttribute("listaEncuestaDetalle", listaEncuestaDetalle);
         }
         rd = request.getRequestDispatcher(ruta);
