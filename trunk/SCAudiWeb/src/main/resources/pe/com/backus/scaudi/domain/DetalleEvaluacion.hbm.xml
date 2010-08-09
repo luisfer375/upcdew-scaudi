@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+  <class name="pe.com.backus.scaudi.domain.DetalleEvaluacion" table="DetalleEvaluacion">
+  <composite-id>
+    <key-many-to-one name="estandar" column="estandar" class="pe.com.backus.scaudi.domain.Estandar" />
+   </composite-id>
+   <property name="puntaje" not-null="true" type="int">
+      <column name="puntaje" sql-type="int"/>
+    </property>
+    <property length="300" name="observaciones" not-null="true" type="java.lang.String">
+      <column name="observaciones" sql-type="VARCHAR"/>
+    </property>
+    <property length="300" name="oportunidades" not-null="true" type="java.lang.String">
+      <column name="oportunidades" sql-type="VARCHAR"/>
+    </property>
+    <many-to-one class="pe.com.backus.scaudi.domain.Evaluacion" name="evaluacion" not-null="true">
+      <column name="periodo"/>
+      <column name="centroDistribucion"/>
+    </many-to-one>
+  </class>
+</hibernate-mapping>

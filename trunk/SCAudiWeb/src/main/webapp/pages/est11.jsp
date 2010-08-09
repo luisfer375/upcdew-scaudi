@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <%@ include file="/pages/cabecera.jsp" %>
-        <link href="pages/styles.css" rel="stylesheet" type="text/css" />
+        <link href="<%=request.getContextPath()%>/pages/styles.css" rel="stylesheet" type="text/css" />
 </head>
 
 <body >
@@ -35,15 +35,15 @@
                     <td background="images/bg_menutopinterna.gif"><table border="0" cellspacing="0" cellpadding="0">
                         <tr>
                           <td><img src="images/logo2_internas.gif" width="118" height="64" /></td>
-                          <td><a href="pages/mod1.jsp"><img src="images/mnI_mod1.gif" name="mod1" width="92" height="64" border="0" id="mod1"/></a></td>
+                          <td><a href="<%=request.getContextPath()%>/pages/mod1.jsp"><img src="images/mnI_mod1.gif" name="mod1" width="92" height="64" border="0" id="mod1"/></a></td>
                           <td><img src="images/mnI_mod1_2.gif" name="mod1_2" width="19" height="64" id="mod1_2" /></td>
-                          <td><a href="pages/mod2.jsp"><img src="images/mnI_mod2.gif" name="mod2" width="106" height="64" border="0" id="mod2" /></a></td>
+                          <td><a href="<%=request.getContextPath()%>/pages/mod2.jsp"><img src="images/mnI_mod2.gif" name="mod2" width="106" height="64" border="0" id="mod2" /></a></td>
                           <td><img src="images/mnI_mod2_3_roll3.gif" name="mod2_3" width="19" height="64" id="mod2_3" /></td>
                           <td><img src="images/mnI_mod3_roll.gif" name="mod3" width="102" height="64" border="0" id="mod3"/></td>
                           <td><img src="images/mnI_mod3_4_roll3.gif" name="mod3_4" width="20" height="64" id="mod3_4" /></td>
-                          <td><a href="pages/mod4.jsp"><img src="images/mnI_mod4.gif" name="mod4" width="71" height="64" border="0" id="mod4" /></a></td>
+                          <td><a href="<%=request.getContextPath()%>/pages/mod4.jsp"><img src="images/mnI_mod4.gif" name="mod4" width="71" height="64" border="0" id="mod4" /></a></td>
                           <td><img src="images/mnI_mod4_5.gif" name="mod4_5" width="19" height="64" id="mod4_5" /></td>
-                          <td><a href="pages/mod5.jsp"><img src="images/mnI_mod5.gif" name="mod5" width="109" height="64" border="0" id="mod5"/></a></td>
+                          <td><a href="<%=request.getContextPath()%>/pages/mod5.jsp"><img src="images/mnI_mod5.gif" name="mod5" width="109" height="64" border="0" id="mod5"/></a></td>
                         </tr>
                     </table></td>
                   </tr>
@@ -58,11 +58,11 @@
   <tr>
     <td class="menuizq"><br />
       <ul>
-        <li class="menuizq"><a href="pages/login.jsp">Inicio</a></li>
-        <li class="menuizq"><a href="pages/intro.jsp">Introducci&oacute;n</a></li>
-        <li class="menuizq"><a href="pages/pautas.jsp">Pautas</a></li>
-        <li class="menuizq"><a href="pages/sistevaluacion.jsp">Sistema de Evaluaci&oacute;n</a></li>
-        <li class="menuizq"><a href="pages/revmodulos.jsp">Revisi&oacute;n de los M&oacute;dulos</a> </li>
+        <li class="menuizq"><a href="<%=request.getContextPath()%>/pages/login.jsp">Inicio</a></li>
+        <li class="menuizq"><a href="<%=request.getContextPath()%>/pages/intro.jsp">Introducci&oacute;n</a></li>
+        <li class="menuizq"><a href="<%=request.getContextPath()%>/pages/pautas.jsp">Pautas</a></li>
+        <li class="menuizq"><a href="<%=request.getContextPath()%>/pages/sistevaluacion.jsp">Sistema de Evaluaci&oacute;n</a></li>
+        <li class="menuizq"><a href="<%=request.getContextPath()%>/pages/revmodulos.jsp">Revisi&oacute;n de los M&oacute;dulos</a> </li>
       </ul></td>
   </tr>
   <tr>
@@ -76,8 +76,8 @@
       <li>Planificación del mantenimiento</li>
     </ul></span><span class="menuMetasEst"><ol start="11">
 <li>Conocimiento de  lineamientos, parámetros, instructivos y procedimientos relacionados al mantenimiento de flota </li>
-<li><a href="pages/est12.jsp">Cumplimiento de los programas de mantenimiento de flota / montacargas.</a></li>
-<li><a href="pages/est13.jsp">Se realiza un seguimiento y análisis del presupuesto de mantenimiento de flota / montacargas.</a></li>
+<li><a href="<%=request.getContextPath()%>/pages/est12.jsp">Cumplimiento de los programas de mantenimiento de flota / montacargas.</a></li>
+<li><a href="<%=request.getContextPath()%>/pages/est13.jsp">Se realiza un seguimiento y análisis del presupuesto de mantenimiento de flota / montacargas.</a></li>
     </ol>
     </span></td>
   </tr>
@@ -137,7 +137,7 @@
                       </tr>
                       
                       <tr>
-                        <td><a href="pages/evidencias/MANUAL MANTENIMIENTO FLOTA.pdf" target="_blank"><img src="images/ic_excel.gif" alt="MANUAL MANTENIMIENTO FLOTA.pdf" width="75" height="71" border="0" /></a></td>
+                        <td><a href="<%=request.getContextPath()%>/pages/evidencias/MANUAL MANTENIMIENTO FLOTA.pdf" target="_blank"><img src="images/ic_excel.gif" alt="MANUAL MANTENIMIENTO FLOTA.pdf" width="75" height="71" border="0" /></a></td>
                       </tr>
                       <tr>
                         <td valign="top"><img src="images/spacer.gif" width="71" height="10" /></td>

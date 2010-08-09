@@ -7,16 +7,14 @@ package pe.com.backus.scaudi.web.controller;
 
 import java.io.IOException;
 
-import java.util.ArrayList;
-import java.util.List;
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-import pe.com.backus.scaudi.domain.DetalleEvaluacion;
 import pe.com.backus.scaudi.domain.Estandar;
-import pe.com.backus.scaudi.util.Log;
+import pe.com.backus.scaudi.service.EstandarService;
+import pe.com.backus.scaudi.service.impl.EstandarServiceImpl;
 
 /**
  *
@@ -34,26 +32,13 @@ public class EstandarServlet extends HttpServlet {
     protected void processRequest(HttpServletRequest request, HttpServletResponse response)
     throws ServletException, IOException {
 
-        List<DetalleEvaluacion> listaEncuestaDetalle = null;
-        RequestDispatcher rd = null;
-        String calificacion = request.getParameter("calificacion");
-        String tipo =  request.getParameter("hiddenField");
-        String observacion = request.getParameter("observacion");
-        String recomendacion = request.getParameter("recomendacion");
-        Log.debug("Calificacion: " +  calificacion);
-        Log.debug("Estandar: " +  tipo);
-        DetalleEvaluacion detalleEvaluacion = new DetalleEvaluacion();
+        RequestDispatcher rd = request.getRequestDispatcher("pages/est1.jsp");
+        EstandarService estandarService = new EstandarServiceImpl();
+   //     Estandar estandar = estandarService.obtenerEstandar(1);
+//        String calificacion = request.getParameter("calificacion");
 
 
-        listaEncuestaDetalle = (ArrayList<DetalleEvaluacion>) request.getAttribute("listaEncuestaDetalle");
-        if(listaEncuestaDetalle == null){
-            listaEncuestaDetalle = new ArrayList<DetalleEvaluacion>();
-        }else{
-            request.removeAttribute("listaEncuestaDetalle");
-        }
-
-
-        String ruta = "/pages/est";
+   /*     String ruta = "/pages/est";
         if(Integer.parseInt(tipo)>15){
              ruta = "/pages/exito" + ".jsp";
      //       request.setAttribute("mensaje", "Auditoria finalizada");
@@ -63,7 +48,7 @@ public class EstandarServlet extends HttpServlet {
             request.setAttribute("listaEncuestaDetalle", listaEncuestaDetalle);
         }
         rd = request.getRequestDispatcher(ruta);
-        
+*/
 
         rd.forward(request, response);
 

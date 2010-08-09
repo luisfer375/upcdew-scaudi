@@ -3,7 +3,7 @@
 <hibernate-mapping>
   <class name="pe.com.backus.scaudi.domain.Usuario" table="Usuario">
     <id column="idUsuario" name="idUsuario" type="java.lang.Integer">
-      <generator class="native"/>
+      <generator class="increment"/>
     </id>
     <property length="50" name="nombre" not-null="false" type="java.lang.String">
       <column name="nombre" sql-type="INTEGER"/>
@@ -14,11 +14,8 @@
     <property length="45" name="password" not-null="true" type="java.lang.String">
       <column name="password" sql-type="VARCHAR"/>
     </property>
-    <property name="password" not-null="true" type="int">
+    <property name="tipo" not-null="true" type="int">
       <column name="tipo" sql-type="INT"/>
-    </property>
-    <property name="tipo" not-null="false" type="java.lang.Integer">
-      <column name="IN_TIPO" sql-type="INTEGER"/>
     </property>
   </class>
 </hibernate-mapping>

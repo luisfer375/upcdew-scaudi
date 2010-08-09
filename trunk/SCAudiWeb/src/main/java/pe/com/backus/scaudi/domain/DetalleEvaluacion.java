@@ -5,18 +5,20 @@
 
 package pe.com.backus.scaudi.domain;
 
+import java.io.Serializable;
+
 /**
  *
  * @author u201000244
  */
-public class DetalleEvaluacion {
+public class DetalleEvaluacion implements Serializable{
 
     private Estandar estandar;
     private Evaluacion  evaluacion;
     private CentroDistribucion centroDistribucion;
     private int   puntaje;
     private String    observaciones;
-    private String    oportuniadades;
+    private String    oportunidades;
 
     public DetalleEvaluacion() {
     }
@@ -53,13 +55,15 @@ public class DetalleEvaluacion {
         this.observaciones = observaciones;
     }
 
-    public String getOportuniadades() {
-        return oportuniadades;
+    public String getOportunidades() {
+        return oportunidades;
     }
 
-    public void setOportuniadades(String oportuniadades) {
-        this.oportuniadades = oportuniadades;
+    public void setOportunidades(String oportunidades) {
+        this.oportunidades = oportunidades;
     }
+
+
 
     public int getPuntaje() {
         return puntaje;

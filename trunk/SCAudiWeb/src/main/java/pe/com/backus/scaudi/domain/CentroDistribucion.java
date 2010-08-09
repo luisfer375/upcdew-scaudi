@@ -5,11 +5,13 @@
 
 package pe.com.backus.scaudi.domain;
 
+import java.io.Serializable;
+
 /**
  *
  * @author u201000244
  */
-public class CentroDistribucion {
+public class CentroDistribucion implements Serializable{
 
     private Integer idCentroDistribucion;
     private Region  region;

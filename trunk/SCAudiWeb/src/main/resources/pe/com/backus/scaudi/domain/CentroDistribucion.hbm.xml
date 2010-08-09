@@ -2,8 +2,8 @@
 <!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
 <hibernate-mapping>
   <class name="pe.com.backus.scaudi.domain.CentroDistribucion" table="CD">
-    <id column="idCD" name="idCentroDist" type="java.lang.Integer">
-      <generator class="native"/>
+    <id column="idCD" name="idCentroDistribucion" type="java.lang.Integer">
+      <generator class="increment"/>
     </id>
     <property length="45" name="descripcion" not-null="true" type="java.lang.String">
       <column name="descripcionCD" sql-type="VARCHAR"/>

@@ -5,12 +5,14 @@
 
 package pe.com.backus.scaudi.domain;
 
+import java.io.Serializable;
+
 
 /**
  *
  * @author u201000244
  */
-public class Evaluacion {
+public class Evaluacion implements Serializable {
 
     private Integer periodo;
     private CentroDistribucion  centroDistribucion;
@@ -43,6 +45,10 @@ public class Evaluacion {
     public void setPosiblePuntaje(int posiblePuntaje) {
         this.posiblePuntaje = posiblePuntaje;
     }
+
+   
+
+ 
 
     public Usuario getUsuario() {
         return usuario;
