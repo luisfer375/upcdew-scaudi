@@ -5,11 +5,13 @@
 
 package pe.com.backus.scaudi.domain;
 
+import java.io.Serializable;
+
 /**
  *
  * @author u201000244
  */
-public class Estandar {
+public class Estandar implements Serializable{
 
 
     private Integer idModulo;

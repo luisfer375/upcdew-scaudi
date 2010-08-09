@@ -11,12 +11,10 @@
         <property name="hibernate.show_sql">false</property>
     <!--<property name="hbm2ddl.auto">create</property>-->
 
-    <mapping resource="pe/com/backus/scaudi/domain/Area.hbm.xml"/>
+    <mapping resource="pe/com/backus/scaudi/domain/Evaluacion.hbm.xml"/>
     <mapping resource="pe/com/backus/scaudi/domain/CentroDistribucion.hbm.xml"/>
-    <mapping resource="pe/com/backus/scaudi/domain/Comentario.hbm.xml"/>
-    <mapping resource="pe/com/backus/scaudi/domain/Encuesta.hbm.xml"/>
     <mapping resource="pe/com/backus/scaudi/domain/Estandar.hbm.xml"/>
-    <mapping resource="pe/com/backus/scaudi/domain/Modulo.hbm.xml"/>
+    <mapping resource="pe/com/backus/scaudi/domain/DetalleEvaluacion.hbm.xml"/>
     <mapping resource="pe/com/backus/scaudi/domain/Region.hbm.xml"/>
     <mapping resource="pe/com/backus/scaudi/domain/Usuario.hbm.xml"/>
     <!-- Si descomentamos esto se crearan las tablas cada vez que carguemos la aplicacion -->
