@@ -6,10 +6,12 @@
 package pe.com.backus.scaudi.dao.hibernate;
 
 import java.util.List;
+import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import pe.com.backus.scaudi.app.HibernateSession;
 import pe.com.backus.scaudi.dao.EstandarDAO;
 import pe.com.backus.scaudi.domain.Estandar;
+import pe.com.backus.scaudi.util.Log;
 
 /**
  *
@@ -29,11 +31,15 @@ public class EstandarDAOHibernate implements EstandarDAO{
     }
 
     public Estandar obtenerEstandar(Integer codigo) {
+       Log.debug("Obtiene los estandar");
+       Session session = sessionFactory.getCurrentSession();
+       session.beginTransaction();
        Estandar estandar =
                 (Estandar) sessionFactory.getCurrentSession()
                 //Aquí cada uno pone su consulta.
                 .createQuery("from Estandar a  where a.idEstandar=?")
                 .setParameter(0, codigo).uniqueResult();
+        session.getTransaction().commit();
         return estandar;
     }
 
