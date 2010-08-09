@@ -91,16 +91,125 @@
                   
                   <tr>
                     <td>&nbsp;</td>
-                    <td valign="top" style="width: 449px"><table width="460" border="0" cellspacing="0" cellpadding="0">
+                    <td valign="top" style="width: 449px">
+                  <table width="460" border="0" cellspacing="0" cellpadding="0">
                       <tr>
                         <td class="titulo" style="width: 453px"><span class="stitModulo">MODULO 1</span><br />
-                          Reparto  - Despacho</td>
+                          ${estandar.nombreModulo}  - ${estandar.nombreMeta} </td>
                       </tr>
+                     
                       <tr>
                         <td bgcolor="#535891" style="width: 453px"><img src="<%=request.getContextPath()%>/images/spacer.gif" width="150" height="1" /></td>
                       </tr>
-                        <c:out escapeXml="true" value="${estandar.nombreModulo}">
-                        </c:out>
+                       <tr>
+                          <td>
+                              <img src="<%=request.getContextPath()%>/images/stit_estandar.gif" />
+                          </td>
+                      </tr>
+                      <tr>
+                          <td>
+                          <table>
+                              <tr>
+                                 <td class="numero">
+                                      ${estandar.idEstandar}.
+                                  </td>
+                                  <td class="nombreestandar"> ${estandar.nombreEstandar}
+                                  </td>
+                              </tr>
+                          </table>
+                          </td>
+                      </tr>
+                      <tr>
+                          <td>
+                              <img src="<%=request.getContextPath()%>/images/tit_comentarios.gif" />
+                          </td>
+                      </tr>
+                      <tr>
+                          <td class="texto">
+                                <c:out escapeXml="false" value="${estandar.comentario}">
+                                </c:out>
+                          </td>
+                       </tr>
+                       <tr>
+                          <td>
+                              <img src="<%=request.getContextPath()%>/images/tit_niveles.gif" />
+                          </td>
+                      </tr>
+                      <tr>
+                        <td valign="top" background="<%=request.getContextPath()%>/images/bg_azul.gif">
+                            <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                              <tr>
+                                <td>
+                                    <img src="<%=request.getContextPath()%>/images/tit_pobre.gif" alt="Pobre" width="40" height="23" />
+                                </td>
+                                <td align="right"><img src="<%=request.getContextPath()%>/images/estrellas1.gif" width="61" height="23" />
+                                </td>
+                              </tr>
+                            </table>
+                        </td>
+                      </tr>
+                      <tr>
+                          <td class="texto">
+                                <c:out escapeXml="false" value="${estandar.esPobre}">
+                                </c:out>
+                          </td>
+                      </tr>
+                      <tr>
+                        <td valign="top" background="<%=request.getContextPath()%>/images/bg_azul.gif">
+                            <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                              <tr>
+                                <td>
+                                    <img src="<%=request.getContextPath()%>/images/tit_debajo.gif" alt="Debajo del Est&aacute;ndar" width="116" height="23" />
+                                </td>
+                                <td align="right"><img src="<%=request.getContextPath()%>/images/estrellas2.gif" width="61" height="23" />
+                                </td>
+                              </tr>
+                            </table>
+                        </td>
+                      </tr>
+                      <tr>
+                          <td class="texto">
+                                <c:out escapeXml="false" value="${estandar.esDebajoEstandar}">
+                                </c:out>
+                          </td>
+                      </tr>
+                      <tr>
+                        <td valign="top" background="<%=request.getContextPath()%>/images/bg_azul.gif"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+                          <tr>
+                            <td>
+                                <img src="<%=request.getContextPath()%>/images/tit_enestandar.gif" alt="En el Est&aacute;ndar" width="90" height="23" />
+                            </td>
+                            <td align="right"><img src="<%=request.getContextPath()%>/images/estrellas3.gif" width="61" height="23" />
+                            </td>
+                          </tr>
+                        </table>
+                        </td>
+                      </tr>
+                       <tr>
+                          <td class="texto">
+                                <c:out escapeXml="false" value="${estandar.esEstandar}">
+                                </c:out>
+                          </td>
+                      </tr>
+                      <tr>
+                        <td valign="top" background="<%=request.getContextPath()%>/images/bg_azul.gif">
+                            <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                            <tr>
+                              <td>
+                                  <img src="<%=request.getContextPath()%>/images/tit_excepcional.gif" alt="Excepcional" width="75" height="23" />
+                              </td>
+                              <td align="right"><img src="<%=request.getContextPath()%>/images/estrellas4.gif" width="61" height="23" />
+                              </td>
+                            </tr>
+                          </table>
+                        </td>
+                      </tr>
+                       <tr>
+                          <td class="texto">
+                                <c:out escapeXml="false" value="${estandar.esExcepcional}">
+                                </c:out>
+                          </td>
+                      </tr>
 
                       <tr>
                         <td valign="top" style="width: 453px">
@@ -115,7 +224,7 @@
                                 <th align="left" valign="top" scope="row"><table width="144" class="subtitulo">
                                   <tr>
                                     <td width="146"><label>
-                                      <input type="radio" name="calificacion" value="0" id="calificacion_0" />
+                                      <input type="radio" name="calificacion" value="0" id="calificacion_0" CHECKED/>
                                       Pobre</label></td>
                                   </tr>
                                   <tr>
@@ -144,7 +253,7 @@
                                   <label>
                                     <input type="submit" name="button" id="button" value="Calificar...!" />
                                   </label>
-                                  <input name="hiddenField" type="hidden" id="hiddenField" value="1" />
+                                  <input name="idEstandar" type="hidden" id="idEstandar" value="${estandar.idEstandar}" />
                                 </p></th>
                               </tr>
                             </table>

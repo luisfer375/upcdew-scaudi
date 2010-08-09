@@ -15,6 +15,7 @@ import javax.servlet.http.HttpServletResponse;
 import pe.com.backus.scaudi.domain.Estandar;
 import pe.com.backus.scaudi.service.EstandarService;
 import pe.com.backus.scaudi.service.impl.EstandarServiceImpl;
+import pe.com.backus.scaudi.util.Log;
 
 /**
  *
@@ -32,25 +33,7 @@ public class EstandarServlet extends HttpServlet {
     protected void processRequest(HttpServletRequest request, HttpServletResponse response)
     throws ServletException, IOException {
 
-        RequestDispatcher rd = request.getRequestDispatcher("pages/est1.jsp");
-        EstandarService estandarService = new EstandarServiceImpl();
-   //     Estandar estandar = estandarService.obtenerEstandar(1);
-//        String calificacion = request.getParameter("calificacion");
-
-
-   /*     String ruta = "/pages/est";
-        if(Integer.parseInt(tipo)>15){
-             ruta = "/pages/exito" + ".jsp";
-     //       request.setAttribute("mensaje", "Auditoria finalizada");
-        }else{
-            ruta +=  (Integer.parseInt(tipo) + 1) + ".jsp";
-     //       listaEncuestaDetalle.add(encuestaDetalle);
-            request.setAttribute("listaEncuestaDetalle", listaEncuestaDetalle);
-        }
-        rd = request.getRequestDispatcher(ruta);
-*/
-
-        rd.forward(request, response);
+  
 
 
 
@@ -86,7 +69,23 @@ public class EstandarServlet extends HttpServlet {
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
     throws ServletException, IOException {
-        processRequest(request, response);
+        RequestDispatcher rd = null;
+        EstandarService estandarService = new EstandarServiceImpl();
+        String strIdEstandar = request.getParameter("idEstandar");
+        int idEstandar = Integer.valueOf(strIdEstandar);
+        Estandar estandar = null;
+        Log.debug("Entro EstandarSevlet" + strIdEstandar);
+        if (idEstandar < 5) {
+            rd = request.getRequestDispatcher("pages/est1.jsp");
+            estandar = estandarService.obtenerEstandar(idEstandar + 1);
+        } else{
+            rd =  request.getRequestDispatcher("pages/exito.jsp");
+        }
+
+
+        String calificacion = request.getParameter("calificacion");
+        request.setAttribute("estandar", estandar);
+        rd.forward(request, response);
     }
 
     /**

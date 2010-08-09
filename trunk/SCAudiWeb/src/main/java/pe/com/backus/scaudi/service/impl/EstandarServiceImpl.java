@@ -7,6 +7,7 @@ package pe.com.backus.scaudi.service.impl;
 
 import java.util.List;
 import pe.com.backus.scaudi.dao.EstandarDAO;
+import pe.com.backus.scaudi.dao.hibernate.EstandarDAOHibernate;
 import pe.com.backus.scaudi.domain.Estandar;
 import pe.com.backus.scaudi.service.EstandarService;
 
@@ -16,15 +17,9 @@ import pe.com.backus.scaudi.service.EstandarService;
  */
 public class EstandarServiceImpl implements EstandarService{
 
-    private EstandarDAO estandarDAO;
+    private EstandarDAO estandarDAO = new EstandarDAOHibernate();
 
-    public void setEstandarDAO(EstandarDAO estandarDAO) {
-        this.estandarDAO = estandarDAO;
-    }
-
-
-
-
+    
     public void guardar(Estandar estandar) {
        estandarDAO.guardar(estandar);
     }

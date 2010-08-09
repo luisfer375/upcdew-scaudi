@@ -15,7 +15,7 @@
     </filter>
     <filter-mapping>
         <filter-name>EstandarFiltro</filter-name>
-        <url-pattern>est1.jsp</url-pattern>
+        <url-pattern>/pages/est1.jsp</url-pattern>
     </filter-mapping>
     <filter-mapping>
         <filter-name>LoginFiltro</filter-name>

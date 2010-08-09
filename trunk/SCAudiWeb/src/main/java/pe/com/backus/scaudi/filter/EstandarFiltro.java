@@ -35,9 +35,10 @@ public class EstandarFiltro implements Filter {
 		HttpServletResponse response = (HttpServletResponse) servletResponse;
                 HttpSession sesion =  request.getSession();
 
-                Log.debug("Servlet Path:" + request.getServletPath().substring(7));
+                Log.debug("Filtro Estandar" + request.getServletPath().substring(7));
                 if(request.getServletPath().substring(7).equals("est1.jsp")){
                     if(request.getAttribute("estandar") ==null){
+                        Log.debug("Inicializando idEstandar" + request.getServletPath().substring(7));
                         EstandarService estandarService = new EstandarServiceImpl();
                         Estandar estandar = estandarService.obtenerEstandar(1);
                         request.setAttribute("estandar", estandar);
