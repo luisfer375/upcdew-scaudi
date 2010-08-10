@@ -6,6 +6,7 @@
 package pe.com.backus.scaudi.dao.hibernate;
 
 import java.util.List;
+import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import pe.com.backus.scaudi.app.HibernateSession;
 import pe.com.backus.scaudi.dao.RegionDAO;
@@ -29,6 +30,7 @@ public class RegionDAOHibernate implements RegionDAO{
     }
 
     public Region obtenerRegion(Integer codigo) {
+
        Region region =
                 (Region) sessionFactory.getCurrentSession()
                 //Aquí cada uno pone su consulta.
@@ -38,8 +40,11 @@ public class RegionDAOHibernate implements RegionDAO{
     }
 
     public List<Region> listarRegiones() {
+        Session session = sessionFactory.getCurrentSession();
+        session.beginTransaction();
          List<Region> regiones= sessionFactory.getCurrentSession()
-                .createQuery("from Region order by idRegion").list();
+                .createQuery("from Region").list();
+         session.getTransaction().commit();
         return regiones;
 
     }

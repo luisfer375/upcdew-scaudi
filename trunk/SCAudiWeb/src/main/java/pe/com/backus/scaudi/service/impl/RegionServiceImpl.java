@@ -7,6 +7,7 @@ package pe.com.backus.scaudi.service.impl;
 
 import java.util.List;
 import pe.com.backus.scaudi.dao.RegionDAO;
+import pe.com.backus.scaudi.dao.hibernate.RegionDAOHibernate;
 import pe.com.backus.scaudi.domain.Region;
 import pe.com.backus.scaudi.service.RegionService;
 
@@ -16,7 +17,7 @@ import pe.com.backus.scaudi.service.RegionService;
  */
 public class RegionServiceImpl implements RegionService{
 
-    private RegionDAO regionDAO;
+    private RegionDAO regionDAO = new RegionDAOHibernate();
 
     public void setRegionDAO(RegionDAO regionDAO) {
         this.regionDAO = regionDAO;

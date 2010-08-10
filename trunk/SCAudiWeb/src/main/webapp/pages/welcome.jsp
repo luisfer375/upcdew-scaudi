@@ -85,6 +85,27 @@
                       <tr>
                         <td class="texto"><img src="<%=request.getContextPath()%>/images/spacer.gif" width="71" height="10" /></td>
                       </tr>
+                      <tr>
+                          <td>
+                              <table>
+                                  <tr>
+                                  <th align="left" valign="middle" scope="row">Region</th>
+                                  <td align="left" valign="middle">
+                                    <label>
+                                    <select name="select" class="menuhome" id="region">
+                                        <option value="0" selected="selected">Seleccione</option>
+                                        <c:if test="${listaRegiones != null}">
+                                            <c:forEach var="region" items="${listaRegiones}">
+                                                <option value="${region.idRegion}">${region.descripcion}</option>
+                                            </c:forEach>
+                                        </c:if>
+                                    </select>
+                                  </label>
+                                  </td>
+                                  </tr>
+                          </table></td>
+                       </tr>
+
                         </table>                          
                           <p>&nbsp;</p>
                           </td>
@@ -107,7 +128,8 @@
       <tr>
         <td colspan="3" valign="top" bgcolor="#FFFFFF"><img src="<%=request.getContextPath()%>/images/spacer.gif" width="174" height="32" /></td>
       </tr>
-    </table></td>
+    </table>
+</td>
   </tr>
 </table>
 </body>
