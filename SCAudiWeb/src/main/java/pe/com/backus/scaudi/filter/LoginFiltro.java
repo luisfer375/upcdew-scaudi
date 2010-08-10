@@ -34,8 +34,11 @@ public class LoginFiltro implements Filter{
 
                 Log.debug("Servlet Path:" + request.getServletPath().substring(7));
                 if(request.getServletPath().substring(7).equals("login.jsp")){
-                    if(sesion.getAttribute("usuario") !=null)
+                    if(sesion.getAttribute("usuario") !=null){
                         sesion.removeAttribute("usuario");
+                        sesion.removeAttribute("listaRegiones");
+                    }
+                        
                     
                     filterChain.doFilter(request, response);
                 }else{
