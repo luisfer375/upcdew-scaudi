@@ -246,7 +246,7 @@
                                 <td align="left" valign="top"><label>
                                   <textarea name="observacion" id="observacion" cols="16" rows="7"></textarea>
                                 </label></td>
-                                <td align="left" valign="top"><textarea name="calificacion" id="calificacion" cols="16" rows="7"></textarea></td>
+                                <td align="left" valign="top"><textarea name="recomendacion" id="recomendacion" cols="16" rows="7"></textarea></td>
                               </tr>
                               <tr>
                                 <th colspan="3" align="center" valign="middle" scope="row"><p>
@@ -254,6 +254,7 @@
                                     <input type="submit" name="button" id="button" value="Calificar...!" />
                                   </label>
                                   <input name="idEstandar" type="hidden" id="idEstandar" value="${estandar.idEstandar}" />
+                                  
                                 </p></th>
                               </tr>
                             </table>

@@ -12,6 +12,7 @@ import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import pe.com.backus.scaudi.domain.DetalleEvaluacion;
 import pe.com.backus.scaudi.domain.Estandar;
 import pe.com.backus.scaudi.service.EstandarService;
 import pe.com.backus.scaudi.service.impl.EstandarServiceImpl;
@@ -69,22 +70,30 @@ public class EstandarServlet extends HttpServlet {
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
     throws ServletException, IOException {
-        RequestDispatcher rd = null;
-        EstandarService estandarService = new EstandarServiceImpl();
-        String strIdEstandar = request.getParameter("idEstandar");
-        int idEstandar = Integer.valueOf(strIdEstandar);
-        Estandar estandar = null;
-        Log.debug("Entro EstandarSevlet" + strIdEstandar);
+        RequestDispatcher rd                = null;
+        Estandar estandarActual             = null;
+        Estandar estandarNuevo              = null;
+        DetalleEvaluacion detalleEvaluacion = new DetalleEvaluacion();
+        EstandarService estandarService     = new EstandarServiceImpl();
+        String strIdEstandar                = request.getParameter("idEstandar");
+        String recomendacion                = request.getParameter("recomendacion");
+        String observacion                  = request.getParameter("observacion");
+        int idEstandar                      = Integer.valueOf(strIdEstandar);
+        estandarActual                      =  estandarService.obtenerEstandar(idEstandar);
+
+        /**Seteo los parametros del Estandar**/
+        detalleEvaluacion.setEstandar(estandarActual);
+        detalleEvaluacion.setObservaciones(observacion);
+        detalleEvaluacion.setOportunidades(recomendacion);
+
         if (idEstandar < 5) {
-            rd = request.getRequestDispatcher("pages/est1.jsp");
-            estandar = estandarService.obtenerEstandar(idEstandar + 1);
+            rd                              = request.getRequestDispatcher("pages/est1.jsp");
+            estandarNuevo                   = estandarService.obtenerEstandar(idEstandar + 1);
         } else{
-            rd =  request.getRequestDispatcher("pages/exito.jsp");
+            rd                           =  request.getRequestDispatcher("pages/exito.jsp");
         }
 
-
-        String calificacion = request.getParameter("calificacion");
-        request.setAttribute("estandar", estandar);
+        request.setAttribute("estandar", estandarNuevo);
         rd.forward(request, response);
     }
 
