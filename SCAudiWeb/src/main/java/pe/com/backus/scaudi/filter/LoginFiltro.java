@@ -37,6 +37,7 @@ public class LoginFiltro implements Filter{
                     if(sesion.getAttribute("usuario") !=null){
                         sesion.removeAttribute("usuario");
                         sesion.removeAttribute("listaRegiones");
+                        sesion.removeAttribute("cd");
                     }
                         
                     

@@ -163,8 +163,8 @@ COMMIT;
 -- Data for table `DBSGA`.`Evaluacion`
 -- -----------------------------------------------------
 SET AUTOCOMMIT=0;
-INSERT INTO `Evaluacion` (`idCD`, `periodo`, `idUsuario`, `PosiblePuntaje`) VALUES (1, 2, 1, 5);
-INSERT INTO `Evaluacion` (`idCD`, `periodo`, `idUsuario`, `PosiblePuntaje`) VALUES (2, 2, 2, 5);
+INSERT INTO `Evaluacion` (`idCD`, `periodo`, `idUsuario`, `PosiblePuntaje`) VALUES (1, 2, 1, 2);
+INSERT INTO `Evaluacion` (`idCD`, `periodo`, `idUsuario`, `PosiblePuntaje`) VALUES (2, 2, 2, 3);
 
 COMMIT;
 

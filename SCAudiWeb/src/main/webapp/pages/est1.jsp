@@ -224,22 +224,22 @@
                                 <th align="left" valign="top" scope="row"><table width="144" class="subtitulo">
                                   <tr>
                                     <td width="146"><label>
-                                      <input type="radio" name="calificacion" value="0" id="calificacion_0" CHECKED/>
+                                      <input type="radio" name="calificacion" value="1" id="calificacion_0" CHECKED/>
                                       Pobre</label></td>
                                   </tr>
                                   <tr>
                                     <td><label>
-                                      <input type="radio" name="calificacion" value="1" id="calificacion_1" />
+                                      <input type="radio" name="calificacion" value="2" id="calificacion_1" />
                                       Debajo del Est&aacute;ndar</label></td>
                                   </tr>
                                   <tr>
                                     <td><label>
-                                      <input type="radio" name="calificacion" value="2" id="calificacion_2" />
+                                      <input type="radio" name="calificacion" value="3" id="calificacion_2" />
                                       En el Est&aacute;ndar</label></td>
                                   </tr>
                                   <tr>
                                     <td><label>
-                                      <input type="radio" name="calificacion" value="3" id="calificacion_3" />
+                                      <input type="radio" name="calificacion" value="4" id="calificacion_3" />
                                       Excepcional</label></td>
                                   </tr>
                                 </table></th>

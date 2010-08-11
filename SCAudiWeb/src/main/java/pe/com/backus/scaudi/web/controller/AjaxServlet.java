@@ -12,6 +12,7 @@ import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
 import pe.com.backus.scaudi.domain.CentroDistribucion;
 import pe.com.backus.scaudi.service.CentroDistribucionService;
 import pe.com.backus.scaudi.service.impl.CentroDistribucionServiceImpl;
@@ -33,22 +34,67 @@ public class AjaxServlet extends HttpServlet {
     protected void processRequest(HttpServletRequest request, HttpServletResponse response)
     throws ServletException, IOException {
         response.setContentType("text/html;charset=UTF-8");
+        String accion = request.getParameter("accion");
+        Log.debug("Accion realizada:" + accion);
+        if(accion.equals("1"))
+            cargarCombo(request,response);
+        else{
+            asignaCD(request,response);
+        }
+    }
+
+    protected void asignaCD(HttpServletRequest request, HttpServletResponse response)
+    throws ServletException, IOException {
+        CentroDistribucionService cdService = new CentroDistribucionServiceImpl();
+        Log.debug("Entro Asignar Centro distribucion");
+        HttpSession session = request.getSession();
         PrintWriter out = response.getWriter();
-        try {
-            /* TODO output your page here
-            out.println("<html>");
-            out.println("<head>");
-            out.println("<title>Servlet AjaxServlet</title>");  
-            out.println("</head>");
-            out.println("<body>");
-            out.println("<h1>Servlet AjaxServlet at " + request.getContextPath () + "</h1>");
-            out.println("</body>");
-            out.println("</html>");
-            */
-        } finally { 
+        String idCD = request.getParameter("idCD");
+        Log.debug("Id Centro Distribucion:" + idCD);
+        CentroDistribucion cd = cdService.obtenerCentroDistribucion(Integer.valueOf(idCD));
+        try{
+           session.setAttribute("cd", cd);
+           out.println("Se asigno el Centro de distribucion correctamente");
+
+        }catch(Exception e){
+            Log.error("Ocurrió una excecion" ,e);
+           throw new InternalError(e.toString());
+        }finally{
             out.close();
         }
-    } 
+    }
+
+
+    protected void cargarCombo(HttpServletRequest request, HttpServletResponse response)
+        throws ServletException, IOException {
+        response.setContentType("text/html;charset=UTF-8");
+        Log.debug("Entro cargarCombo");
+        CentroDistribucionService cdService = new CentroDistribucionServiceImpl();
+        List<CentroDistribucion> listaCD = null;
+        PrintWriter out = response.getWriter();
+        try{
+        String strIdRegion = request.getParameter("idRegion");
+        int idRegion = 0;
+        Log.debug("Id Region:" + strIdRegion);
+        if(!"".equals(strIdRegion)){
+            idRegion = Integer.parseInt(strIdRegion);
+            listaCD = cdService.listarCentroDistribuciones(idRegion);
+            out.println("<option value=0 selected=selected>Seleccione</option>");
+            for(CentroDistribucion cd : listaCD){
+                out.println("<option value="
+                        +   cd.getIdCentroDistribucion() +  ">"
+                        +   cd.getDescripcion()+            "</option>");
+                }
+            }
+        }catch(Exception e){
+           Log.error("Ocurrió una excecion" ,e);
+           throw new InternalError(e.toString());
+        }finally{
+            out.close();
+        }
+
+    }
+
 
     // <editor-fold defaultstate="collapsed" desc="HttpServlet methods. Click on the + sign on the left to edit the code.">
     /** 
@@ -61,26 +107,8 @@ public class AjaxServlet extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
     throws ServletException, IOException {
-        //processRequest(request, response);
-        response.setContentType("text/html;charset=UTF-8");
-        CentroDistribucionService cdService = new CentroDistribucionServiceImpl();
-        List<CentroDistribucion> listaCD = null;
-        PrintWriter out = response.getWriter();
-        String strIdRegion = request.getParameter("idRegion");
-        int idRegion = 0;
-        Log.debug("Id Region:" + strIdRegion);
-        if(!"".equals(strIdRegion)){
-            idRegion = Integer.parseInt(strIdRegion);
-            listaCD = cdService.listarCentroDistribuciones(idRegion);
-            for(CentroDistribucion cd : listaCD){
-                out.println("<option value="
-                        +   cd.getIdCentroDistribucion() +  ">"
-                        +   cd.getDescripcion()+            "</option>");
-            }
-        }
-
-
-    } 
+        processRequest(request, response);
+    }
 
     /** 
      * Handles the HTTP <code>POST</code> method.
