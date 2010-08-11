@@ -6,10 +6,12 @@
 package pe.com.backus.scaudi.dao.hibernate;
 
 import java.util.List;
+import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import pe.com.backus.scaudi.app.HibernateSession;
 import pe.com.backus.scaudi.dao.CentroDistribucionDAO;
 import pe.com.backus.scaudi.domain.CentroDistribucion;
+import pe.com.backus.scaudi.util.Log;
 
 /**
  *
@@ -37,9 +39,15 @@ public class CentroDistribucionDAOHibernate implements CentroDistribucionDAO{
         return centroDistribucion;
     }
 
-    public List<CentroDistribucion> listarCentroDistribuciones() {
+    public List<CentroDistribucion> listarCentroDistribuciones(Integer idRegion) {
+       Log.debug("Obtiene los CentroDistribucion");
+       Session session = sessionFactory.getCurrentSession();
+       session.beginTransaction();
          List<CentroDistribucion> centroDistribuciones= sessionFactory.getCurrentSession()
-                .createQuery("from CentroDistribucion order by idCentroDistribucion").list();
+                .createQuery("from CentroDistribucion c where c.idRegion=?")
+                .setParameter(0, idRegion)
+                .list();
+        session.getTransaction().commit();
         return centroDistribuciones;
 
     }

@@ -21,6 +21,6 @@ public interface CentroDistribucionService {
 
     public CentroDistribucion obtenerCentroDistribucion(Integer codigo);
 
-    public List<CentroDistribucion> listarCentroDistribuciones();
+    public List<CentroDistribucion> listarCentroDistribuciones(Integer idRegion);
 
 }

@@ -29,6 +29,10 @@
         <servlet-name>EstandarServlet</servlet-name>
         <servlet-class>pe.com.backus.scaudi.web.controller.EstandarServlet</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>AjaxServlet</servlet-name>
+        <servlet-class>pe.com.backus.scaudi.web.controller.AjaxServlet</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>LoginServlet</servlet-name>
         <url-pattern>/LoginServlet</url-pattern>
@@ -36,6 +40,10 @@
     <servlet-mapping>
         <servlet-name>EstandarServlet</servlet-name>
         <url-pattern>/EstandarServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>AjaxServlet</servlet-name>
+        <url-pattern>/AjaxServlet</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>

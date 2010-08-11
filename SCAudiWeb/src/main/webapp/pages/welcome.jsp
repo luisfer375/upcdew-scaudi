@@ -6,6 +6,46 @@
     <%@ include file="/pages/cabecera.jsp" %>
 </head>
 <body >
+    <script>
+var ajax;
+
+function funcionCallback()
+{
+	// Comprobamos si la peticion se ha completado (estado 4)
+	if( ajax.readyState == 4 )
+	{
+		// Comprobamos si la respuesta ha sido correcta (resultado HTTP 200)
+                alert(ajax.status);
+		if( ajax.status == 200 )
+		{
+			// Escribimos el resultado en la pagina HTML mediante DHTML
+                        alert(ajax.responseText);
+			document.getElementById('FrmBienvenida:cd').innerHTML = "<b>"+ajax.responseText+"</b>";
+		}
+	}
+}
+
+function cargarCD(idRegion)
+{
+
+	// Creamos el control XMLHttpRequest segun el navegador en el que estemos
+	if( window.XMLHttpRequest )
+		ajax = new XMLHttpRequest(); // No Internet Explorer
+	else
+		ajax = new ActiveXObject("Microsoft.XMLHTTP"); // Internet Explorer
+
+	// Almacenamos en el control al funcion que se invocara cuando la peticion
+	// cambie de estado
+	ajax.onreadystatechange = funcionCallback;
+
+	// Enviamos la peticion
+	ajax.open( "GET", "<%=request.getContextPath()%>/AjaxServlet?idRegion="+idRegion, true );
+	ajax.send( "" );
+}
+</script>
+
+
+
 <table border="0" align="center" cellpadding="2" cellspacing="0">
   <tr>
     <td bgcolor="#262b54"><table border="0" align="center" cellpadding="0" cellspacing="0" bgcolor="#FFFFFF">
@@ -74,6 +114,7 @@
                   </tr>
                   
                   <tr>
+                      <form id="FrmBienvenida" name="FrmBienvenida">
                     <td>&nbsp;</td>
                     <td valign="top"><table width="460" border="0" cellspacing="0" cellpadding="0">
                       <tr>
@@ -92,7 +133,7 @@
                                   <th align="left" valign="middle" scope="row">Region</th>
                                   <td align="left" valign="middle">
                                     <label>
-                                    <select name="select" class="menuhome" id="region">
+                                        <select name="select" class="menuhome" id="region" onchange="cargarCD(this.value);">
                                         <option value="0" selected="selected">Seleccione</option>
                                         <c:if test="${listaRegiones != null}">
                                             <c:forEach var="region" items="${listaRegiones}">
@@ -105,10 +146,26 @@
                                   </tr>
                           </table></td>
                        </tr>
-
+                        <tr>
+                          <td>
+                              <table>
+                                  <tr>
+                                  <th align="left" valign="middle" scope="row">Centro Distribucion</th>
+                                  <td align="left" valign="middle">
+                                    <label>
+                                    <select name="select" class="menuhome" id="cd">
+                                        <option value="0" selected="selected">Seleccione</option>
+                                    </select>
+                                  </label>
+                                  </td>
+                                  </tr>
+                          </table></td>
+                       </tr>
                         </table>                          
                           <p>&nbsp;</p>
                           </td>
+                      </form>
+
                       </tr>
                     </table></td>
                     <td>&nbsp;</td>

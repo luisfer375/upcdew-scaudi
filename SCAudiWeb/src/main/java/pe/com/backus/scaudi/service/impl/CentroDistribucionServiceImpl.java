@@ -7,6 +7,7 @@ package pe.com.backus.scaudi.service.impl;
 
 import java.util.List;
 import pe.com.backus.scaudi.dao.CentroDistribucionDAO;
+import pe.com.backus.scaudi.dao.hibernate.CentroDistribucionDAOHibernate;
 import pe.com.backus.scaudi.domain.CentroDistribucion;
 import pe.com.backus.scaudi.service.CentroDistribucionService;
 
@@ -16,11 +17,7 @@ import pe.com.backus.scaudi.service.CentroDistribucionService;
  */
 public class CentroDistribucionServiceImpl implements CentroDistribucionService{
 
-    private CentroDistribucionDAO centroDistribucionDAO;
-
-    public void setCentroDistribucionDAO(CentroDistribucionDAO centroDistribucionDAO) {
-        this.centroDistribucionDAO = centroDistribucionDAO;
-    }
+    private CentroDistribucionDAO centroDistribucionDAO = new CentroDistribucionDAOHibernate();
 
 
 
@@ -36,8 +33,8 @@ public class CentroDistribucionServiceImpl implements CentroDistribucionService{
         return centroDistribucionDAO.obtenerCentroDistribucion(codigo);
     }
 
-    public List<CentroDistribucion> listarCentroDistribuciones() {
-        return centroDistribucionDAO.listarCentroDistribuciones();
+    public List<CentroDistribucion> listarCentroDistribuciones(Integer idRegion) {
+        return centroDistribucionDAO.listarCentroDistribuciones(idRegion);
 
     }
 
