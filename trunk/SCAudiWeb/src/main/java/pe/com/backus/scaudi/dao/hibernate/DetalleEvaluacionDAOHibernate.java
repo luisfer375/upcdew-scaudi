@@ -23,7 +23,11 @@ public class DetalleEvaluacionDAOHibernate implements DetalleEvaluacionDAO{
 
 
     public void guardar(DetalleEvaluacion detalleEvaluacion) {
-        sessionFactory.getCurrentSession().saveOrUpdate(detalleEvaluacion);
+       Log.debug("Guarda DetalleEvaluacion");
+       Session session = sessionFactory.getCurrentSession();
+       session.beginTransaction();
+       sessionFactory.getCurrentSession().saveOrUpdate(detalleEvaluacion);
+       session.getTransaction().commit();
     }
 
     public void eliminar(DetalleEvaluacion detalleEvaluacion) {

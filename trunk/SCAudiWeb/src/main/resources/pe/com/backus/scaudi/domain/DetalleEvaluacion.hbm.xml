@@ -17,6 +17,6 @@
     <many-to-one class="pe.com.backus.scaudi.domain.Evaluacion" name="evaluacion" not-null="true">
       <column name="periodo"/>
       <column name="centroDistribucion"/>
-    </many-to-one>
+    </many-to-one> 
   </class>
 </hibernate-mapping>

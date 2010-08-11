@@ -12,11 +12,16 @@ import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
+import pe.com.backus.scaudi.domain.CentroDistribucion;
 import pe.com.backus.scaudi.domain.DetalleEvaluacion;
 import pe.com.backus.scaudi.domain.Estandar;
+import pe.com.backus.scaudi.domain.Evaluacion;
+import pe.com.backus.scaudi.domain.Usuario;
+import pe.com.backus.scaudi.service.DetalleEvaluacionService;
 import pe.com.backus.scaudi.service.EstandarService;
+import pe.com.backus.scaudi.service.impl.DetalleEvaluacionServiceImpl;
 import pe.com.backus.scaudi.service.impl.EstandarServiceImpl;
-import pe.com.backus.scaudi.util.Log;
 
 /**
  *
@@ -70,21 +75,35 @@ public class EstandarServlet extends HttpServlet {
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
     throws ServletException, IOException {
+        HttpSession session                 = request.getSession();
+        DetalleEvaluacionService deService  = new DetalleEvaluacionServiceImpl();
         RequestDispatcher rd                = null;
         Estandar estandarActual             = null;
         Estandar estandarNuevo              = null;
+        CentroDistribucion cd               = null;
+        Evaluacion evaluacion               = new Evaluacion();
         DetalleEvaluacion detalleEvaluacion = new DetalleEvaluacion();
         EstandarService estandarService     = new EstandarServiceImpl();
+        Usuario usuario                     = (Usuario) session.getAttribute("usuario");
+
         String strIdEstandar                = request.getParameter("idEstandar");
+        String calificacion                 = request.getParameter("calificacion");
         String recomendacion                = request.getParameter("recomendacion");
         String observacion                  = request.getParameter("observacion");
         int idEstandar                      = Integer.valueOf(strIdEstandar);
         estandarActual                      =  estandarService.obtenerEstandar(idEstandar);
+        cd                                  = (CentroDistribucion)session.getAttribute("cd");
 
         /**Seteo los parametros del Estandar**/
+
         detalleEvaluacion.setEstandar(estandarActual);
         detalleEvaluacion.setObservaciones(observacion);
         detalleEvaluacion.setOportunidades(recomendacion);
+        evaluacion.setCentroDistribucion(cd);
+        evaluacion.setUsuario(usuario);
+        evaluacion.setPosiblePuntaje(Integer.valueOf(calificacion));
+        detalleEvaluacion.setEvaluacion(evaluacion);
+        deService.guardar(detalleEvaluacion);
 
         if (idEstandar < 5) {
             rd                              = request.getRequestDispatcher("pages/est1.jsp");

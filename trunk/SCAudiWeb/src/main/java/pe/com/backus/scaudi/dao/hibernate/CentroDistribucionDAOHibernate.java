@@ -31,20 +31,24 @@ public class CentroDistribucionDAOHibernate implements CentroDistribucionDAO{
     }
 
     public CentroDistribucion obtenerCentroDistribucion(Integer codigo) {
+       Log.debug("Obtiene el centro de Distribucion");
+       Session session = sessionFactory.getCurrentSession();
+       session.beginTransaction();
        CentroDistribucion centroDistribucion =
                 (CentroDistribucion) sessionFactory.getCurrentSession()
                 //Aquí cada uno pone su consulta.
                 .createQuery("from CentroDistribucion a  where a.idCentroDistribucion=?")
                 .setParameter(0, codigo).uniqueResult();
+        session.getTransaction().commit();
         return centroDistribucion;
     }
 
     public List<CentroDistribucion> listarCentroDistribuciones(Integer idRegion) {
-       Log.debug("Obtiene los CentroDistribucion");
+       Log.debug("Lista los CentroDistribucion por Region");
        Session session = sessionFactory.getCurrentSession();
        session.beginTransaction();
          List<CentroDistribucion> centroDistribuciones= sessionFactory.getCurrentSession()
-                .createQuery("from CentroDistribucion c where c.idRegion=?")
+                .createQuery("from CentroDistribucion c where c.region.idRegion=?")
                 .setParameter(0, idRegion)
                 .list();
         session.getTransaction().commit();

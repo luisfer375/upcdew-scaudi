@@ -8,6 +8,7 @@
 <body >
     <script>
 var ajax;
+var accion;
 
 function funcionCallback()
 {
@@ -15,19 +16,23 @@ function funcionCallback()
 	if( ajax.readyState == 4 )
 	{
 		// Comprobamos si la respuesta ha sido correcta (resultado HTTP 200)
-                alert(ajax.status);
+
 		if( ajax.status == 200 )
 		{
 			// Escribimos el resultado en la pagina HTML mediante DHTML
-                        alert(ajax.responseText);
-			document.getElementById('FrmBienvenida:cd').innerHTML = "<b>"+ajax.responseText+"</b>";
+                        if(accion == 1){
+                            document.getElementById('cd').innerHTML = "<b>"+ajax.responseText+"</b>";
+                        }else{
+                            document.getElementById('mensaje').innerHTML = "<b>"+ajax.responseText+"</b>";
+                        }
+			
 		}
 	}
 }
 
 function cargarCD(idRegion)
 {
-
+        accion = 1;
 	// Creamos el control XMLHttpRequest segun el navegador en el que estemos
 	if( window.XMLHttpRequest )
 		ajax = new XMLHttpRequest(); // No Internet Explorer
@@ -39,7 +44,25 @@ function cargarCD(idRegion)
 	ajax.onreadystatechange = funcionCallback;
 
 	// Enviamos la peticion
-	ajax.open( "GET", "<%=request.getContextPath()%>/AjaxServlet?idRegion="+idRegion, true );
+	ajax.open( "GET", "<%=request.getContextPath()%>/AjaxServlet?idRegion="+idRegion+"&accion="+accion, true );
+	ajax.send( "" );
+}
+
+function registrarCD()
+{
+        accion = 2;
+	// Creamos el control XMLHttpRequest segun el navegador en el que estemos
+	if( window.XMLHttpRequest )
+		ajax = new XMLHttpRequest(); // No Internet Explorer
+	else
+		ajax = new ActiveXObject("Microsoft.XMLHTTP"); // Internet Explorer
+
+	// Almacenamos en el control al funcion que se invocara cuando la peticion
+	// cambie de estado
+	ajax.onreadystatechange = funcionCallback;
+        var idCD = document.getElementById("cd").value;
+	// Enviamos la peticion
+	ajax.open( "GET", "<%=request.getContextPath()%>/AjaxServlet?idCD="+idCD+"&accion="+accion, true );
 	ajax.send( "" );
 }
 </script>
@@ -114,11 +137,20 @@ function cargarCD(idRegion)
                   </tr>
                   
                   <tr>
-                      <form id="FrmBienvenida" name="FrmBienvenida">
+                      <form id="FrmBienvenida" name="FrmBienvenida" action=""  onsubmit="javascript:registrarCD(); return false;">
                     <td>&nbsp;</td>
                     <td valign="top"><table width="460" border="0" cellspacing="0" cellpadding="0">
                       <tr>
                         <td class="titulo">Bienvenido: ${usuario.nombre}</td>
+                      </tr>
+                      <tr>
+                          <td class="texto">
+                              <label>
+                                  A continuación debe asignar el Centro de Distribución auditado.
+                              </label>
+
+                          </td>
+
                       </tr>
                       <tr>
                         <td bgcolor="#535891"><img src="<%=request.getContextPath()%>/images/spacer.gif" width="150" height="1" /></td>
@@ -160,6 +192,19 @@ function cargarCD(idRegion)
                                   </td>
                                   </tr>
                           </table></td>
+                       </tr>
+                      <tr>
+                       <th colspan="1" scope="row">
+                           <input type="Submit" name="button" id="button" value="Asignar Modulo!"
+                                  />
+                             </th>
+                       </tr>
+                      <tr>
+                         <td class="texto">
+                             <div id="mensaje">
+
+                             </div>
+                         </td>
                        </tr>
                         </table>                          
                           <p>&nbsp;</p>
