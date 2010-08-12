@@ -11,6 +11,7 @@ import org.hibernate.SessionFactory;
 import pe.com.backus.scaudi.app.HibernateSession;
 import pe.com.backus.scaudi.dao.EvaluacionDAO;
 import pe.com.backus.scaudi.domain.Evaluacion;
+import pe.com.backus.scaudi.domain.Usuario;
 import pe.com.backus.scaudi.util.Log;
 
 /**
@@ -26,7 +27,7 @@ public class EvaluacionDAOHibernate implements EvaluacionDAO{
        Log.debug("Guarda Evaluacion");
        Session session = sessionFactory.getCurrentSession();
        session.beginTransaction();
-       sessionFactory.getCurrentSession().saveOrUpdate(Evaluacion);
+       sessionFactory.getCurrentSession().save(Evaluacion);
        session.getTransaction().commit();
        Log.debug("Registro con exito");
     }
@@ -42,7 +43,7 @@ public class EvaluacionDAOHibernate implements EvaluacionDAO{
        Evaluacion Evaluacion =
                 (Evaluacion) sessionFactory.getCurrentSession()
                 //Aquí cada uno pone su consulta.
-                .createQuery("from Evaluacion a  where a.periodo=?")
+                .createQuery("from Evaluacion a where a.periodo=?")
                 .setParameter(0, codigo).uniqueResult();
         session.getTransaction().commit();
         return Evaluacion;
@@ -53,6 +54,20 @@ public class EvaluacionDAOHibernate implements EvaluacionDAO{
                 .createQuery("from Evaluacion order by idEvaluacion").list();
         return Evaluaciones;
 
+    }
+
+    public Integer obtenerCorrelativoEvaluacionUsuario(Usuario usuario) {
+       Log.debug("Obtiene los obtenerCorrelativoEvaluacionUsuario");
+       Session session = sessionFactory.getCurrentSession();
+       session.beginTransaction();
+       Integer periodo =
+                (Integer) sessionFactory.getCurrentSession()
+                //Aquí cada uno pone su consulta.
+                .createQuery("select max(e.periodo) from Evaluacion e where e.Usuario.idUsuario=?")
+                .setParameter(0, usuario.getIdUsuario()).uniqueResult();
+        session.getTransaction().commit();
+        Log.debug("periodo:" + periodo);
+        return periodo;
     }
 
 

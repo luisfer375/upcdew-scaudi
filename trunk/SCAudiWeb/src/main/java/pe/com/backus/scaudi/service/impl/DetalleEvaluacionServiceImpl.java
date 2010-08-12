@@ -24,6 +24,9 @@ public class DetalleEvaluacionServiceImpl implements DetalleEvaluacionService{
     public void guardar(DetalleEvaluacion detalleEvaluacion) {
        EvaluacionService evaluacionService = new EvaluacionServiceImpl();
        evaluacionService.guardar(detalleEvaluacion.getEvaluacion());
+       Integer periodo = evaluacionService.obtenerCorrelativoEvaluacionUsuario(
+                         detalleEvaluacion.getEvaluacion().getUsuario());
+       detalleEvaluacion.getEvaluacion().setPeriodo(periodo);
        detalleEvaluacionDAO.guardar(detalleEvaluacion);
     }
 

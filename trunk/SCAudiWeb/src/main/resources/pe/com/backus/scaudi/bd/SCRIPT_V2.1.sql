@@ -71,8 +71,8 @@ ENGINE = InnoDB;
 -- Table `DBSGA`.`Evaluacion`
 -- -----------------------------------------------------
 CREATE  TABLE IF NOT EXISTS `DBSGA`.`Evaluacion` (
-  `idCD` INTEGER NOT NULL ,
-  `periodo` INTEGER NOT NULL ,
+  `idCD` INTEGER NOT NULL  ,
+  `periodo` INTEGER NOT NULL AUTO_INCREMENT,
   `idUsuario` INTEGER NOT NULL ,
   `PosiblePuntaje` INT NOT NULL ,
   INDEX `fk_Evaluacion_CD` (`idCD` ASC) ,
