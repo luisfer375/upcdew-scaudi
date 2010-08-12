@@ -10,6 +10,7 @@ import pe.com.backus.scaudi.dao.DetalleEvaluacionDAO;
 import pe.com.backus.scaudi.dao.hibernate.DetalleEvaluacionDAOHibernate;
 import pe.com.backus.scaudi.domain.DetalleEvaluacion;
 import pe.com.backus.scaudi.service.DetalleEvaluacionService;
+import pe.com.backus.scaudi.service.EvaluacionService;
 
 /**
  *
@@ -17,23 +18,25 @@ import pe.com.backus.scaudi.service.DetalleEvaluacionService;
  */
 public class DetalleEvaluacionServiceImpl implements DetalleEvaluacionService{
 
-    private DetalleEvaluacionDAO DetalleEvaluacionDAO = new DetalleEvaluacionDAOHibernate();
+    private DetalleEvaluacionDAO detalleEvaluacionDAO = new DetalleEvaluacionDAOHibernate();
 
     
     public void guardar(DetalleEvaluacion detalleEvaluacion) {
-       DetalleEvaluacionDAO.guardar(detalleEvaluacion);
+       EvaluacionService evaluacionService = new EvaluacionServiceImpl();
+       evaluacionService.guardar(detalleEvaluacion.getEvaluacion());
+       detalleEvaluacionDAO.guardar(detalleEvaluacion);
     }
 
     public void eliminar(DetalleEvaluacion detalleEvaluacion) {
-        DetalleEvaluacionDAO.eliminar(detalleEvaluacion);
+        detalleEvaluacionDAO.eliminar(detalleEvaluacion);
     }
 
     public DetalleEvaluacion obtenerDetalleEvaluacion(Integer codigo) {
-        return DetalleEvaluacionDAO.obtenerDetalleEvaluacion(codigo);
+        return detalleEvaluacionDAO.obtenerDetalleEvaluacion(codigo);
     }
 
     public List<DetalleEvaluacion> listarDetalleEvaluaciones() {
-        return DetalleEvaluacionDAO.listarDetalleEvaluaciones();
+        return detalleEvaluacionDAO.listarDetalleEvaluaciones();
 
     }
 

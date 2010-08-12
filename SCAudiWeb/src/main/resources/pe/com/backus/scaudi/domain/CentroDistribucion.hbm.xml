@@ -3,7 +3,7 @@
 <hibernate-mapping>
   <class name="pe.com.backus.scaudi.domain.CentroDistribucion" table="CD">
     <id column="idCD" name="idCentroDistribucion" type="java.lang.Integer">
-      <generator class="increment"/>
+      <generator class="native"/>
     </id>
     <property length="45" name="descripcion" not-null="true" type="java.lang.String">
       <column name="descripcionCD" sql-type="VARCHAR"/>

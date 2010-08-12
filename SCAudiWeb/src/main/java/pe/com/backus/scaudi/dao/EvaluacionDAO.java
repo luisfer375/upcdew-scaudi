@@ -12,15 +12,15 @@ import pe.com.backus.scaudi.domain.Evaluacion;
  *
  * @author Administrador
  */
-public interface EncuestaDAO {
+public interface EvaluacionDAO {
 
 
-    public void guardar(Evaluacion encuesta);
+    public void guardar(Evaluacion Evaluacion);
 
-    public void eliminar(Evaluacion encuesta);
+    public void eliminar(Evaluacion Evaluacion);
 
-    public Evaluacion obtenerEncuesta(Integer codigo);
+    public Evaluacion obtenerEvaluacion(Integer codigo);
 
-    public List<Evaluacion> listarEncuestas();
+    public List<Evaluacion> listarEvaluaciones();
 
 }
