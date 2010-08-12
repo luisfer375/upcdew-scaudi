@@ -9,6 +9,7 @@ import java.util.List;
 import pe.com.backus.scaudi.dao.EvaluacionDAO;
 import pe.com.backus.scaudi.dao.hibernate.EvaluacionDAOHibernate;
 import pe.com.backus.scaudi.domain.Evaluacion;
+import pe.com.backus.scaudi.domain.Usuario;
 import pe.com.backus.scaudi.service.EvaluacionService;
 
 /**
@@ -35,6 +36,10 @@ public class EvaluacionServiceImpl implements EvaluacionService{
     public List<Evaluacion> listarEvaluaciones() {
         return evaluacionDAO.listarEvaluaciones();
 
+    }
+
+    public Integer obtenerCorrelativoEvaluacionUsuario(Usuario usuario) {
+         return evaluacionDAO.obtenerCorrelativoEvaluacionUsuario(usuario);
     }
 
 

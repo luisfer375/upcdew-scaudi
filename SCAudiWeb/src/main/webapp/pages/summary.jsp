@@ -89,7 +89,7 @@
                               <param name="quality" value="high" />
                               <param name="wmode" value="opaque" />
                               <param name="swfversion" value="8.0.35.0" />
-                              <param name="FlashVars" value="&dataURL=Data/LimaF10.xml" />
+                              <param name="FlashVars" value="&dataURL=<%=request.getContextPath()%>/data/LimaF10.xml" />
                               <param name="expressinstall" value="Scripts/expressInstall.swf" />
                               <!-- The browser displays the following alternative content for users with Flash Player 6.0 and older. -->
                               <div>

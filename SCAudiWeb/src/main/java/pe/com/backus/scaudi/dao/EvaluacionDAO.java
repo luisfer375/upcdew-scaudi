@@ -7,6 +7,7 @@ package pe.com.backus.scaudi.dao;
 
 import java.util.List;
 import pe.com.backus.scaudi.domain.Evaluacion;
+import pe.com.backus.scaudi.domain.Usuario;
 
 /**
  *
@@ -22,5 +23,7 @@ public interface EvaluacionDAO {
     public Evaluacion obtenerEvaluacion(Integer codigo);
 
     public List<Evaluacion> listarEvaluaciones();
+
+    public Integer obtenerCorrelativoEvaluacionUsuario(Usuario usuario);
 
 }
