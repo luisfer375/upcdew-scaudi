@@ -15,20 +15,11 @@ public class DetalleEvaluacion implements Serializable{
 
     private Estandar estandar;
     private Evaluacion  evaluacion;
-    private CentroDistribucion centroDistribucion;
     private int   puntaje;
     private String    observaciones;
     private String    oportunidades;
 
     public DetalleEvaluacion() {
-    }
-
-    public CentroDistribucion getCentroDistribucion() {
-        return centroDistribucion;
-    }
-
-    public void setCentroDistribucion(CentroDistribucion centroDistribucion) {
-        this.centroDistribucion = centroDistribucion;
     }
 
     public Estandar getEstandar() {

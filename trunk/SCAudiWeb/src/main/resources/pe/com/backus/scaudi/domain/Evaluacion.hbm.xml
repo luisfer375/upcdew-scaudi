@@ -2,17 +2,17 @@
 <!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
 <hibernate-mapping>
   <class name="pe.com.backus.scaudi.domain.Evaluacion" table="Evaluacion">
-     <composite-id>
-            <key-property name="periodo" type="java.lang.Integer">
-                      <column name="periodo"  not-null="true" />
-             </key-property>
-            <key-many-to-one name="centroDistribucion" column="centroDistribucion" class="pe.com.backus.scaudi.domain.CentroDistribucion" />
-        </composite-id>  
-    <property  name="posiblePuntaje" not-null="true" type="int">
+    <composite-id>
+      <key-property name="periodo" type="java.lang.Integer" >
+        <column name="periodo" not-null="false"/>
+      </key-property>
+      <key-many-to-one class="pe.com.backus.scaudi.domain.CentroDistribucion" column="idCD" name="centroDistribucion"/>
+    </composite-id>
+    <property name="posiblePuntaje" not-null="true" type="int">
       <column name="posiblePuntaje" sql-type="int"/>
     </property>
-     <many-to-one class="pe.com.backus.scaudi.domain.Usuario" name="Usuario" not-null="true">
-      <column name="usuario"/>
+    <many-to-one class="pe.com.backus.scaudi.domain.Usuario" name="Usuario" not-null="true">
+      <column name="idUsuario"/>
     </many-to-one>
   </class>
 </hibernate-mapping>
