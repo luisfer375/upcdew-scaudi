@@ -75,7 +75,8 @@
                         <td colspan="2" class="texto"><span class="tituloModulo">REPORTE NIVEL REGI&Oacute;N - RED F10 Vs. F09 (%)</span></td>
                       </tr>
                       <tr>
-                        <td width="261" align="left" valign="top" class="subtitulo">RED F10                     <object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" width="242" height="210" align="middle" id="FlashID">
+                        <td width="261" align="left" valign="top" class="subtitulo">RED F10
+                            <object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" width="242" height="210" align="middle" id="FlashID">
                             <param name="movie" value="<%=request.getContextPath()%>/Charts/AngularGauge.swf" />
                             <param name="quality" value="high" />
                             <param name="wmode" value="opaque" />
