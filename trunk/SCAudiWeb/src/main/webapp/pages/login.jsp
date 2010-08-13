@@ -48,16 +48,6 @@
                               </label></td>
                             </tr>
                             <tr>
-                              <th align="left" valign="middle" scope="row">Rol</th>
-                              <td align="left" valign="middle">
-                                <label>
-                                <select name="select" class="menuhome" id="select">
-                                  <option value="1" selected="selected">Auditor</option>
-                                  <option value="2">Administrador</option>
-                                </select>
-                              </label></td>
-                            </tr>
-                            <tr>
                               <th colspan="1" scope="row">
                                   <input type="submit" name="button" id="button" value="Logueo!" />
                                 </th>

@@ -22,7 +22,8 @@
               <tr>
                 <td colspan="2"><table width="100%" border="0" cellpadding="0" cellspacing="0">
                   <tr>
-                    <td background="<%=request.getContextPath()%>/images/bg_topinterna.gif"><table width="100%" border="0" cellpadding="0" cellspacing="0">
+                    <td background="<%=request.getContextPath()%>/images/bg_topinterna.gif">
+                        <table width="100%" border="0" cellpadding="0" cellspacing="0">
                         <tr>
                           <td><img src="<%=request.getContextPath()%>/images/logo1_interna.gif" width="354" height="76" /></td>
                           <td><img src="<%=request.getContextPath()%>/images/spacer.gif" width="20" height="76" /></td>
@@ -34,15 +35,15 @@
                     <td background="<%=request.getContextPath()%>/images/bg_menutopinterna.gif"><table border="0" cellspacing="0" cellpadding="0">
                         <tr>
                           <td><img src="<%=request.getContextPath()%>/images/logo2_internas.gif" width="118" height="64" /></td>
-                          <td><a href="<%=request.getContextPath()%>/pages/rmod1.jsp"><img src="<%=request.getContextPath()%>/images/mnI_mod1.gif" name="mod1" width="92" height="64" border="0" id="mod1"/></a></td>
+                          <td><a href="<%=request.getContextPath()%>/pages/est1.jsp"><img src="<%=request.getContextPath()%>/images/mnI_mod1.gif" name="mod1" width="92" height="64" border="0" id="mod1"/></a></td>
                           <td><img src="<%=request.getContextPath()%>/images/mnI_mod1_2.gif" name="mod1_2" width="19" height="64" id="mod1_2" /></td>
-                          <td><a href="<%=request.getContextPath()%>/pages/rmod2.jsp"><img src="<%=request.getContextPath()%>/images/mnI_mod2.gif" name="mod2" width="106" height="64" border="0" id="mod2" /></a></td>
+                          <td><a href="<%=request.getContextPath()%>/pages/est1.jsp"><img src="<%=request.getContextPath()%>/images/mnI_mod2.gif" name="mod2" width="106" height="64" border="0" id="mod2" /></a></td>
                           <td><img src="<%=request.getContextPath()%>/images/mnI_mod2_3.gif" name="mod2_3" width="19" height="64" id="mod2_3" /></td>
-                          <td><a href="<%=request.getContextPath()%>/pages/rmod3.jsp"><img src="<%=request.getContextPath()%>/images/mnI_mod3.gif" name="mod3" width="102" height="64" border="0" id="mod3"/></a></td>
+                          <td><a href="<%=request.getContextPath()%>/pages/est1.jsp"><img src="<%=request.getContextPath()%>/images/mnI_mod3.gif" name="mod3" width="102" height="64" border="0" id="mod3"/></a></td>
                           <td><img src="<%=request.getContextPath()%>/images/mnI_mod3_4.gif" name="mod3_4" width="20" height="64" id="mod3_4" /></td>
-                          <td><a href="<%=request.getContextPath()%>/pages/rmod4.jsp"><img src="<%=request.getContextPath()%>/images/mnI_mod4.gif" name="mod4" width="71" height="64" border="0" id="mod4"/></a></td>
+                          <td><a href="<%=request.getContextPath()%>/pages/est1.jsp"><img src="<%=request.getContextPath()%>/images/mnI_mod4.gif" name="mod4" width="71" height="64" border="0" id="mod4"/></a></td>
                           <td><img src="<%=request.getContextPath()%>/images/mnI_mod4_5.gif" name="mod4_5" width="19" height="64" id="mod4_5" /></td>
-                          <td><a href="<%=request.getContextPath()%>/pages/rmod5.jsp"><img src="<%=request.getContextPath()%>/images/mnI_mod5.gif" name="mod5" width="109" height="64" border="0" id="mod5"/></a></td>
+                          <td><a href="<%=request.getContextPath()%>/pages/est1.jsp"><img src="<%=request.getContextPath()%>/images/mnI_mod5.gif" name="mod5" width="109" height="64" border="0" id="mod5"/></a></td>
                         </tr>
                     </table></td>
                   </tr>
@@ -89,7 +90,7 @@
                               <param name="quality" value="high" />
                               <param name="wmode" value="opaque" />
                               <param name="swfversion" value="8.0.35.0" />
-                              <param name="FlashVars" value="&dataURL=<%=request.getContextPath()%>/data/LimaF10.xml" />
+                              <param name="FlashVars" value="&dataURL=data/LimaF10.xml" />
                               <param name="expressinstall" value="Scripts/expressInstall.swf" />
                               <!-- The browser displays the following alternative content for users with Flash Player 6.0 and older. -->
                               <div>
