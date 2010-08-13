@@ -2,7 +2,6 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <%@ include file="/pages/cabecera.jsp" %>
-    <script type="text/javascript" src="js/FusionCharts.js"></script>
 </head>
 <body >
 <table border="0" align="center" cellpadding="2" cellspacing="0">
@@ -77,21 +76,21 @@
                       </tr>
                       <tr>
                         <td width="261" align="left" valign="top" class="subtitulo">RED F10                     <object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" width="242" height="210" align="middle" id="FlashID">
-                            <param name="movie" value="Charts/AngularGauge.swf" />
+                            <param name="movie" value="<%=request.getContextPath()%>/Charts/AngularGauge.swf" />
                             <param name="quality" value="high" />
                             <param name="wmode" value="opaque" />
                             <param name="swfversion" value="8.0.35.0" />
                             <!-- This param tag prompts users with Flash Player 6.0 r65 and higher to download the latest version of Flash Player. Delete it if you don&rsquo;t want users to see the prompt. -->
-                            <param name="expressinstall" value="Scripts/expressInstall.swf" />
+                            <param name="expressinstall" value="<%=request.getContextPath()%>/Scripts/expressInstall.swf" />
                             <!-- Next object tag is for non-IE browsers. So hide it from IE using IECC. -->
                             <!--[if !IE]>-->
-                            <object data="Charts/AngularGauge.swf" type="application/x-shockwave-flash" width="242" height="210" align="middle">
+                            <object data="<%=request.getContextPath()%>/Charts/AngularGauge.swf" type="application/x-shockwave-flash" width="242" height="210" align="middle">
                               <!--<![endif]-->
                               <param name="quality" value="high" />
                               <param name="wmode" value="opaque" />
                               <param name="swfversion" value="8.0.35.0" />
-                              <param name="FlashVars" value="&dataURL=data/LimaF10.xml" />
-                              <param name="expressinstall" value="Scripts/expressInstall.swf" />
+                              <param name="FlashVars" value="&dataURL=<%=request.getContextPath()%>/data/LimaF10.xml" />
+                              <param name="expressinstall" value="<%=request.getContextPath()%>/Scripts/expressInstall.swf" />
                               <!-- The browser displays the following alternative content for users with Flash Player 6.0 and older. -->
                               <div>
                                 <h4>Content on this page requires a newer version of Adobe Flash Player.</h4>
@@ -104,21 +103,21 @@
                         </td>
                         <td width="250" align="left" valign="top" class="subtitulo">RED F09
                           <object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" width="242" height="210" align="middle" id="FlashID3">
-                            <param name="movie" value="Charts/AngularGauge.swf" />
+                            <param name="movie" value="<%=request.getContextPath()%>/Charts/AngularGauge.swf" />
                             <param name="quality" value="high" />
                             <param name="wmode" value="opaque" />
                             <param name="swfversion" value="8.0.35.0" />
                             <!-- This param tag prompts users with Flash Player 6.0 r65 and higher to download the latest version of Flash Player. Delete it if you don&rsquo;t want users to see the prompt. -->
-                            <param name="expressinstall" value="Scripts/expressInstall.swf" />
+                            <param name="expressinstall" value="<%=request.getContextPath()%>/Scripts/expressInstall.swf" />
                             <!-- Next object tag is for non-IE browsers. So hide it from IE using IECC. -->
                             <!--[if !IE]>-->
-                            <object data="Charts/AngularGauge.swf" type="application/x-shockwave-flash" width="242" height="210" align="middle">
+                            <object data="<%=request.getContextPath()%>/Charts/AngularGauge.swf" type="application/x-shockwave-flash" width="242" height="210" align="middle">
                               <!--<![endif]-->
                               <param name="quality" value="high" />
                               <param name="wmode" value="opaque" />
                               <param name="swfversion" value="8.0.35.0" />
-                              <param name="FlashVars" value="&dataURL=data/LimaF09.xml" />
-                              <param name="expressinstall" value="Scripts/expressInstall.swf" />
+                              <param name="FlashVars" value="&dataURL=<%=request.getContextPath()%>/data/LimaF09.xml" />
+                              <param name="expressinstall" value="<%=request.getContextPath()%>/Scripts/expressInstall.swf" />
                               <!-- The browser displays the following alternative content for users with Flash Player 6.0 and older. -->
                               <div>
                                 <h4>Content on this page requires a newer version of Adobe Flash Player.</h4>
@@ -134,21 +133,21 @@
                       </tr>
                       <tr>
                         <td colspan="2" align="center" valign="top" class="texto"><object id="FlashID2" classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" width="500" height="300">
-                          <param name="movie" value="Charts/MSCombi2D.swf" />
+                          <param name="movie" value="<%=request.getContextPath()%>/Charts/MSCombi2D.swf" />
                           <param name="quality" value="high" />
                           <param name="wmode" value="opaque" />
                           <param name="swfversion" value="8.0.35.0" />
                           <!-- This param tag prompts users with Flash Player 6.0 r65 and higher to download the latest version of Flash Player. Delete it if you don&rsquo;t want users to see the prompt. -->
-                          <param name="expressinstall" value="Scripts/expressInstall.swf" />
+                          <param name="expressinstall" value="<%=request.getContextPath()%>/Scripts/expressInstall.swf" />
                           <!-- Next object tag is for non-IE browsers. So hide it from IE using IECC. -->
                           <!--[if !IE]>-->
-                          <object type="application/x-shockwave-flash" data="Charts/MSCombi2D.swf" width="500" height="300">
+                          <object type="application/x-shockwave-flash" data="<%=request.getContextPath()%>/Charts/MSCombi2D.swf" width="500" height="300">
                             <!--<![endif]-->
                             <param name="quality" value="high" />
-                            <param name="FlashVars" value="&dataURL=data/LimaDetallado.xml" />
+                            <param name="FlashVars" value="&dataURL=<%=request.getContextPath()%>/data/LimaDetallado.xml" />
                             <param name="wmode" value="opaque" />
                             <param name="swfversion" value="8.0.35.0" />
-                            <param name="expressinstall" value="Scripts/expressInstall.swf" />
+                            <param name="expressinstall" value="<%=request.getContextPath()%>/Scripts/expressInstall.swf" />
                             <!-- The browser displays the following alternative content for users with Flash Player 6.0 and older. -->
                             <div>
                               <h4>Content on this page requires a newer version of Adobe Flash Player.</h4>

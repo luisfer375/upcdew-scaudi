@@ -24,7 +24,7 @@ body {
 	font-size: 11px;
 	color: #383431;
 	font-weight: bold;
-	list-style-image: url(<%=request.getContextPath()%>/images/bullet_celeste.gif);
+	list-style-image: url(images/bullet_celeste.gif);
 	
 }
 .menuizq ul {
@@ -44,19 +44,19 @@ body {
 }
 .menuizq a:hover {
 	color: #464b87;
-	list-style-image: url(<%=request.getContextPath()%>/images/bullet_azul.gif);
+	list-style-image: url(images/bullet_azul.gif);
 }
 .menuMetas {
 	font-family: Arial, Helvetica, sans-serif;
 	font-size: 11px;
 	font-weight: bold;
 	color: #ffffff;
-	list-style-image: url(<%=request.getContextPath()%>/images/bullet_azul.gif);
+	list-style-image: url(images/bullet_azul.gif);
 	
 }
 .menuMetas #activo {
 	color: #ffffff;
-	list-style-image: url(<%=request.getContextPath()%>/images/bullet_azul.gif);
+	list-style-image: url(images/bullet_azul.gif);
 	
 }
 .menuMetas ul {
@@ -92,7 +92,7 @@ body {
 }
 .menuMetas a:hover {
 	color: #ffffff;
-	list-style-image: url(<%=request.getContextPath()%>/images/bullet_azul.gif);
+	list-style-image: url(images/bullet_azul.gif);
 }
 
 .menuMetasEst a:link {
@@ -135,7 +135,7 @@ h2 {
 	font-family: Arial, Helvetica, sans-serif;
 	font-size: 11px;
 	color: #4d4d57;
-	list-style-image: url(<%=request.getContextPath()%>/images/bullet_grischico.gif);
+	list-style-image: url(images/bullet_grischico.gif);
 }
 .textotabla li {
 	margin-left: -15px;
@@ -181,7 +181,7 @@ h2 {
 }
 .texto ul {
 	margin-top: 10px;
-	list-style-image: url(<%=request.getContextPath()%>/images/bullet_grischico.gif);
+	list-style-image: url(images/bullet_grischico.gif);
 }
 .texto a:link {
 	color: #4d4d57;
