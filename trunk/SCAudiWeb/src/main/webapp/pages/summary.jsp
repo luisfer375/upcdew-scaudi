@@ -2,8 +2,8 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <%@ include file="/pages/cabecera.jsp" %>
+    <script type="text/javascript" src="js/FusionCharts.js"></script>
 </head>
-
 <body >
 <table border="0" align="center" cellpadding="2" cellspacing="0">
   <tr>
@@ -95,7 +95,7 @@
                               <!-- The browser displays the following alternative content for users with Flash Player 6.0 and older. -->
                               <div>
                                 <h4>Content on this page requires a newer version of Adobe Flash Player.</h4>
-                                <p><a href="<%=request.getContextPath()%>/pages/http://www.adobe.com/go/getflashplayer"><img src="http://www.adobe.com/<%=request.getContextPath()%>/images/shared/download_buttons/get_flash_player.gif" alt="Get Adobe Flash player" /></a></p>
+                                <p><a href="http://www.adobe.com/go/getflashplayer"><img src="http://www.adobe.com/images/shared/download_buttons/get_flash_player.gif" alt="Get Adobe Flash player" /></a></p>
                               </div>
                               <!--[if !IE]>-->
                             </object>
@@ -117,12 +117,12 @@
                               <param name="quality" value="high" />
                               <param name="wmode" value="opaque" />
                               <param name="swfversion" value="8.0.35.0" />
-                              <param name="FlashVars" value="&dataURL=Data/LimaF09.xml" />
+                              <param name="FlashVars" value="&dataURL=data/LimaF09.xml" />
                               <param name="expressinstall" value="Scripts/expressInstall.swf" />
                               <!-- The browser displays the following alternative content for users with Flash Player 6.0 and older. -->
                               <div>
                                 <h4>Content on this page requires a newer version of Adobe Flash Player.</h4>
-                                <p><a href="<%=request.getContextPath()%>/pages/http://www.adobe.com/go/getflashplayer"><img src="http://www.adobe.com/<%=request.getContextPath()%>/images/shared/download_buttons/get_flash_player.gif" alt="Get Adobe Flash player" /></a></p>
+                                <p><a href="http://www.adobe.com/go/getflashplayer"><img src="http://www.adobe.com/images/shared/download_buttons/get_flash_player.gif" alt="Get Adobe Flash player" /></a></p>
                               </div>
                               <!--[if !IE]>-->
                             </object>
@@ -145,14 +145,14 @@
                           <object type="application/x-shockwave-flash" data="Charts/MSCombi2D.swf" width="500" height="300">
                             <!--<![endif]-->
                             <param name="quality" value="high" />
-                            <param name="FlashVars" value="&dataURL=Data/LimaDetallado.xml" />
+                            <param name="FlashVars" value="&dataURL=data/LimaDetallado.xml" />
                             <param name="wmode" value="opaque" />
                             <param name="swfversion" value="8.0.35.0" />
                             <param name="expressinstall" value="Scripts/expressInstall.swf" />
                             <!-- The browser displays the following alternative content for users with Flash Player 6.0 and older. -->
                             <div>
                               <h4>Content on this page requires a newer version of Adobe Flash Player.</h4>
-                              <p><a href="<%=request.getContextPath()%>/pages/http://www.adobe.com/go/getflashplayer"><img src="http://www.adobe.com/<%=request.getContextPath()%>/images/shared/download_buttons/get_flash_player.gif" alt="Get Adobe Flash player" /></a></p>
+                              <p><a href="http://www.adobe.com/go/getflashplayer"><img src="http://www.adobe.com/images/shared/download_buttons/get_flash_player.gif" alt="Get Adobe Flash player" /></a></p>
                             </div>
                             <!--[if !IE]>-->
                           </object>
